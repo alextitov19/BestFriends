@@ -32,23 +32,19 @@ struct RR56: View {
     var body: some View {
         
         ZStack {
-            Color.purple
-                .opacity(0.9)
+            Color.black
+                .opacity(0.2)
                 .ignoresSafeArea()
             
-            Color.black
-                .opacity(0.6)
-                .ignoresSafeArea()
-
             AdPlayerView(name: "sky2")
                 .ignoresSafeArea()
                 .blendMode(.screen)
-                .opacity(0.99)
+                .opacity(0.9)
             
             AdPlayerView(name: "girlFriends1")
                 .ignoresSafeArea()
                 .blendMode(.screen)
-                .opacity(0.2)
+                .opacity(0.4)
             
             
             ZStack{

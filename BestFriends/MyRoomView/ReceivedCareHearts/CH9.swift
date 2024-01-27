@@ -42,7 +42,7 @@ struct CH9: View {
             if shareTapped {
                 
                 Color.black
-                    .opacity(0.8)
+                    .opacity(0.9)
                     .ignoresSafeArea()
         
                 AdPlayerView(name: "dramaLights")
@@ -53,15 +53,14 @@ struct CH9: View {
             } else {
 
 
-                ColorManager .grey2
-                   .opacity(0.9)
+                Color.black
+                    .opacity(0.7)
                     .ignoresSafeArea()
-                
                 
                 AdPlayerView(name: "sky2")
                     .ignoresSafeArea()
                     .blendMode(.screen)
-                    .opacity(0.99)
+                    .opacity(0.9)
            
 //                AdPlayerView(name: "moonRose1")
 //                    .ignoresSafeArea()

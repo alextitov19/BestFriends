@@ -75,14 +75,10 @@ struct HomeView: View {
                     
                 }
                 
-//
+
                 Color.black
                     .opacity(0.2)
                     .ignoresSafeArea()
-                
-//                Color.gray
-//                    .opacity(0.2)
-//                    .ignoresSafeArea()
                 
                 AdPlayerView(name: "sky2")
                     .ignoresSafeArea()

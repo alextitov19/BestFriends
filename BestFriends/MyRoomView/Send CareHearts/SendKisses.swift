@@ -46,7 +46,7 @@ struct SendKisses: View {
 //                    .opacity(0.9)
 //                    .ignoresSafeArea()
                 
-                ColorManager.purple4
+                ColorManager .grey2
                     .ignoresSafeArea()
                     .onAppear()
         
@@ -55,25 +55,18 @@ struct SendKisses: View {
                     .ignoresSafeArea()
                     .blendMode(.screen)
                 
-//             ************** PUT OUR HOMEMADE VIDEO HERE ************
-//                ********* NO audio on second page
+                AdPlayerView(name: "easyHearts2")
+                    .ignoresSafeArea()
+                    .blendMode(.screen)
+                    .opacity(0.8)
                 
-                
-//                AdPlayerView(name: "BlowingKisses2")
-//                    .ignoresSafeArea()
-//                    .blendMode(.screen)
-//                    .opacity(0.25)
-                
-//                AdPlayerView(name: "alwaysForever2")
-//                    .ignoresSafeArea()
-//                    .blendMode(.screen)
-//                    .opacity(0.0)
+
                 
             } else {
 
 
-                ColorManager .purple7
-                   .opacity(0.7)
+                ColorManager .grey2
+                    .opacity(0.7)
                     .ignoresSafeArea()
                 
                 

@@ -43,23 +43,21 @@ struct HugPushNotification: View {
             
             if shareTapped {
                 
-//                Color.black
-//                    .opacity(0.9)
-//                    .ignoresSafeArea()
-                
-                ColorManager.purple4
+                ColorManager .grey2
                     .ignoresSafeArea()
                     .onAppear()
+                
+                AdPlayerView(name: "easyHearts2")
+                    .ignoresSafeArea()
+                    .blendMode(.screen)
+                    .opacity(0.8)
                 
                 AdPlayerView(name: "dramaLights")
                     .opacity(0.5)
                     .ignoresSafeArea()
                     .blendMode(.screen)
                 
-//                AdPlayerView(name: "HugTikTok")
-//                    .ignoresSafeArea()
-//                    .blendMode(.screen)
-//                    .opacity(0.0)
+
                 
             } else {
                 

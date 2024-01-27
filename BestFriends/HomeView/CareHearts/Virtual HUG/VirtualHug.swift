@@ -99,7 +99,7 @@ struct VirtualHug: View {
                 
                 
                 Color.gray
-                    .opacity(0.4)
+                    .opacity(0.8)
                     .ignoresSafeArea()
                 
                 AdPlayerView(name: "sky2")
@@ -115,7 +115,7 @@ struct VirtualHug: View {
                 AdPlayerView(name: "HugTikTok")
                     .ignoresSafeArea()
                     .blendMode(.screen)
-                    .opacity(0.5)
+                    .opacity(0.8)
                 
             }
             

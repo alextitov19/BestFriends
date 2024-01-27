@@ -38,23 +38,26 @@ struct NEWSFeedPergion: View {
             
             if shareTapped {
                 
-                ColorManager.purple4
+                ColorManager .grey2
                     .ignoresSafeArea()
                     .onAppear()
+                
+                AdPlayerView(name: "easyHearts2")
+                    .ignoresSafeArea()
+                    .blendMode(.screen)
+                    .opacity(0.8)
          
                 AdPlayerView(name: "dramaLights")
                     .opacity(0.5)
                     .ignoresSafeArea()
                     .blendMode(.screen)
                 
-                AdPlayerView(name: "missingYou3")
-                    .ignoresSafeArea()
-                    .blendMode(.screen)
+
                 
             } else {
                 
                 
-                ColorManager .purple7
+                ColorManager .grey2
                     .opacity(0.9)
                     .ignoresSafeArea()
                 
@@ -67,12 +70,8 @@ struct NEWSFeedPergion: View {
                 AdPlayerView(name: "missingYou3")
                     .ignoresSafeArea()
                     .blendMode(.screen)
-                   .opacity(0.5)
-//
-//                AdPlayerView(name: "InnerStellar3")
-//                              .ignoresSafeArea()
-//                              .blendMode(.screen)
-//                              .opacity(0.0)
+                   .opacity(0.8)
+
                 
             }
             

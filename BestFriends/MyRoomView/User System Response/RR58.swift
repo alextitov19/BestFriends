@@ -76,13 +76,14 @@ struct RR58: View {
 //
 //                } else {
                     
-                    Color.black
-                        .opacity(0.9)
-                        .ignoresSafeArea()
-                    
-                    AdPlayerView(name: "sky2")
-                        .ignoresSafeArea()
-                        .blendMode(.screen)
+                Color.black
+                    .opacity(0.99)
+                    .ignoresSafeArea()
+                
+                AdPlayerView(name: "sky2")
+                    .ignoresSafeArea()
+                    .blendMode(.screen)
+                    .opacity(0.9)
                     
                     AdPlayerView(name: "moonShots3")
                         .ignoresSafeArea()

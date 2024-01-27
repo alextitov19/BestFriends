@@ -422,10 +422,10 @@ struct RRLoveTarts7: View {
                 }
                 Spacer ()
                     .frame(width: 40)
-                
+//                RRBrokenHeart(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups
                 
                 NavigationLink(
-                    destination: RRBrokenHeart(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
+                    destination: EmptyView(),
                     label: {
                         
                         ZStack {

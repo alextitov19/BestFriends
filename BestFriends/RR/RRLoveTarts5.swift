@@ -107,6 +107,11 @@ struct RRLoveTarts5: View {
                     .opacity(0.9)
                     .ignoresSafeArea()
                 
+                AdPlayerView(name: "easyHearts2")
+                    .ignoresSafeArea()
+                    .blendMode(.screen)
+                    .opacity(0.8)
+                
                 AdPlayerView(name: "dramaLights")
                     .opacity(0.5)
                     .ignoresSafeArea()
@@ -120,31 +125,30 @@ struct RRLoveTarts5: View {
                 
             } else {
                 
-                
-//                ColorManager .purple3
-//                    .opacity(0.9)
-//                    .ignoresSafeArea()
-                  
+                Color.black
+                    .opacity(0.99)
+                    .ignoresSafeArea()
                 
                 AdPlayerView(name: "sky2")
                     .ignoresSafeArea()
                     .blendMode(.screen)
-                    .opacity(0.99)
+                    .opacity(0.9)
                 
-                //                        AdPlayerView(name: "missingYou3")
-                //                            .ignoresSafeArea()
-                //                            .blendMode(.screen)
-                //                            .opacity(0.1)
                 
                 AdPlayerView(name: "easyHearts2")
                     .ignoresSafeArea()
                     .blendMode(.screen)
-                    .opacity(0.99)
+                    .opacity(0.3)
                 
                 AdPlayerView(name: "TaylorSwift2")
                     .ignoresSafeArea()
                     .blendMode(.screen)
                     .opacity(0.0)
+                
+                AdPlayerView(name: "moonShots")
+                    .ignoresSafeArea()
+                    .blendMode(.screen)
+                    .opacity(0.9)
                 
                 
                 
@@ -241,8 +245,17 @@ struct RRLoveTarts5: View {
                             destination: RRPoemContest(user: user, friends: friends, groups: groups),
                             label: {
                                 VStack {
-                                    Text("Kissing frogs \nfairy tales")
+                                    Text("Kissing frogs")
                                         .font(.system(size: 22))
+                                        .fontWeight(.light)
+                                        .multilineTextAlignment(.center)
+                                        .foregroundColor(ColorManager .grey1)
+                                        .rotationEffect(.degrees(-10))
+                                        .opacity(0.99)
+                                    
+                                    Text("fairy tales")
+                                        .font(.system(size: 17))
+                                        .italic()
                                         .fontWeight(.light)
                                         .multilineTextAlignment(.center)
                                         .foregroundColor(ColorManager .grey1)
@@ -584,21 +597,33 @@ struct RRLoveTarts5: View {
                             
                             VStack {
                                 
-                                Text("  feel your lover's")
-                                    .font(.system(size: 17))
-                                    .italic()
-                                    .fontWeight(.light)
-                                    .multilineTextAlignment(.center)
-                                    .foregroundColor(Color.white)
-                                    .rotationEffect(.degrees(10))
-                                //                        .blinking(duration: 3.0)
-                                    .shadow(color: Color.white, radius: 6, x: 3, y: 5)
-                                    .opacity(0.5)
-                                
                                 Spacer ()
                                     .frame(height: 30)
                                 
-                                Text("Hearbeat")
+                                Text("     touching their")
+                                    .font(.system(size: 15))
+                                    .italic()
+                                    .fontWeight(.regular)
+                                    .multilineTextAlignment(.center)
+                                    .foregroundColor(Color.white)
+                                    .rotationEffect(.degrees(10))
+                                    .shadow(color: Color.white, radius: 6, x: 3, y: 5)
+                                    .opacity(0.99)
+                                
+                                Text("  Heartbeat")
+                                    .font(.system(size: 15))
+                                  
+                                    .fontWeight(.bold)
+                                    .multilineTextAlignment(.center)
+                                    .foregroundColor(Color.white)
+                                    .rotationEffect(.degrees(10))
+                                    .shadow(color: Color.white, radius: 6, x: 3, y: 5)
+                                    .opacity(0.99)
+                                
+                                Spacer ()
+                                    .frame(height: 100)
+
+                                Text("")
                                     .font(.system(size: 15))
                                     .italic()
                                     .fontWeight(.regular)
@@ -617,7 +642,7 @@ struct RRLoveTarts5: View {
                             Image(systemName: "heart.fill")
                                 .resizable()
                                 .foregroundColor(ColorManager .purple3)
-                                .frame(width: 140, height: 110)
+                                .frame(width: 165, height: 140)
                                 .shadow(color: ColorManager .purple1, radius: 3, x: 3, y: 3)
                                 .rotationEffect(.degrees(10))
                                 .opacity(0.4)
@@ -637,7 +662,7 @@ struct RRLoveTarts5: View {
                                 Image(systemName: "heart.fill")
                                     .resizable()
                                     .foregroundColor(.purple)
-                                    .frame(width: 150, height: 110)
+                                    .frame(width: 150, height: 130)
                                     .shadow(color: .blue, radius: 65, x: 30, y: 50)
                                     .opacity(0.25)
                                     .alert("", isPresented: $showingAlert) {
@@ -655,27 +680,25 @@ struct RRLoveTarts5: View {
                             VStack {
                                 
                                 Spacer()
-                                    .frame(height: 30)
+                                    .frame(height: 50)
                                 
                                 ZStack {
                                     Image(systemName: "heart.fill")
                                         .resizable()
                                         .foregroundColor(ColorManager .purple3)
-                                        .frame(width: 140, height: 110)
+                                        .frame(width: 50, height: 50)
                                         .shadow(color: ColorManager .purple1, radius: 3, x: 3, y: 3)
                                         .rotationEffect(.degrees(10))
                                         .opacity(0.4)
                                     
-                                    Text("TAP")
+                                 
                                     
+                                    Text("TAP")
                                         .font(.system(size: 25))
                                         .fontWeight(.light)
-                                        .foregroundColor(.cyan)
-                                        .frame(width: 70, height: 30)
-                                        .background(Color.cyan)
                                         .multilineTextAlignment(.center)
                                         .rotationEffect(.degrees(10))
-                                        .cornerRadius(5)
+                                        .blinking(duration: 2.0)
                                         .foregroundColor(Color.white)
                                     //                                       .blinking(duration: 3.0)
                                         .opacity(0.6)
@@ -739,14 +762,31 @@ struct RRLoveTarts5: View {
                             label: {
                                 
                                 ZStack {
-                                    Text("Dented \nHeart")
-                                        .font(.system(size: 14))
-                                        .foregroundColor(ColorManager .grey4)
-                                        .fontWeight(.bold)
-                                        .rotationEffect(.degrees(-10))
-                                        .opacity(0.99)
-                                        .multilineTextAlignment(.center)
-                                    //                        .blinking(duration: 2.0)
+                                    
+                                    VStack {
+                                        
+                                        
+                                        Text("Uggg")
+                                            .font(.system(size: 17))
+                                            .foregroundColor(Color .white)
+                                            .fontWeight(.bold)
+                                            .rotationEffect(.degrees(-10))
+                                            .opacity(0.99)
+                                            .multilineTextAlignment(.center)
+                                        
+                                        Spacer ()
+                                            .frame(height: 7)
+                                        
+                                        Text("dented \nheart")
+                                            .font(.system(size: 14))
+                                            .italic()
+                                            .foregroundColor(Color .white)
+                                            .fontWeight(.medium)
+                                            .rotationEffect(.degrees(-10))
+                                            .opacity(0.99)
+                                            .multilineTextAlignment(.center)
+                                        
+                                    }
                                     
                                     Image(systemName: "heart")
                                         .resizable()

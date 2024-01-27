@@ -41,24 +41,15 @@ struct SaySomethingNice5: View {
             
             if shareTapped {
                 
-//                AdPlayerView(name: "surfer2")
-//                    .ignoresSafeArea()
-//                    .blendMode(.screen)
-//                    .opacity(0.3)
-                
-//                AdPlayerView(name: "dandaline")
-//                    .ignoresSafeArea()
-//                    .blendMode(.screen)
-//                    .opacity(0.0)
-                
-//                AdPlayerView(name: "sendHearts6")
-//                    .ignoresSafeArea()
-//                    .blendMode(.screen)
-//                    .opacity(0.6)
-                
-                ColorManager.purple4
+
+                ColorManager .grey2
                     .ignoresSafeArea()
                     .onAppear()
+                
+                AdPlayerView(name: "easyHearts2")
+                    .ignoresSafeArea()
+                    .blendMode(.screen)
+                    .opacity(0.8)
                 
                 AdPlayerView(name: "dramaLights")
                     .opacity(0.5)
@@ -68,7 +59,7 @@ struct SaySomethingNice5: View {
             } else {
                 
                 
-                ColorManager .purple5
+                ColorManager .grey2
                     .opacity(0.7)
                     .ignoresSafeArea()
                 
@@ -80,7 +71,7 @@ struct SaySomethingNice5: View {
                 AdPlayerView(name: "easyHearts2")
                     .ignoresSafeArea()
                     .blendMode(.screen)
-                    .opacity(0.7)
+                    .opacity(0.99)
                 
 
                 

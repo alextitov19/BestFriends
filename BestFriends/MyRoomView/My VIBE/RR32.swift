@@ -53,28 +53,18 @@ struct RR32: View {
             } else {
                 
                 Color.black
-                    .opacity(0.9)
+                    .opacity(0.99)
                     .ignoresSafeArea()
-                
                 
                 AdPlayerView(name: "sky2")
                     .ignoresSafeArea()
                     .blendMode(.screen)
-                
-//                AdPlayerView(name: "Somebody7")
-//                    .ignoresSafeArea()
-//                    .blendMode(.screen)
-//                    .opacity(0.0)
-
+                    .opacity(0.9)
             }
             
    
-        VStack {
-             
-           
-//
-    //    ******************************************************
-                
+VStack {
+   
     VStack {
         
       Spacer ()

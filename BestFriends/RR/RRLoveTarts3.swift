@@ -24,11 +24,11 @@ struct RRLoveTarts3: View {
     let groups: [Group]
     let atmosphere: Atmosphere
     let friendAtmospheres: [Atmosphere]
+ 
     
-    
-    //   let atmosphere: Atmosphere
-    //   let friendAtmospheres: [Atmosphere]
-    
+//   let atmosphere: Atmosphere
+//   let friendAtmospheres: [Atmosphere]
+ 
     
     @State private var selectedFriends: [String] = []
     @State private var colors: [Color] = [ColorManager.grey2, ColorManager.grey2, ColorManager.grey2, ColorManager.grey2, ColorManager.grey2]
@@ -91,310 +91,310 @@ struct RRLoveTarts3: View {
             }
         }
     }
-    
+  
     
     //**************************
-    @State var animate: Bool = false
-    let animation: Animation = Animation.linear(duration: 5.0).repeatForever(autoreverses: false)
-    
-    
+        @State var animate: Bool = false
+        let animation: Animation = Animation.linear(duration: 5.0).repeatForever(autoreverses: false)
+
+            
     var body: some View {
-        ZStack {
+            ZStack {
+              
+                    if shareTapped {
+                        
+                        Color.black
+                            .opacity(0.9)
+                            .ignoresSafeArea()
+                
+                        AdPlayerView(name: "dramaLights")
+                            .opacity(0.5)
+                            .ignoresSafeArea()
+                            .blendMode(.screen)
+//
+//
+//                        AdPlayerView(name: "BlowingKisses2")
+//                            .ignoresSafeArea()
+//                            .blendMode(.screen)
+//                            .opacity(0.25)
+                        
+                    } else {
+
+
+                        Color.black
+                           .opacity(0.9)
+                            .ignoresSafeArea()
+                        
+                        
+                        AdPlayerView(name: "sky2")
+                            .ignoresSafeArea()
+                            .blendMode(.screen)
+                            .opacity(0.9)
+                        
+//                        AdPlayerView(name: "missingYou3")
+//                            .ignoresSafeArea()
+//                            .blendMode(.screen)
+//                            .opacity(0.1)
+                        
+                        AdPlayerView(name: "easyHearts2")
+                            .ignoresSafeArea()
+                            .blendMode(.screen)
+                            .opacity(0.7)
+                        
+                        AdPlayerView(name: "TaylorSwift2")
+                                      .ignoresSafeArea()
+                                      .blendMode(.screen)
+                                      .opacity(0.0)
+                   
+                      
+                        
+                    }
             
-            if shareTapped {
-                
-                Color.black
-                    .opacity(0.9)
-                    .ignoresSafeArea()
-                
-                AdPlayerView(name: "dramaLights")
-                    .opacity(0.5)
-                    .ignoresSafeArea()
-                    .blendMode(.screen)
-                //
-                //
-                //                        AdPlayerView(name: "BlowingKisses2")
-                //                            .ignoresSafeArea()
-                //                            .blendMode(.screen)
-                //                            .opacity(0.25)
-                
-            } else {
                 
                 
-                Color.black
-                    .opacity(0.9)
-                    .ignoresSafeArea()
+VStack {
+    
+    
+        VStack {
                 
+            
+            
+            
+                Spacer ()
+                    .frame(height: 40)
                 
-                AdPlayerView(name: "sky2")
-                    .ignoresSafeArea()
-                    .blendMode(.screen)
-                    .opacity(0.9)
-                
-                //                        AdPlayerView(name: "missingYou3")
-                //                            .ignoresSafeArea()
-                //                            .blendMode(.screen)
-                //                            .opacity(0.1)
-                
-                AdPlayerView(name: "easyHearts2")
-                    .ignoresSafeArea()
-                    .blendMode(.screen)
-                    .opacity(0.7)
-                
-                AdPlayerView(name: "TaylorSwift2")
-                    .ignoresSafeArea()
-                    .blendMode(.screen)
-                    .opacity(0.0)
-                
-                
-                
+                HStack {
+                    
+                    
+                    Spacer ()
+                        .frame(width: 20)
+                    
+                    
+                    VStack {
+                        Text("Two souls whose stories")
+                            .font(.system(size: 10))
+                            .fontWeight(.bold)
+                            .multilineTextAlignment(.center)
+                            .foregroundColor(Color.white)
+                            .rotationEffect(.degrees(-20))
+                        //                            .blinking(duration: 3.0)
+                            .shadow(color: ColorManager .grey3, radius: 0.7, x: 0.5, y: 0.5)
+                            .opacity(0.5)
+                        
+                        Text("forever etched in the laugh lines and")
+                            .font(.system(size: 10))
+                            .fontWeight(.bold)
+                            .multilineTextAlignment(.center)
+                            .foregroundColor(Color.white)
+                            .rotationEffect(.degrees(-20))
+                        //                            .blinking(duration: 3.0)
+                            .shadow(color: ColorManager .grey3, radius: 0.7, x: 0.5, y: 0.5)
+                            .opacity(0.5)
+                        
+                        Text("dreams swiriling behind their eyes.")
+                            .font(.system(size: 10))
+                            .fontWeight(.bold)
+                            .multilineTextAlignment(.center)
+                            .foregroundColor(Color.white)
+                            .rotationEffect(.degrees(-20))
+                        //                            .blinking(duration: 3.0)
+                            .shadow(color: ColorManager .grey3, radius: 0.7, x: 0.5, y: 0.5)
+                            .opacity(0.5)
+                        
+                        
+                        Text("-- Thays from Brazil")
+                            .font(.system(size: 10))
+                            .fontWeight(.bold)
+                            .italic()
+                            .multilineTextAlignment(.center)
+                            .foregroundColor(Color.white)
+                            .rotationEffect(.degrees(-20))
+//                            .blinking(duration: 3.0)
+                            .shadow(color: ColorManager .grey3, radius: 0.7, x: 0.5, y: 0.5)
+                            .opacity(0.5)
+                        
+                        
+                    }
+                    
+                    
+                    Spacer ()
+                        .frame(width: 30)
+                    
+                    
+                    
+                    ZStack {
+//                        Image(systemName: "heart.fill")
+//                            .rotationEffect(.degrees(10))
+                        
+                        
+//    Link(destination: URL(string: "https://socialtechlabs.com/tips/")!) {
+                        
+                        Image(systemName: "heart.fill")
+                            .resizable()
+                            .foregroundColor(ColorManager .grey2)
+                            .frame(width: 140, height: 110)
+                            .shadow(color: ColorManager .grey1, radius: 3, x: 3, y: 3)
+                            .rotationEffect(.degrees(-10))
+                            .opacity(0.4)
+
+                      
+                        NavigationLink(
+                            destination: RRPoemContest(user: user, friends: friends, groups: groups),
+                            label: {
+                            VStack {
+                                Text("Poem \nContest")
+                                    .font(.system(size: 22))
+                                    .fontWeight(.light)
+                                    .multilineTextAlignment(.center)
+                                    .foregroundColor(ColorManager .grey1)
+                                    .rotationEffect(.degrees(-10))
+                                    .opacity(0.99)
+
+                            }
+                        }
+                    )}
+                }
+            
+            Spacer ()
+                .frame(height: 5)
             }
-            
-            
+        }
         
                 
                 
+                
+                
+                
+//        Spacer()
+//            .frame(height: 100)
+        
+        //                **************************************
+        
+        HStack {
+            ZStack{
+                
                 VStack {
                     
-                    
-                    
-                    
-                    Spacer ()
-                        .frame(height: 40)
-                    
-                    HStack {
-                        
-                        
-                        Spacer ()
-                            .frame(width: 20)
-                        
-                        
-                        VStack {
-                            Text("Two souls whose stories")
-                                .font(.system(size: 10))
-                                .fontWeight(.bold)
-                                .multilineTextAlignment(.center)
-                                .foregroundColor(Color.white)
-                                .rotationEffect(.degrees(-20))
-                            //                            .blinking(duration: 3.0)
-                                .shadow(color: ColorManager .grey3, radius: 0.7, x: 0.5, y: 0.5)
-                                .opacity(0.5)
-                            
-                            Text("forever etched in the laugh lines and")
-                                .font(.system(size: 10))
-                                .fontWeight(.bold)
-                                .multilineTextAlignment(.center)
-                                .foregroundColor(Color.white)
-                                .rotationEffect(.degrees(-20))
-                            //                            .blinking(duration: 3.0)
-                                .shadow(color: ColorManager .grey3, radius: 0.7, x: 0.5, y: 0.5)
-                                .opacity(0.5)
-                            
-                            Text("dreams swiriling behind their eyes.")
-                                .font(.system(size: 10))
-                                .fontWeight(.bold)
-                                .multilineTextAlignment(.center)
-                                .foregroundColor(Color.white)
-                                .rotationEffect(.degrees(-20))
-                            //                            .blinking(duration: 3.0)
-                                .shadow(color: ColorManager .grey3, radius: 0.7, x: 0.5, y: 0.5)
-                                .opacity(0.5)
-                            
-                            
-                            Text("-- Thays from Brazil")
-                                .font(.system(size: 10))
-                                .fontWeight(.bold)
-                                .italic()
-                                .multilineTextAlignment(.center)
-                                .foregroundColor(Color.white)
-                                .rotationEffect(.degrees(-20))
-                            //                            .blinking(duration: 3.0)
-                                .shadow(color: ColorManager .grey3, radius: 0.7, x: 0.5, y: 0.5)
-                                .opacity(0.5)
-                            
-                            
-                        }
-                        
-                        
-                        Spacer ()
-                            .frame(width: 30)
-                        
-                        
-                        
-                        ZStack {
-                            //                        Image(systemName: "heart.fill")
-                            //                            .rotationEffect(.degrees(10))
-                            
-                            
-                            //    Link(destination: URL(string: "https://socialtechlabs.com/tips/")!) {
-                            
-                            Image(systemName: "heart.fill")
-                                .resizable()
-                                .foregroundColor(ColorManager .grey2)
-                                .frame(width: 140, height: 110)
-                                .shadow(color: ColorManager .grey1, radius: 3, x: 3, y: 3)
-                                .rotationEffect(.degrees(-10))
-                                .opacity(0.4)
-                            
-                            
-                            NavigationLink(
-                                destination: RRPoemContest(user: user, friends: friends, groups: groups),
-                                label: {
-                                    VStack {
-                                        Text("Poem \nContest")
-                                            .font(.system(size: 22))
-                                            .fontWeight(.light)
-                                            .multilineTextAlignment(.center)
-                                            .foregroundColor(ColorManager .grey1)
-                                            .rotationEffect(.degrees(-10))
-                                            .opacity(0.99)
-                                        
-                                    }
-                                }
-                            )}
-                    }
+                    Text("  feel your lover's")
+                        .font(.system(size: 17))
+                        .italic()
+                        .fontWeight(.light)
+                        .multilineTextAlignment(.center)
+                        .foregroundColor(Color.white)
+                        .rotationEffect(.degrees(10))
+//                        .blinking(duration: 3.0)
+                        .shadow(color: Color.white, radius: 6, x: 3, y: 5)
+                        .opacity(0.5)
                     
                     Spacer ()
-                        .frame(height: 5)
+                        .frame(height: 30)
+                    
+                    Text("Hearbeat")
+                        .font(.system(size: 15))
+                        .italic()
+                        .fontWeight(.regular)
+                        .multilineTextAlignment(.center)
+                        .foregroundColor(Color.white)
+                       .rotationEffect(.degrees(10))
+//                        .blinking(duration: 3.0)
+                        .shadow(color: Color.white, radius: 6, x: 3, y: 5)
+                        .opacity(0.6)
                 }
-            }
-            
-            
-            
-            
-            
-            
-            //        Spacer()
-            //            .frame(height: 100)
-            
-            //                **************************************
-            
-            HStack {
-                ZStack{
-                    
-                    VStack {
-                        
-                        Text("  feel your lover's")
-                            .font(.system(size: 17))
-                            .italic()
-                            .fontWeight(.light)
-                            .multilineTextAlignment(.center)
-                            .foregroundColor(Color.white)
-                            .rotationEffect(.degrees(10))
-                        //                        .blinking(duration: 3.0)
-                            .shadow(color: Color.white, radius: 6, x: 3, y: 5)
-                            .opacity(0.5)
-                        
-                        Spacer ()
-                            .frame(height: 30)
-                        
-                        Text("Hearbeat")
-                            .font(.system(size: 15))
-                            .italic()
-                            .fontWeight(.regular)
-                            .multilineTextAlignment(.center)
-                            .foregroundColor(Color.white)
-                            .rotationEffect(.degrees(10))
-                        //                        .blinking(duration: 3.0)
-                            .shadow(color: Color.white, radius: 6, x: 3, y: 5)
-                            .opacity(0.6)
-                    }
-                    
-                    Spacer ()
-                        .frame(height: 10)
-                    
+                
+                Spacer ()
+                    .frame(height: 10)
+                
+                //
+                Image(systemName: "heart.fill")
+                    .resizable()
+                    .foregroundColor(ColorManager .purple3)
+                    .frame(width: 140, height: 110)
+                    .shadow(color: ColorManager .purple1, radius: 3, x: 3, y: 3)
+                    .rotationEffect(.degrees(10))
+                    .opacity(0.4)
+                
+                // ***********************************************
+                // *********** Audio to the TAP on the Heartbeat *****************
+                
+                Button(action: {
+                    counter += 1
+                    shareTapped = true
+                    shareButtonTapped()
+                    sendMessage()
+                },
+                       label: {
+                    //                        Image("iconShare")
                     //
                     Image(systemName: "heart.fill")
                         .resizable()
-                        .foregroundColor(ColorManager .purple3)
-                        .frame(width: 140, height: 110)
-                        .shadow(color: ColorManager .purple1, radius: 3, x: 3, y: 3)
-                        .rotationEffect(.degrees(10))
-                        .opacity(0.4)
+                        .foregroundColor(.purple)
+                        .frame(width: 150, height: 110)
+                        .shadow(color: .blue, radius: 65, x: 30, y: 50)
+                        .opacity(0.25)
+                        .alert("", isPresented: $showingAlert) {
+                            Button("", role: .cancel) { }
+                        }
                     
-                    // ***********************************************
-                    // *********** Audio to the TAP on the Heartbeat *****************
                     
-                    Button(action: {
-                        counter += 1
-                        shareTapped = true
-                        shareButtonTapped()
-                        sendMessage()
-                    },
-                           label: {
-                        //                        Image("iconShare")
-                        //
+                })
+                
+                
+                
+                
+                // *********************************
+                
+                VStack {
+                    
+                    Spacer()
+                        .frame(height: 30)
+                    
+                    ZStack {
                         Image(systemName: "heart.fill")
                             .resizable()
-                            .foregroundColor(.purple)
-                            .frame(width: 150, height: 110)
-                            .shadow(color: .blue, radius: 65, x: 30, y: 50)
-                            .opacity(0.25)
-                            .alert("", isPresented: $showingAlert) {
-                                Button("", role: .cancel) { }
-                            }
+                            .foregroundColor(ColorManager .purple3)
+                            .frame(width: 140, height: 110)
+                            .shadow(color: ColorManager .purple1, radius: 3, x: 3, y: 3)
+                            .rotationEffect(.degrees(10))
+                            .opacity(0.4)
                         
+                        Text("TAP")
                         
-                    })
-                    
-                    
-                    
-                    
-                    // *********************************
-                    
-                    VStack {
-                        
-                        Spacer()
-                            .frame(height: 30)
-                        
-                        ZStack {
-                            Image(systemName: "heart.fill")
-                                .resizable()
-                                .foregroundColor(ColorManager .purple3)
-                                .frame(width: 140, height: 110)
-                                .shadow(color: ColorManager .purple1, radius: 3, x: 3, y: 3)
-                                .rotationEffect(.degrees(10))
-                                .opacity(0.4)
-                            
-                            Text("TAP")
-                            
-                                .font(.system(size: 25))
-                                .fontWeight(.light)
-                                .foregroundColor(.cyan)
-                                .frame(width: 70, height: 30)
-                                .background(Color.cyan)
-                                .multilineTextAlignment(.center)
-                                .rotationEffect(.degrees(10))
-                                .cornerRadius(5)
-                                .foregroundColor(Color.white)
-                            //                                       .blinking(duration: 3.0)
-                                .opacity(0.6)
-                                .padding()
-                                .onTapGesture {
-                                    showingHeart = false
-                                    DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-                                        AudioServicesPlayAlertSoundWithCompletion(SystemSoundID(kSystemSoundID_Vibrate)) {
-                                            DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-                                                AudioServicesPlayAlertSoundWithCompletion(SystemSoundID(kSystemSoundID_Vibrate)) {
-                                                    DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-                                                        AudioServicesPlayAlertSoundWithCompletion(SystemSoundID(kSystemSoundID_Vibrate)) {
-                                                            DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-                                                                AudioServicesPlayAlertSoundWithCompletion(SystemSoundID(kSystemSoundID_Vibrate)) {
-                                                                    DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-                                                                        AudioServicesPlayAlertSoundWithCompletion(SystemSoundID(kSystemSoundID_Vibrate)) {
-                                                                            DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-                                                                                AudioServicesPlayAlertSoundWithCompletion(SystemSoundID(kSystemSoundID_Vibrate)) {
-                                                                                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
-                                                                                        AudioServicesPlayAlertSoundWithCompletion(SystemSoundID(kSystemSoundID_Vibrate)) {
-                                                                                            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                            .font(.system(size: 25))
+                            .fontWeight(.light)
+                            .foregroundColor(.cyan)
+                            .frame(width: 70, height: 30)
+                            .background(Color.cyan)
+                            .multilineTextAlignment(.center)
+                            .rotationEffect(.degrees(10))
+                            .cornerRadius(5)
+                            .foregroundColor(Color.white)
+                        //                                       .blinking(duration: 3.0)
+                            .opacity(0.6)
+                            .padding()
+                            .onTapGesture {
+                                showingHeart = false
+                                DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                                    AudioServicesPlayAlertSoundWithCompletion(SystemSoundID(kSystemSoundID_Vibrate)) {
+                                        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                                            AudioServicesPlayAlertSoundWithCompletion(SystemSoundID(kSystemSoundID_Vibrate)) {
+                                                DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                                                    AudioServicesPlayAlertSoundWithCompletion(SystemSoundID(kSystemSoundID_Vibrate)) {
+                                                        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                                                            AudioServicesPlayAlertSoundWithCompletion(SystemSoundID(kSystemSoundID_Vibrate)) {
+                                                                DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                                                                    AudioServicesPlayAlertSoundWithCompletion(SystemSoundID(kSystemSoundID_Vibrate)) {
+                                                                        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                                                                            AudioServicesPlayAlertSoundWithCompletion(SystemSoundID(kSystemSoundID_Vibrate)) {
+                                                                                DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                                                                                    AudioServicesPlayAlertSoundWithCompletion(SystemSoundID(kSystemSoundID_Vibrate)) {
+                                                                                        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                                                                                            AudioServicesPlayAlertSoundWithCompletion(SystemSoundID(kSystemSoundID_Vibrate)) {
                                                                                                 AudioServicesPlayAlertSoundWithCompletion(SystemSoundID(kSystemSoundID_Vibrate)) {
                                                                                                     AudioServicesPlayAlertSoundWithCompletion(SystemSoundID(kSystemSoundID_Vibrate)) {
+                                                                                                        
                                                                                                         AudioServicesPlayAlertSoundWithCompletion(SystemSoundID(kSystemSoundID_Vibrate)) {
+                                                                                                            showingHeart = true
                                                                                                             
-                                                                                                            AudioServicesPlayAlertSoundWithCompletion(SystemSoundID(kSystemSoundID_Vibrate)) {
-                                                                                                                showingHeart = true
-                                                                                                                
-                                                                                                            }
                                                                                                         }
                                                                                                     }
                                                                                                 }
@@ -414,241 +414,242 @@ struct RRLoveTarts3: View {
                                         }
                                     }
                                 }
-                        }
-                        
-                        Spacer()
-                            .frame(height: 30)
+                            }
                     }
+                    
+                    Spacer()
+                        .frame(height: 30)
                 }
-                Spacer ()
-                    .frame(width: 40)
-                
-                
-                NavigationLink(
-                    destination: RRBrokenHeart(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
-                    label: {
+            }
+        Spacer ()
+                .frame(width: 40)
+            
+            
+            NavigationLink(
+                destination: RRBrokenHeart(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
+                label: {
+                    
+                    ZStack {
+                        Text("Dented \nHeart")
+                            .font(.system(size: 14))
+                            .foregroundColor(ColorManager .grey4)
+                            .fontWeight(.bold)
+                            .rotationEffect(.degrees(-10))
+                            .opacity(0.99)
+                            .multilineTextAlignment(.center)
+                        //                        .blinking(duration: 2.0)
                         
+                        Image(systemName: "heart")
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 120, height: 120)
+                            .foregroundColor(Color.cyan)
+                            .opacity(0.1)
+                            .rotationEffect(.degrees(-10))
+                            .glow(color: Color.purple, radius: 1)
+                            .shadow(color: Color.purple, radius: 2, x: 0, y: 3)
+                        
+                        Image(systemName: "heart.fill")
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 110, height: 110)
+                            .foregroundColor(ColorManager .purple3)
+                            .opacity(0.1)
+                        //                                        .rotationEffect(.degrees(10))
+                            .glow(color: Color.white, radius: 1)
+                            .shadow(color: Color.white, radius: 2, x: 0, y: 3)
+                    }
+                         
+                })
+            }
+
+     
+                
+        //                **************************************
+        
+       
+                
+                
+    VStack {
+            
+            HStack {
+                
+
+
+                NavigationLink(
+                    destination:  SendKisses(user: user, friends: friends),
+                    label: {
                         ZStack {
-                            Text("Dented \nHeart")
-                                .font(.system(size: 14))
-                                .foregroundColor(ColorManager .grey4)
-                                .fontWeight(.bold)
-                                .rotationEffect(.degrees(-10))
-                                .opacity(0.99)
-                                .multilineTextAlignment(.center)
-                            //                        .blinking(duration: 2.0)
-                            
-                            Image(systemName: "heart")
+
+                            Image(systemName: "circle.fill")
                                 .resizable()
                                 .scaledToFit()
-                                .frame(width: 120, height: 120)
+                                .frame(width: 60, height: 60)
                                 .foregroundColor(Color.cyan)
-                                .opacity(0.1)
-                                .rotationEffect(.degrees(-10))
-                                .glow(color: Color.purple, radius: 1)
-                                .shadow(color: Color.purple, radius: 2, x: 0, y: 3)
+                                .opacity(0.95)
+
+                            Image(systemName: "heart.fill")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 50, height: 50)
+                                .foregroundColor(Color.purple)
+                                .glow(color: Color.white, radius: 0.3)
+                                .shadow(color: .white, radius: 1, x: 3, y: -0.5)
+                                .opacity(0.95)
+
+                            Text("blowing \nkisses")
+                                .font(.system(size: 10))
+                                .fontWeight(.medium)
+                                .multilineTextAlignment(.center)
+                                .foregroundColor(Color.white)
+                                .opacity(0.99)
+
+                        }
+                    })
+
+
+
+
+                //                        ********************** Hugs ********************
+
+                NavigationLink(
+                    destination: SaySomethingNice5(user: user, friends: friends),
+                    label: {
+                        HStack {
+                            ZStack {
+                                Image(systemName: "circle.fill")
+                                    .resizable()
+                                    .scaledToFit()
+                                    .frame(width: 60, height: 60)
+                                    .foregroundColor(Color.cyan)
+                                    .opacity(0.95)
+
+                                Image(systemName: "heart.fill")
+                                    .resizable()
+                                    .scaledToFit()
+                                    .frame(width: 50, height: 50)
+                                    .foregroundColor(Color.purple)
+                                    .glow(color: Color.white, radius: 0.3)
+                                    .shadow(color: .white, radius: 1, x: 3, y: -0.5)
+                                    .opacity(0.95)
+
+                                Text("send \nhearts")
+                                    .font(.system(size: 10))
+                                    .fontWeight(.medium)
+                                    .multilineTextAlignment(.center)
+                                    .foregroundColor(Color.white)
+                                //                                                .rotationEffect(.degrees(-10))
+                                    .opacity(0.99)
+
+                            }
+                        }
+                    })
+
+
+
+
+
+
+                //                        ********************** Missing You ********************
+//                NavigationLink(
+//                    destination:  HugPushNotification(user: user, friends: friends),
+//                    label: {
+//                        ZStack {
+//                            Image(systemName: "circle.fill")
+//                                .resizable()
+//                                .scaledToFit()
+//                                .frame(width: 60, height: 60)
+//                                .foregroundColor(Color.cyan)
+//                                .opacity(0.95)
+//
+//                            Image(systemName: "heart.fill")
+//                                .resizable()
+//                                .scaledToFit()
+//                                .frame(width: 50, height: 50)
+//                                .foregroundColor(Color.purple)
+//                                .glow(color: Color.white, radius: 0.3)
+//                                .shadow(color: .white, radius: 1, x: 3, y: -0.5)
+//                                .opacity(0.95)
+//
+//                            Text("send \nhugs")
+//                                .font(.system(size: 10))
+//                                .fontWeight(.medium)
+//                                .multilineTextAlignment(.center)
+//                                .foregroundColor(Color.white)
+//                                .opacity(0.99)
+//
+//                        }
+//                    })
+
+                //                ************************* Hugs ****************************
+
+                NavigationLink(
+                    destination: NEWSFeedPergion(user: user, friends: friends),
+                    label: {
+                        ZStack {
+                            Image(systemName: "circle.fill")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 60, height: 60)
+                                .foregroundColor(Color.cyan)
+                                .opacity(0.95)
+
+                            Image(systemName: "heart.fill")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 50, height: 50)
+                                .foregroundColor(Color.purple)
+                                .glow(color: Color.white, radius: 0.3)
+                                .shadow(color: .white, radius: 1, x: 3, y: -0.5)
+                                .opacity(0.95)
+
+                            Text("missing \nyou")
+                                .font(.system(size: 10))
+                                .fontWeight(.medium)
+                                .multilineTextAlignment(.center)
+                                .foregroundColor(Color.white)
+                                .opacity(0.99)
+
+                        }
+                    })
+
+                //  ****************************** Missing You **************
+
+                NavigationLink(
+                    destination:  HugPushNotification(user: user, friends: friends),
+                    label: {
+                        ZStack {
+                            
+                            Image(systemName: "circle.fill")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 60, height: 60)
+                                .foregroundColor(Color.cyan)
+                                .opacity(0.95)
                             
                             Image(systemName: "heart.fill")
                                 .resizable()
                                 .scaledToFit()
-                                .frame(width: 110, height: 110)
-                                .foregroundColor(ColorManager .purple3)
-                                .opacity(0.1)
-                            //                                        .rotationEffect(.degrees(10))
-                                .glow(color: Color.white, radius: 1)
-                                .shadow(color: Color.white, radius: 2, x: 0, y: 3)
+                                .frame(width: 50, height: 50)
+                                .foregroundColor(Color.purple)
+                                .glow(color: Color.white, radius: 0.3)
+                                .shadow(color: .white, radius: 1, x: 3, y: -0.5)
+                                .opacity(0.95)
+                            
+                            Text("send \nhugs")
+                                .font(.system(size: 10))
+                                .fontWeight(.medium)
+                                .multilineTextAlignment(.center)
+                                .foregroundColor(Color.white)
+                                .opacity(0.99)
+                            
                         }
-                        
                     })
-            }
-            
-            
-            
-            //                **************************************
-            
-            
-            
-            
-            VStack {
-                
-                HStack {
-                    
-                    
-                    
-                    NavigationLink(
-                        destination:  SendKisses(user: user, friends: friends),
-                        label: {
-                            ZStack {
-                                
-                                Image(systemName: "circle.fill")
-                                    .resizable()
-                                    .scaledToFit()
-                                    .frame(width: 60, height: 60)
-                                    .foregroundColor(Color.cyan)
-                                    .opacity(0.95)
-                                
-                                Image(systemName: "heart.fill")
-                                    .resizable()
-                                    .scaledToFit()
-                                    .frame(width: 50, height: 50)
-                                    .foregroundColor(Color.purple)
-                                    .glow(color: Color.white, radius: 0.3)
-                                    .shadow(color: .white, radius: 1, x: 3, y: -0.5)
-                                    .opacity(0.95)
-                                
-                                Text("blowing \nkisses")
-                                    .font(.system(size: 10))
-                                    .fontWeight(.medium)
-                                    .multilineTextAlignment(.center)
-                                    .foregroundColor(Color.white)
-                                    .opacity(0.99)
-                                
-                            }
-                        })
-                    
-                    
-                    
-                    
-                    //                        ********************** Hugs ********************
-                    
-                    NavigationLink(
-                        destination: SaySomethingNice5(user: user, friends: friends),
-                        label: {
-                            HStack {
-                                ZStack {
-                                    Image(systemName: "circle.fill")
-                                        .resizable()
-                                        .scaledToFit()
-                                        .frame(width: 60, height: 60)
-                                        .foregroundColor(Color.cyan)
-                                        .opacity(0.95)
-                                    
-                                    Image(systemName: "heart.fill")
-                                        .resizable()
-                                        .scaledToFit()
-                                        .frame(width: 50, height: 50)
-                                        .foregroundColor(Color.purple)
-                                        .glow(color: Color.white, radius: 0.3)
-                                        .shadow(color: .white, radius: 1, x: 3, y: -0.5)
-                                        .opacity(0.95)
-                                    
-                                    Text("send \nhearts")
-                                        .font(.system(size: 10))
-                                        .fontWeight(.medium)
-                                        .multilineTextAlignment(.center)
-                                        .foregroundColor(Color.white)
-                                    //                                                .rotationEffect(.degrees(-10))
-                                        .opacity(0.99)
-                                    
-                                }
-                            }
-                        })
-                    
-                    
-                    
-                    
-                    
-                    
-                    //                        ********************** Missing You ********************
-                    //                NavigationLink(
-                    //                    destination:  HugPushNotification(user: user, friends: friends),
-                    //                    label: {
-                    //                        ZStack {
-                    //                            Image(systemName: "circle.fill")
-                    //                                .resizable()
-                    //                                .scaledToFit()
-                    //                                .frame(width: 60, height: 60)
-                    //                                .foregroundColor(Color.cyan)
-                    //                                .opacity(0.95)
-                    //
-                    //                            Image(systemName: "heart.fill")
-                    //                                .resizable()
-                    //                                .scaledToFit()
-                    //                                .frame(width: 50, height: 50)
-                    //                                .foregroundColor(Color.purple)
-                    //                                .glow(color: Color.white, radius: 0.3)
-                    //                                .shadow(color: .white, radius: 1, x: 3, y: -0.5)
-                    //                                .opacity(0.95)
-                    //
-                    //                            Text("send \nhugs")
-                    //                                .font(.system(size: 10))
-                    //                                .fontWeight(.medium)
-                    //                                .multilineTextAlignment(.center)
-                    //                                .foregroundColor(Color.white)
-                    //                                .opacity(0.99)
-                    //
-                    //                        }
-                    //                    })
-                    
-                    //                ************************* Hugs ****************************
-                    
-                    NavigationLink(
-                        destination: NEWSFeedPergion(user: user, friends: friends),
-                        label: {
-                            ZStack {
-                                Image(systemName: "circle.fill")
-                                    .resizable()
-                                    .scaledToFit()
-                                    .frame(width: 60, height: 60)
-                                    .foregroundColor(Color.cyan)
-                                    .opacity(0.95)
-                                
-                                Image(systemName: "heart.fill")
-                                    .resizable()
-                                    .scaledToFit()
-                                    .frame(width: 50, height: 50)
-                                    .foregroundColor(Color.purple)
-                                    .glow(color: Color.white, radius: 0.3)
-                                    .shadow(color: .white, radius: 1, x: 3, y: -0.5)
-                                    .opacity(0.95)
-                                
-                                Text("missing \nyou")
-                                    .font(.system(size: 10))
-                                    .fontWeight(.medium)
-                                    .multilineTextAlignment(.center)
-                                    .foregroundColor(Color.white)
-                                    .opacity(0.99)
-                                
-                            }
-                        })
-                    
-                    //  ****************************** Missing You **************
-                    
-                    NavigationLink(
-                        destination:  HugPushNotification(user: user, friends: friends),
-                        label: {
-                            ZStack {
-                                
-                                Image(systemName: "circle.fill")
-                                    .resizable()
-                                    .scaledToFit()
-                                    .frame(width: 60, height: 60)
-                                    .foregroundColor(Color.cyan)
-                                    .opacity(0.95)
-                                
-                                Image(systemName: "heart.fill")
-                                    .resizable()
-                                    .scaledToFit()
-                                    .frame(width: 50, height: 50)
-                                    .foregroundColor(Color.purple)
-                                    .glow(color: Color.white, radius: 0.3)
-                                    .shadow(color: .white, radius: 1, x: 3, y: -0.5)
-                                    .opacity(0.95)
-                                
-                                Text("send \nhugs")
-                                    .font(.system(size: 10))
-                                    .fontWeight(.medium)
-                                    .multilineTextAlignment(.center)
-                                    .foregroundColor(Color.white)
-                                    .opacity(0.99)
-                                
-                            }
-                        })
                 }
             }
-            
-            Spacer()
-                .frame(height: 10)
+        
+        Spacer()
+            .frame(height: 10)
             
             ZStack {
                 
@@ -703,7 +704,7 @@ struct RRLoveTarts3: View {
                     Spacer()
                         .frame(height: 10)
                     
-                    
+  
                     HStack {
                         
                         if friends.count > 0 {
@@ -814,8 +815,8 @@ struct RRLoveTarts3: View {
                         
                     })
                     
-                    VStack {
-                        
+        VStack {
+                   
                         HStack {
                             
                             ZStack {
@@ -832,7 +833,7 @@ struct RRLoveTarts3: View {
                                     .opacity(0.3)
                                 
                                 Link(destination: URL(string: "https://socialtechlabs.com/a-kisses-journey/")!) {
-                                    
+
                                     VStack {
                                         Text("a kisses \n\njourney")
                                             .font(.system(size: 20))
@@ -841,15 +842,15 @@ struct RRLoveTarts3: View {
                                             .foregroundColor(ColorManager .grey1)
                                             .rotationEffect(.degrees(-10))
                                             .opacity(0.99)
-                                        
-                                        
+                                
+                      
                                         
                                     }
                                 }
                             }
                             
                             
-                            
+                          
                             Spacer()
                                 .frame(width: 50)
                             
@@ -884,7 +885,7 @@ struct RRLoveTarts3: View {
                                 }
                             }
                         }
-                        
+                      
                         Spacer()
                             .frame(height: 70)
                         
@@ -896,7 +897,7 @@ struct RRLoveTarts3: View {
             
         }
         
-            
+//     }
         
         
         
@@ -941,5 +942,5 @@ struct RRLoveTarts3: View {
             }
         }
     }
-    
 
+            

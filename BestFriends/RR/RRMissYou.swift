@@ -52,14 +52,14 @@ struct RRMissYou: View {
             } else {
                 
                 
-                ColorManager .purple3
-                    .opacity(0.4)
+                Color.black
+                    .opacity(0.5)
                     .ignoresSafeArea()
                 
                 AdPlayerView(name: "sky2")
                     .ignoresSafeArea()
                     .blendMode(.screen)
-                    .opacity(0.5)
+                    .opacity(0.9)
               
                 
                 AdPlayerView(name: "missingYou3")
