@@ -111,8 +111,8 @@ struct RRLoveTarts3: View {
                             .opacity(0.5)
                             .ignoresSafeArea()
                             .blendMode(.screen)
-//                        
-//                        
+//
+//
 //                        AdPlayerView(name: "BlowingKisses2")
 //                            .ignoresSafeArea()
 //                            .blendMode(.screen)
@@ -152,7 +152,9 @@ struct RRLoveTarts3: View {
             
                 
                 
-                
+//VStack {
+    
+    
         VStack {
                 
             
@@ -702,8 +704,7 @@ struct RRLoveTarts3: View {
                     Spacer()
                         .frame(height: 10)
                     
-
-                    
+  
                     HStack {
                         
                         if friends.count > 0 {
@@ -807,7 +808,7 @@ struct RRLoveTarts3: View {
                             .glow(color: Color.purple, radius: 2)
                             .opacity(0.6)
                             .blinking(duration: 3.0)
-                            .alert("You LoveTart is shooting past the stars", isPresented: $showingAlert) {
+                            .alert("Your message has been sent", isPresented: $showingAlert) {
                                 Button("OK", role: .cancel) { }
                             }
                         
@@ -896,7 +897,7 @@ struct RRLoveTarts3: View {
             
         }
         
-        
+//     }
         
         
         
