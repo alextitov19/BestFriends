@@ -122,8 +122,8 @@ struct RRLoveTarts: View {
                 //                           .opacity(0.9)
                 //                            .ignoresSafeArea()
                 
-                ColorManager .purple1
-                    .opacity(0.2)
+                ColorManager .grey4
+                    .opacity(0.99)
                     .ignoresSafeArea()
                 
                 AdPlayerView(name: "sky2")
