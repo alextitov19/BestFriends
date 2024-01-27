@@ -17,8 +17,15 @@ struct RRLoveTarts5: View {
     
     @EnvironmentObject var sessionManager: SessionManager
     
+//    let user: User
+//    let friends: [User]
+//    
     let user: User
+    let friend: User
     let friends: [User]
+    let groups: [Group]
+    let atmosphere: Atmosphere
+    let friendAtmospheres: [Atmosphere]
     
     @State private var selectedFriends: [String] = []
     @State private var colors: [Color] = [ColorManager.purple3, ColorManager.purple3, ColorManager.purple3, ColorManager.purple3, ColorManager.purple3]
@@ -135,7 +142,7 @@ struct RRLoveTarts5: View {
                         Spacer ()
                              .frame(height: 20)
                         
-                        Text("To feel your HUG!")
+                        Text("LoveTarts")
                             .font(.system(size: 35))
                             .fontWeight(.bold)
                             .multilineTextAlignment(.center)
@@ -146,47 +153,126 @@ struct RRLoveTarts5: View {
                             .opacity(0.5)
         
                       
-                    
+//   *******************************************************************
                         
-                        ZStack{
-                          
+                        VStack {
+                            
+                            Spacer()
+                                .frame(height: 30)
+                            
+                            ZStack {
                                 Image(systemName: "heart.fill")
                                     .resizable()
-                                    .foregroundColor(.purple)
-                                    .frame(width: 300, height: 200)
-                                    .shadow(color: .blue, radius: 65, x: 30, y: 50)
-                                    .opacity(0.3)
+                                    .foregroundColor(ColorManager .purple3)
+                                    .frame(width: 140, height: 110)
+                                    .shadow(color: ColorManager .purple1, radius: 3, x: 3, y: 3)
+                                    .rotationEffect(.degrees(10))
+                                    .opacity(0.4)
                                 
-                                VStack {
-                                   
-//                                    Spacer()
-//                                        .frame(height: 10)
-                                    
-                                    Text("TAP here, then...")
-                                        .font(.system(size: 25))
-                                        .fontWeight(.light)
-                                        .multilineTextAlignment(.center)
-                                        .foregroundColor(Color.white)
-//                                       .blinking(duration: 3.0)
-                                        .opacity(0.5)
-                                        .padding()
-                                        .onTapGesture {
-                                            showingHeart = false
-                                            DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
-                                                AudioServicesPlayAlertSoundWithCompletion(SystemSoundID(kSystemSoundID_Vibrate)) {
+                                Text("TAP")
+                                
+                                    .font(.system(size: 25))
+                                    .fontWeight(.light)
+                                    .foregroundColor(.cyan)
+                                    .frame(width: 70, height: 30)
+                                    .background(Color.cyan)
+                                    .multilineTextAlignment(.center)
+                                    .rotationEffect(.degrees(10))
+                                    .cornerRadius(5)
+                                    .foregroundColor(Color.white)
+                                //                                       .blinking(duration: 3.0)
+                                    .opacity(0.6)
+                                    .padding()
+                                    .onTapGesture {
+                                        showingHeart = false
+                                        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                                            AudioServicesPlayAlertSoundWithCompletion(SystemSoundID(kSystemSoundID_Vibrate)) {
+                                                DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
                                                     AudioServicesPlayAlertSoundWithCompletion(SystemSoundID(kSystemSoundID_Vibrate)) {
-                                                        AudioServicesPlayAlertSoundWithCompletion(SystemSoundID(kSystemSoundID_Vibrate)) {
+                                                        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
                                                             AudioServicesPlayAlertSoundWithCompletion(SystemSoundID(kSystemSoundID_Vibrate)) {
-                                                                AudioServicesPlayAlertSoundWithCompletion(SystemSoundID(kSystemSoundID_Vibrate)) {
-                                                                    showingHeart = true
+                                                                DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                                                                    AudioServicesPlayAlertSoundWithCompletion(SystemSoundID(kSystemSoundID_Vibrate)) {
+                                                                        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                                                                            AudioServicesPlayAlertSoundWithCompletion(SystemSoundID(kSystemSoundID_Vibrate)) {
+                                                                                DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                                                                                    AudioServicesPlayAlertSoundWithCompletion(SystemSoundID(kSystemSoundID_Vibrate)) {
+                                                                                        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                                                                                            AudioServicesPlayAlertSoundWithCompletion(SystemSoundID(kSystemSoundID_Vibrate)) {
+                                                                                                DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                                                                                                    AudioServicesPlayAlertSoundWithCompletion(SystemSoundID(kSystemSoundID_Vibrate)) {
+                                                                                                        AudioServicesPlayAlertSoundWithCompletion(SystemSoundID(kSystemSoundID_Vibrate)) {
+                                                                                                            AudioServicesPlayAlertSoundWithCompletion(SystemSoundID(kSystemSoundID_Vibrate)) {
+                                                                                                                
+                                                                                                                AudioServicesPlayAlertSoundWithCompletion(SystemSoundID(kSystemSoundID_Vibrate)) {
+                                                                                                                    showingHeart = true
+                                                                                                                    
+                                                                                                                }
+                                                                                                            }
+                                                                                                        }
+                                                                                                    }
+                                                                                                }
+                                                                                            }
+                                                                                        }
+                                                                                    }
+                                                                                }
+                                                                            }
+                                                                        }
+                                                                    }
                                                                 }
                                                             }
                                                         }
                                                     }
                                                 }
-                                                
                                             }
                                         }
+                                    }
+                            }
+                            
+                            Spacer()
+                                .frame(height: 30)
+                        }
+//                    }
+                        
+//                        ZStack{
+//
+//                                Image(systemName: "heart.fill")
+//                                    .resizable()
+//                                    .foregroundColor(.purple)
+//                                    .frame(width: 300, height: 200)
+//                                    .shadow(color: .blue, radius: 65, x: 30, y: 50)
+//                                    .opacity(0.3)
+//
+//                                VStack {
+//
+////                                    Spacer()
+////                                        .frame(height: 10)
+//
+//                                    Text("TAP here, then...")
+//                                        .font(.system(size: 25))
+//                                        .fontWeight(.light)
+//                                        .multilineTextAlignment(.center)
+//                                        .foregroundColor(Color.white)
+////                                       .blinking(duration: 3.0)
+//                                        .opacity(0.5)
+//                                        .padding()
+//                                        .onTapGesture {
+//                                            showingHeart = false
+//                                            DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+//                                                AudioServicesPlayAlertSoundWithCompletion(SystemSoundID(kSystemSoundID_Vibrate)) {
+//                                                    AudioServicesPlayAlertSoundWithCompletion(SystemSoundID(kSystemSoundID_Vibrate)) {
+//                                                        AudioServicesPlayAlertSoundWithCompletion(SystemSoundID(kSystemSoundID_Vibrate)) {
+//                                                            AudioServicesPlayAlertSoundWithCompletion(SystemSoundID(kSystemSoundID_Vibrate)) {
+//                                                                AudioServicesPlayAlertSoundWithCompletion(SystemSoundID(kSystemSoundID_Vibrate)) {
+//                                                                    showingHeart = true
+//                                                                }
+//                                                            }
+//                                                        }
+//                                                    }
+//                                                }
+//
+//                                            }
+//                                        }
                                     VStack {
                                         
                                         Spacer()
@@ -234,8 +320,8 @@ struct RRLoveTarts5: View {
                                         
                                     }
                                     
-                                }
-                            }
+//                                }
+//                            }
                          
 //**********************************************************************
                         
