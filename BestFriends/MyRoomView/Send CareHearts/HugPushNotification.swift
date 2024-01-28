@@ -62,7 +62,7 @@ struct HugPushNotification: View {
             } else {
                 
                 
-                ColorManager .purple7
+                ColorManager .grey3
                     .opacity(0.9)
                     .ignoresSafeArea()
                 
