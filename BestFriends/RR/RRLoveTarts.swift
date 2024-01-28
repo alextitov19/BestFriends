@@ -104,6 +104,8 @@ struct RRLoveTarts: View {
                     .opacity(0.5)
                     .ignoresSafeArea()
                 
+             
+                
                 AdPlayerView(name: "dramaLights")
                     .opacity(0.5)
                     .ignoresSafeArea()
@@ -117,26 +119,30 @@ struct RRLoveTarts: View {
                 
             } else {
                 
+        
                 
-                //                        Color.black
-                //                           .opacity(0.9)
-                //                            .ignoresSafeArea()
-                
-                ColorManager .grey4
+                Color.black
                     .opacity(0.99)
                     .ignoresSafeArea()
                 
-                AdPlayerView(name: "sky2")
-                    .ignoresSafeArea()
-                    .blendMode(.screen)
-                    .opacity(0.9)
+//                ColorManager .grey4
+//                    .opacity(0.99)
+//                    .ignoresSafeArea()
                 
-                AdPlayerView(name: "CHsBackground3")
+//                AdPlayerView(name: "sky2")
+//                    .ignoresSafeArea()
+//                    .blendMode(.screen)
+//                    .opacity(0.9)
+                
+//                AdPlayerView(name: "CHsBackground3")
+//                    .ignoresSafeArea()
+//                    .blendMode(.screen)
+//                    .opacity(0.99)
+                
+                AdPlayerView(name: "CHsMain")
                     .ignoresSafeArea()
                     .blendMode(.screen)
                     .opacity(0.99)
-                
-                
                 
             }
             

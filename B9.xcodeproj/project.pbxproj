@@ -226,6 +226,7 @@
 		CF3163ED2B64A3A200A4D4B0 /* RRLoveTarts5.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3163EC2B64A3A200A4D4B0 /* RRLoveTarts5.swift */; };
 		CF3163EF2B64BC5B00A4D4B0 /* RRLoveTarts7.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3163EE2B64BC5B00A4D4B0 /* RRLoveTarts7.swift */; };
 		CF3163F12B652F8300A4D4B0 /* RRDentedHeart.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3163F02B652F8300A4D4B0 /* RRDentedHeart.swift */; };
+		CF3163F32B6607CE00A4D4B0 /* CHsMain.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF3163F22B6607CE00A4D4B0 /* CHsMain.mp4 */; };
 		CF3295F7290BAA7C0014F658 /* INFOPreload.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3295F6290BAA7C0014F658 /* INFOPreload.swift */; };
 		CF3295FD290BBD210014F658 /* InfoCoolVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3295FC290BBD210014F658 /* InfoCoolVideo.swift */; };
 		CF37534B28B5D84B003817E3 /* HorizonsPreload1.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF37534A28B5D84B003817E3 /* HorizonsPreload1.swift */; };
@@ -705,6 +706,7 @@
 		CF3163EC2B64A3A200A4D4B0 /* RRLoveTarts5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RRLoveTarts5.swift; sourceTree = "<group>"; };
 		CF3163EE2B64BC5B00A4D4B0 /* RRLoveTarts7.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RRLoveTarts7.swift; sourceTree = "<group>"; };
 		CF3163F02B652F8300A4D4B0 /* RRDentedHeart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RRDentedHeart.swift; sourceTree = "<group>"; };
+		CF3163F22B6607CE00A4D4B0 /* CHsMain.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = CHsMain.mp4; sourceTree = "<group>"; };
 		CF3295F6290BAA7C0014F658 /* INFOPreload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = INFOPreload.swift; sourceTree = "<group>"; };
 		CF3295FC290BBD210014F658 /* InfoCoolVideo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoCoolVideo.swift; sourceTree = "<group>"; };
 		CF37534A28B5D84B003817E3 /* HorizonsPreload1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizonsPreload1.swift; sourceTree = "<group>"; };
@@ -1682,6 +1684,7 @@
 			children = (
 				CFB6690A2B4283FB00E9C237 /* offPlanet1.mp4 */,
 				CF4A08ED2879577E00ADA9DD /* sky2.mp4 */,
+				CF3163F22B6607CE00A4D4B0 /* CHsMain.mp4 */,
 				CF3163E82B62510000A4D4B0 /* grayGrass2.mp4 */,
 				CF3163E42B624F8900A4D4B0 /* photopopWhite2.mp4 */,
 				CF3163DE2B624BE400A4D4B0 /* grayDots2.mp4 */,
@@ -2386,6 +2389,7 @@
 			files = (
 				CF89412E2A8B4A0B00AFEC39 /* DramaLights2.mp4 in Resources */,
 				CFB669282B47A13300E9C237 /* sendHearts6.mp4 in Resources */,
+				CF3163F32B6607CE00A4D4B0 /* CHsMain.mp4 in Resources */,
 				CF4A08EE2879577E00ADA9DD /* sky2.mp4 in Resources */,
 				7A71BD062625292B00E6FA9E /* Preview Assets.xcassets in Resources */,
 				CF47CF0728DD1CFE008B6F11 /* Emilia2.m4a in Resources */,
@@ -3106,7 +3110,7 @@
 				CODE_SIGN_ENTITLEMENTS = BestFriends/BestFriends.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 25;
+				CURRENT_PROJECT_VERSION = 26;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_ASSET_PATHS = "\"BestFriends/Preview Content\"";
 				DEVELOPMENT_TEAM = AS6KAWXZJT;
@@ -3138,7 +3142,7 @@
 				CODE_SIGN_ENTITLEMENTS = BestFriends/BestFriendsRelease.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 25;
+				CURRENT_PROJECT_VERSION = 26;
 				DEVELOPMENT_ASSET_PATHS = "\"BestFriends/Preview Content\"";
 				DEVELOPMENT_TEAM = AS6KAWXZJT;
 				ENABLE_BITCODE = NO;
