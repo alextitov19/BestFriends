@@ -50,15 +50,20 @@ struct RR59: View {
                 .opacity(0.9)
                 .ignoresSafeArea()
   
-            AdPlayerView(name: "background_7")
-                .ignoresSafeArea()
-                .blendMode(.screen)
-                .opacity(0.5)
-         
-            AdPlayerView(name: "moonShots")
+//            AdPlayerView(name: "background_7")
+//                .ignoresSafeArea()
+//                .blendMode(.screen)
+//                .opacity(0.5)
+            
+            AdPlayerView(name: "OffPlanet3")
                 .ignoresSafeArea()
                 .blendMode(.screen)
                 .opacity(0.9)
+         
+//            AdPlayerView(name: "moonShots")
+//                .ignoresSafeArea()
+//                .blendMode(.screen)
+//                .opacity(0.9)
             
 //            AdPlayerView(name: "dreams")
 //                .ignoresSafeArea()

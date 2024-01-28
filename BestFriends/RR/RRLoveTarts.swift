@@ -121,28 +121,28 @@ struct RRLoveTarts: View {
                 
         
                 
-                Color.black
-                    .opacity(0.99)
-                    .ignoresSafeArea()
-                
-//                ColorManager .grey4
+//                Color.black
 //                    .opacity(0.99)
 //                    .ignoresSafeArea()
+                
+                ColorManager .grey4
+                    .opacity(0.99)
+                    .ignoresSafeArea()
                 
 //                AdPlayerView(name: "sky2")
 //                    .ignoresSafeArea()
 //                    .blendMode(.screen)
 //                    .opacity(0.9)
                 
-//                AdPlayerView(name: "CHsBackground3")
-//                    .ignoresSafeArea()
-//                    .blendMode(.screen)
-//                    .opacity(0.99)
-                
-                AdPlayerView(name: "CHsMain")
+                AdPlayerView(name: "CHsBackground3")
                     .ignoresSafeArea()
                     .blendMode(.screen)
                     .opacity(0.99)
+                
+//                AdPlayerView(name: "CHsMain")
+//                    .ignoresSafeArea()
+//                    .blendMode(.screen)
+//                    .opacity(0.99)
                 
             }
             

@@ -131,12 +131,12 @@ struct InfoWhyLoveBF: View {
                     ZStack {
                   
                         
-                        Image(systemName: "cube.fill")
-                            .resizable()
-                            .foregroundColor(Color.purple)
-                            .frame(width: 250, height: 200)
-                            .shadow(color: ColorManager .purple3, radius: 65, x: 30, y: 50)
-                            .opacity(0.7)
+//                        Image(systemName: "cube.fill")
+//                            .resizable()
+//                            .foregroundColor(Color.purple)
+//                            .frame(width: 250, height: 200)
+//                            .shadow(color: ColorManager .purple3, radius: 65, x: 30, y: 50)
+//                            .opacity(0.7)
                        
                         
                         
@@ -147,21 +147,21 @@ struct InfoWhyLoveBF: View {
                                 .frame(height: 7)
                             
                             
-                            Text("Say")
-                                .font(.system(size: 40, weight: .light))
-                                .foregroundColor(ColorManager .grey1)
+                            Text("Say,")
+                                .font(.system(size: 25, weight: .light))
+                                .foregroundColor(ColorManager .grey3)
                                 .multilineTextAlignment(.center)
                                 .opacity(0.5)
                             
-                            Text("they look")
-                                .font(.system(size: 25, weight: .light))
-                                .foregroundColor(ColorManager .grey1)
-                                .multilineTextAlignment(.center)
-                                .opacity(0.5)
+//                            Text("you look")
+//                                .font(.system(size: 25, weight: .light))
+//                                .foregroundColor(ColorManager .grey1)
+//                                .multilineTextAlignment(.center)
+//                                .opacity(0.5)
                            
-                            Text("nice today")
-                                .font(.system(size: 35, weight: .light))
-                                .foregroundColor(ColorManager .grey1)
+                            Text("'You look nice today'")
+                                .font(.system(size: 30, weight: .light))
+                                .foregroundColor(ColorManager .grey3)
                                 .multilineTextAlignment(.center)
                                 .opacity(0.5)
                                 .frame(height: 10)

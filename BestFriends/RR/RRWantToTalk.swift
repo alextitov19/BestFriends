@@ -142,24 +142,24 @@ struct RRWantToTalk: View {
                         
                         ZStack {
                             
-                            Image(systemName: "cube.fill")
-                                .resizable()
-                                .foregroundColor(Color.purple)
-                                .frame(width: 240, height: 170)
-                                .shadow(color: ColorManager .purple3, radius: 65, x: 30, y: 50)
-                                .opacity(0.8)
+//                            Image(systemName: "cube.fill")
+//                                .resizable()
+//                                .foregroundColor(Color.purple)
+//                                .frame(width: 240, height: 170)
+//                                .shadow(color: ColorManager .purple3, radius: 65, x: 30, y: 50)
+//                                .opacity(0.8)
                             
                             VStack {
                                 
                                 Text("Do you want to")
-                                    .font(.system(size: 27, weight: .light))
-                                    .foregroundColor(Color .white)
-                                    .opacity(0.5)
+                                    .font(.system(size: 25, weight: .light))
+                                    .foregroundColor(ColorManager .grey3)
+                                    .opacity(0.8)
 //
                                 Text("talk?")
-                                    .font(.system(size: 27, weight: .light))
-                                    .foregroundColor(Color .white)
-                                    .opacity(0.5)
+                                    .font(.system(size: 30, weight: .light))
+                                    .foregroundColor(ColorManager .grey3)
+                                    .opacity(0.8)
                                 
                                
                             }
@@ -190,15 +190,13 @@ struct RRWantToTalk: View {
 //
                         ZStack {
 
-
-                            Image("comicBubble")
+                            Image(systemName: "circle.fill")
                                 .resizable()
-                                .foregroundColor(Color.white)
-                                .frame(width: 350, height: 200)
+                                .foregroundColor(Color.purple)
+                                .frame(width: 300, height: 150)
                                 .shadow(color: Color.white, radius: 3, x: 3, y: 3)
                                 .rotationEffect(.degrees(-7))
-                                .opacity(0.7)
-//                                .blinking(duration: 5.0)
+                                .opacity(0.4)
 
                             VStack {
 
