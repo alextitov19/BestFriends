@@ -87,23 +87,23 @@ struct RRMissYou: View {
                             
                             ZStack {
                                 
-                                Image(systemName: "cube.fill")
-                                    .resizable()
-                                    .foregroundColor(Color.purple)
-                                    .frame(width: 250, height: 200)
-                                    .shadow(color: ColorManager .purple3, radius: 65, x: 30, y: 50)
-                                    .opacity(0.5)
+//                                Image(systemName: "cube.fill")
+//                                    .resizable()
+//                                    .foregroundColor(Color.purple)
+//                                    .frame(width: 250, height: 200)
+//                                    .shadow(color: ColorManager .purple3, radius: 65, x: 30, y: 50)
+//                                    .opacity(0.5)
                                 
                                 VStack {
                                     
-                                    Text("just wanted to say,")
-                                        .font(.system(size: 23, weight: .light))
-                                        .italic()
+                                    Text("just wanted to say I'm")
+                                        .font(.system(size: 20, weight: .light))
+                                    
                                         .foregroundColor(ColorManager .grey1)
                                         .opacity(0.5)
                                     
-                                    Text("I'm missing you")
-                                        .font(.system(size: 33, weight: .light))
+                                    Text("missing you")
+                                        .font(.system(size: 30, weight: .light))
                                         .foregroundColor(ColorManager .grey1)
                                         .opacity(0.5)
                                     

@@ -107,13 +107,13 @@ struct SaySomethingNice5: View {
                                 VStack {
                                     
                                     
-                                    Text("thinking of you")
+                                    Text("I'm thinking of you")
                                         .font(.system(size: 30, weight: .light))
-                                        .italic()
+                                        
                                         .foregroundColor(ColorManager .grey1)
                                         .opacity(0.5)
                                     
-                                    Text("I'm sending \nyou Hearts")
+                                    Text("sending you Hearts")
                                         .font(.system(size: 20, weight: .light))
                                         .foregroundColor(ColorManager .grey1)
                                         .opacity(0.5)
