@@ -17,6 +17,7 @@ import Combine
 struct InfoWhyLoveBF: View {
     
     @EnvironmentObject var sessionManager: SessionManager
+    @Environment(\.colorScheme) var colorScheme
     
     let user: User
     let friend: User
@@ -147,24 +148,35 @@ struct InfoWhyLoveBF: View {
                                 .frame(height: 7)
                             
                             
-                            Text("Say,")
-                                .font(.system(size: 25, weight: .light))
-                                .foregroundColor(ColorManager .grey3)
-                                .multilineTextAlignment(.center)
-                                .opacity(0.5)
-                            
-//                            Text("you look")
-//                                .font(.system(size: 25, weight: .light))
-//                                .foregroundColor(ColorManager .grey1)
-//                                .multilineTextAlignment(.center)
-//                                .opacity(0.5)
-                           
-                            Text("'You look nice today'")
-                                .font(.system(size: 30, weight: .light))
-                                .foregroundColor(ColorManager .grey3)
-                                .multilineTextAlignment(.center)
-                                .opacity(0.5)
-                                .frame(height: 10)
+                            if (colorScheme == .dark){
+                                Text("Say,")
+                                    .font(.system(size: 25, weight: .light))
+                                    .foregroundColor(ColorManager .grey3)
+                                    .multilineTextAlignment(.center)
+                                    .opacity(0.5)
+                                
+                                
+                                Text("'You look nice today'")
+                                    .font(.system(size: 30, weight: .light))
+                                    .foregroundColor(ColorManager .grey3)
+                                    .multilineTextAlignment(.center)
+                                    .opacity(0.5)
+                                    .frame(height: 10)
+                            } else{
+                                Text("Say,")
+                                    .font(.system(size: 25, weight: .light))
+                                    .foregroundColor(ColorManager .red)
+                                    .multilineTextAlignment(.center)
+                                    .opacity(0.5)
+                                
+                                
+                                Text("'You look nice today'")
+                                    .font(.system(size: 30, weight: .light))
+                                    .foregroundColor(ColorManager .red)
+                                    .multilineTextAlignment(.center)
+                                    .opacity(0.5)
+                                    .frame(height: 10)
+                            }
                             
                             Spacer ()
                                 .frame(height: 25)
@@ -190,9 +202,15 @@ struct InfoWhyLoveBF: View {
                                 TextField("", text: $customMessage)
                                     .placeholder(when: customMessage.isEmpty) {
                                         HStack {
-                                            Text("Let them know why ...")
-                                                .foregroundColor(ColorManager .grey3)
-                                                .fontWeight(.thin)
+                                            if (colorScheme == .dark){
+                                                Text("Let them know why ...")
+                                                    .foregroundColor(ColorManager .grey3)
+                                                    .fontWeight(.thin)
+                                            } else{
+                                                Text("Let them know why ...")
+                                                    .foregroundColor(ColorManager .red)
+                                                    .fontWeight(.thin)
+                                            }
                                             Spacer()
                                         }
                                     }
@@ -223,13 +241,21 @@ struct InfoWhyLoveBF: View {
                     Spacer()
                         .frame(height: 30)
                     
-                    Text("(alert them to your message in Chat)")
-                        .font(.system(size: 15))
-                        .italic()
-                        .fontWeight(.light)
-                        .foregroundColor(ColorManager .grey3)
-                        .multilineTextAlignment(.center)
-            
+                    if (colorScheme == .dark){
+                        Text("(alert them to your message in Chat)")
+                            .font(.system(size: 15))
+                            .italic()
+                            .fontWeight(.light)
+                            .foregroundColor(ColorManager .grey3)
+                            .multilineTextAlignment(.center)
+                    } else {
+                        Text("(alert them to your message in Chat)")
+                            .font(.system(size: 15))
+                            .italic()
+                            .fontWeight(.light)
+                            .foregroundColor(ColorManager .red)
+                            .multilineTextAlignment(.center)
+                    }
                     VStack {
                         
                         Spacer()
