@@ -141,12 +141,12 @@ struct CH4: View {
                         
                         ZStack {
                             
-                            Image(systemName: "cube.fill")
-                                .resizable()
-                                .foregroundColor(Color.purple)
-                                .frame(width: 240, height: 170)
-                                .shadow(color: ColorManager .purple3, radius: 65, x: 30, y: 50)
-                                .opacity(0.4)
+//                           Image(systemName: "circle.fill")
+//                                .resizable()
+//                                .foregroundColor(Color.purple)
+//                                .frame(width: 240, height: 170)
+//                                .shadow(color: ColorManager .purple3, radius: 65, x: 30, y: 50)
+//                                .opacity(0.4)
                             
                             VStack {
                                 
@@ -190,13 +190,13 @@ struct CH4: View {
                         ZStack {
 
 
-                            Image("comicBubble")
+                            Image(systemName: "circle.fill")
                                 .resizable()
-                                .foregroundColor(Color.white)
-                                .frame(width: 350, height: 200)
+                                .foregroundColor(Color.purple)
+                                .frame(width: 300, height: 150)
                                 .shadow(color: Color.white, radius: 3, x: 3, y: 3)
                                 .rotationEffect(.degrees(-7))
-                                .opacity(0.55)
+                                .opacity(0.3)
 //                                .blinking(duration: 5.0)
 
                             VStack {
