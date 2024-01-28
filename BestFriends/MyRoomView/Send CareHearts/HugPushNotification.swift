@@ -92,12 +92,12 @@ struct HugPushNotification: View {
                         
                         ZStack {
                             
-                            Image(systemName: "cube.fill")
-                                .resizable()
-                                .foregroundColor(Color.purple)
-                                .frame(width: 300, height: 200)
-                                .shadow(color: ColorManager .purple3, radius: 65, x: 30, y: 50)
-                                .opacity(0.5)
+//                            Image(systemName: "cube.fill")
+//                                .resizable()
+//                                .foregroundColor(Color.purple)
+//                                .frame(width: 300, height: 200)
+//                                .shadow(color: ColorManager .purple3, radius: 65, x: 30, y: 50)
+//                                .opacity(0.5)
                             
                             VStack {
                                 
@@ -106,12 +106,12 @@ struct HugPushNotification: View {
                                 
                                 Text("Sending Hugs")
                                     .font(.system(size: 30, weight: .light))
-                                    .foregroundColor(Color.white)
+                                    .foregroundColor(ColorManager .grey3)
                                     .opacity(0.5)
                                 
                                 Text("touching their heart")
                                     .font(.system(size: 20, weight: .light))
-                                    .foregroundColor(Color.white)
+                                    .foregroundColor(ColorManager .grey3)
                                     .opacity(0.5)
                                 Spacer()
                                     .frame(height: 10)

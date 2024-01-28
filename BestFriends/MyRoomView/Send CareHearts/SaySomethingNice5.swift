@@ -102,24 +102,19 @@ struct SaySomethingNice5: View {
                                     .shadow(color: ColorManager .purple3, radius: 65, x: 30, y: 50)
                                     .opacity(0.5)
                                 
-//                                Image(systemName: "heart.fill")
-//                                    .resizable()
-//                                    .foregroundColor(Color.purple)
-//                                    .frame(width: 250, height: 200)
-//                                    .shadow(color: ColorManager .purple3, radius: 65, x: 30, y: 50)
-//                                    .opacity(0.5)
+
                                 
                                 VStack {
                                     
                                     
                                     Text("thinking of you")
-                                        .font(.system(size: 35, weight: .light))
+                                        .font(.system(size: 30, weight: .light))
                                         .italic()
                                         .foregroundColor(ColorManager .grey1)
                                         .opacity(0.5)
                                     
                                     Text("I'm sending \nyou Hearts")
-                                        .font(.system(size: 25, weight: .light))
+                                        .font(.system(size: 20, weight: .light))
                                         .foregroundColor(ColorManager .grey1)
                                         .opacity(0.5)
                                     

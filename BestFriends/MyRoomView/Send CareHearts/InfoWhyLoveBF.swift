@@ -114,7 +114,10 @@ struct InfoWhyLoveBF: View {
                           .blendMode(.screen)
                           .opacity(0.99)
                       
-                   
+                      AdPlayerView(name: "fernShadow2")
+                          .ignoresSafeArea()
+                          .blendMode(.screen)
+                          .opacity(0.99)
                    
             }
           
@@ -133,7 +136,7 @@ struct InfoWhyLoveBF: View {
                             .foregroundColor(Color.purple)
                             .frame(width: 250, height: 200)
                             .shadow(color: ColorManager .purple3, radius: 65, x: 30, y: 50)
-                            .opacity(0.5)
+                            .opacity(0.7)
                        
                         
                         
@@ -144,7 +147,7 @@ struct InfoWhyLoveBF: View {
                                 .frame(height: 7)
                             
                             
-                            Text("Tell someone")
+                            Text("Say")
                                 .font(.system(size: 40, weight: .light))
                                 .foregroundColor(ColorManager .grey1)
                                 .multilineTextAlignment(.center)
@@ -156,7 +159,7 @@ struct InfoWhyLoveBF: View {
                                 .multilineTextAlignment(.center)
                                 .opacity(0.5)
                            
-                            Text("really nice today")
+                            Text("nice today")
                                 .font(.system(size: 35, weight: .light))
                                 .foregroundColor(ColorManager .grey1)
                                 .multilineTextAlignment(.center)
@@ -188,7 +191,7 @@ struct InfoWhyLoveBF: View {
                                     .placeholder(when: customMessage.isEmpty) {
                                         HStack {
                                             Text("Let them know why ...")
-                                                .foregroundColor(Color.white)
+                                                .foregroundColor(ColorManager .grey3)
                                                 .fontWeight(.thin)
                                             Spacer()
                                         }
@@ -224,7 +227,7 @@ struct InfoWhyLoveBF: View {
                         .font(.system(size: 15))
                         .italic()
                         .fontWeight(.light)
-                        .foregroundColor(ColorManager .grey1)
+                        .foregroundColor(ColorManager .grey3)
                         .multilineTextAlignment(.center)
             
                     VStack {
