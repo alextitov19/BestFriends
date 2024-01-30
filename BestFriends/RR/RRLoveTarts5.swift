@@ -153,84 +153,56 @@ struct RRLoveTarts5: View {
                 
                 
             }
-            
-            
-            
-            
-            
+    
             VStack {
-                
-                
-                
                 
                 Spacer ()
                     .frame(height: 40)
                 
                 HStack {
-                    
+               
+                    ZStack {
+                     
+                        
+                        Image(systemName: "heart.fill")
+                            .resizable()
+                            .foregroundColor(ColorManager .grey2)
+                            .frame(width: 140, height: 110)
+                            .shadow(color: ColorManager .grey1, radius: 3, x: 3, y: 3)
+                            .rotationEffect(.degrees(-10))
+                            .opacity(0.4)
+                        
+                        
+                        NavigationLink(
+                            destination: RRPoemContest(user: user, friends: friends, groups: groups),
+                            label: {
+                                VStack {
+                                    Text("together in a")
+                                        .font(.system(size: 17))
+                                        .fontWeight(.light)
+                                        .multilineTextAlignment(.center)
+                                        .foregroundColor(ColorManager .grey1)
+                                        .rotationEffect(.degrees(-10))
+                                        .opacity(0.99)
+                                    
+                                    Text("romantic \nambience")
+                                        .font(.system(size: 17))
+                                        .italic()
+                                        .fontWeight(.light)
+                                        .multilineTextAlignment(.center)
+                                        .foregroundColor(ColorManager .grey1)
+                                        .rotationEffect(.degrees(-10))
+                                        .opacity(0.99)
+                                    
+                                }
+                            }
+                        )}
                     
                     Spacer ()
                         .frame(width: 20)
                     
-                    
-                    VStack {
-                        Text("Two souls whose stories")
-                            .font(.system(size: 10))
-                            .fontWeight(.bold)
-                            .multilineTextAlignment(.center)
-                            .foregroundColor(Color.white)
-                            .rotationEffect(.degrees(-20))
-                        //                            .blinking(duration: 3.0)
-                            .shadow(color: ColorManager .grey3, radius: 0.7, x: 0.5, y: 0.5)
-                            .opacity(0.5)
-                        
-                        Text("forever etched in the laugh lines and")
-                            .font(.system(size: 10))
-                            .fontWeight(.bold)
-                            .multilineTextAlignment(.center)
-                            .foregroundColor(Color.white)
-                            .rotationEffect(.degrees(-20))
-                        //                            .blinking(duration: 3.0)
-                            .shadow(color: ColorManager .grey3, radius: 0.7, x: 0.5, y: 0.5)
-                            .opacity(0.5)
-                        
-                        Text("dreams swiriling behind their eyes.")
-                            .font(.system(size: 10))
-                            .fontWeight(.bold)
-                            .multilineTextAlignment(.center)
-                            .foregroundColor(Color.white)
-                            .rotationEffect(.degrees(-20))
-                        //                            .blinking(duration: 3.0)
-                            .shadow(color: ColorManager .grey3, radius: 0.7, x: 0.5, y: 0.5)
-                            .opacity(0.5)
-                        
-                        
-                        Text("-- Thays from Brazil")
-                            .font(.system(size: 10))
-                            .fontWeight(.bold)
-                            .italic()
-                            .multilineTextAlignment(.center)
-                            .foregroundColor(Color.white)
-                            .rotationEffect(.degrees(-20))
-                        //                            .blinking(duration: 3.0)
-                            .shadow(color: ColorManager .grey3, radius: 0.7, x: 0.5, y: 0.5)
-                            .opacity(0.5)
-                        
-                        
-                    }
-                    
-                    
-                    Spacer ()
-                        .frame(width: 30)
-                    
-                    
-                    
                     ZStack {
-                        //                        Image(systemName: "heart.fill")
-                        //                            .rotationEffect(.degrees(10))
-                        
-                        
-                        //    Link(destination: URL(string: "https://socialtechlabs.com/tips/")!) {
+                     
                         
                         Image(systemName: "heart.fill")
                             .resizable()
@@ -827,7 +799,7 @@ struct RRLoveTarts5: View {
                     }
                     
                     Spacer()
-                        .frame(height: 100)
+                        .frame(height: 50)
                 }
             }
         }

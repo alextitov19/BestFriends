@@ -39,19 +39,19 @@ struct RRPoemContest: View {
         
         ZStack {
             
-            ColorManager .grey1
-                .ignoresSafeArea()
-                .opacity(0.7)
+//            ColorManager .grey1
+//                .ignoresSafeArea()
+//                .opacity(0.2)
             
-            //            AdPlayerView(name: "sky2")
-            //                .ignoresSafeArea()
-            //                .blendMode(.screen)
-            //                .opacity(0.5)
+                        AdPlayerView(name: "sky2")
+                            .ignoresSafeArea()
+                            .blendMode(.screen)
+                            .opacity(0.5)
             
             AdPlayerView(name: "easyHearts2")
                 .ignoresSafeArea()
                 .blendMode(.screen)
-                .opacity(0.5)
+                .opacity(0.9)
             
             //          ********************************************
             
@@ -298,89 +298,88 @@ struct RRPoemContest: View {
                                 }
                             }
                         }
-                    }
+                
+                
+                
+                VStack {
                     
-                }
-
-                    
-                    VStack {
+                    Text("Coming summer ...")
+                                               .font(.system(size: 20))
+                                               .italic()
+                                               .foregroundColor(Color.white)
+                                               .fontWeight(.light)
+                                               .multilineTextAlignment(.center)
+                                               .opacity(0.7)
+                                           
+                                           Spacer()
+                                               .frame(height: 20)
+                                           
+                                           Text("Submit you heartfelt")
+                                               .font(.system(size: 30))
+                                               .foregroundColor(ColorManager .grey3)
+                                               .fontWeight(.light)
+                                               .multilineTextAlignment(.center)
+                                               .opacity(0.99)
+                                           
+                                           Spacer()
+                                               .frame(height: 7)
+                                           
+                                           
+                                           VStack {
+                                               
+                                               Text("romantic poems")
+                                                   .font(.system(size: 30))
+                                               
+                                                   .foregroundColor(ColorManager .grey3)
+                                                   .fontWeight(.light)
+                                                   .multilineTextAlignment(.center)
+                                                   .opacity(0.99)
+                                          
                         
-                        Text("Coming sometime Q:1 2024 ...")
-                            .font(.system(size: 20))
-                            .italic()
-                            .foregroundColor(Color.white)
-                            .fontWeight(.light)
-                            .multilineTextAlignment(.center)
-                            .opacity(0.7)
-                        
-                        Spacer()
-                            .frame(height: 20)
-                        
-                        Text("Submit you heartfelt")
-                            .font(.system(size: 30))
-                            .foregroundColor(ColorManager .grey3)
-                            .fontWeight(.light)
-                            .multilineTextAlignment(.center)
-                            .opacity(0.99)
-                        
-                        Spacer()
-                            .frame(height: 7)
                         
                         
                         VStack {
                             
-                            Text("romantic poems")
-                                .font(.system(size: 30))
-                            
-                                .foregroundColor(ColorManager .grey3)
-                                .fontWeight(.light)
-                                .multilineTextAlignment(.center)
-                                .opacity(0.99)
-                        
-                            
-                            
-                            
-                            VStack {
+                            NavigationLink(
+                                destination: EmptyView(),
+                                label: {
+                                Text("Contest details")
+                                    .fontWeight(.thin)
+                                    .frame(width: 200, height: 40)
+                                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                    .font(.system(size: 25))
+                                    .background(Color.cyan)
+                                    .cornerRadius(10)
+                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                                 
-                                NavigationLink(
-                                    destination: EmptyView(),
-                                    label: {
-                                    Text("Contest details to come")
-                                        .fontWeight(.thin)
-                                        .frame(width: 270, height: 40)
-                                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                        .font(.system(size: 25))
-                                        .background(Color.cyan)
-                                        .cornerRadius(10)
-                                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                    
-                                }
-                            )}
-                            
-                            Spacer()
-                                .frame(height: 30)
-                            
-                            VStack {
-                                
-                                Button(action: {
-                                    sessionManager.showLogin()
-                                },
-                                       label: {
-                                    Image("home-alt2")
-                                        .frame(width: 60, height: 30)
-                                        .foregroundColor(.black)
-                                        .font(.system(size: 20))
-                                        .background(ColorManager .grey4)
-                                        .cornerRadius(15)
-                                        .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
-                                        .opacity(0.70)
-                                    
-                                })
                             }
+                        )}
+                        
+                        Spacer()
+                            .frame(height: 30)
+                        
+                        VStack {
+                            
+                            Button(action: {
+                                sessionManager.showLogin()
+                            },
+                                   label: {
+                                Image("home-alt2")
+                                    .frame(width: 60, height: 30)
+                                    .foregroundColor(.black)
+                                    .font(.system(size: 20))
+                                    .background(ColorManager .grey4)
+                                    .cornerRadius(15)
+                                    .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
+                                    .opacity(0.70)
+                                
+                            })
                         }
                     }
-//                }
-            
+                }
+            }
+        }
+
           
                 
                 Spacer()
@@ -388,7 +387,7 @@ struct RRPoemContest: View {
                 
             }
         }
-//    }
+
 
 
 
