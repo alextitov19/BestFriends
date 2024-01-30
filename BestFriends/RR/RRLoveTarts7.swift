@@ -241,7 +241,7 @@ struct RRLoveTarts7: View {
                                 destination: RRPoemContest(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
                                 label: {
                                     VStack {
-                                        Text("Kissing frogs \nfairy tale")
+                                        Text("Kissing frogs \nfairy tale \npoems")
                                             .font(.system(size: 22))
                                             .fontWeight(.light)
                                             .multilineTextAlignment(.center)

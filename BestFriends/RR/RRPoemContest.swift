@@ -175,11 +175,7 @@ struct RRPoemContest: View {
                             .rotationEffect(.degrees(-10))
                             .opacity(0.4)
                         
-                        
-                        
-                        Image(systemName: "heart.fill")
-                            .foregroundColor(ColorManager .grey2)
-                            .rotationEffect(.degrees(-10))
+                     
                         
                         Image(systemName: "heart.fill")
                             .resizable()
@@ -189,18 +185,26 @@ struct RRPoemContest: View {
                             .rotationEffect(.degrees(-10))
                             .opacity(0.3)
                         
-                        Link(destination: URL(string: "https://socialtechlabs.com/a-kisses-journey/")!) {
+//                        Link(destination: URL(string: "https://socialtechlabs.com/a-kisses-journey/")!) {
                             
                             VStack {
-                                Text("new poem \n\ncoming")
-                                    .font(.system(size: 20))
+                                Text("Feb 2024 WINNER")
+                                    .font(.system(size: 12))
                                     .fontWeight(.light)
                                     .multilineTextAlignment(.center)
-                                    .foregroundColor(ColorManager .grey1)
+                                    .foregroundColor(Color .black)
                                     .rotationEffect(.degrees(-10))
                                     .opacity(0.99)
                                 
-                            }
+                                Text("submit your \npoem now")
+                                    .font(.system(size: 17))
+                                    .fontWeight(.light)
+                                    .multilineTextAlignment(.center)
+                                    .foregroundColor(ColorManager .grey4)
+                                    .rotationEffect(.degrees(-10))
+                                    .opacity(0.99)
+                                
+//                            }
                         }
                     }
                 }
@@ -222,6 +226,15 @@ struct RRPoemContest: View {
                                             ZStack {
                                                 
                                                 VStack {
+                                                    
+                                                    
+                                                    Text("Dec 2023 WINNER")
+                                                        .font(.system(size: 12))
+                                                        .fontWeight(.light)
+                                                        .multilineTextAlignment(.center)
+                                                        .foregroundColor(Color .black)
+                                                        .rotationEffect(.degrees(-10))
+                                                        .opacity(0.99)
                                                     
                                                     Text("a kisses' \njourney")
                                                         .font(.system(size: 20))
@@ -263,6 +276,14 @@ struct RRPoemContest: View {
                                     
                                     VStack {
                                         
+                                        Text("Jan 2024 WINNER")
+                                            .font(.system(size: 12))
+                                            .fontWeight(.light)
+                                            .multilineTextAlignment(.center)
+                                            .foregroundColor(Color .black)
+                                            .rotationEffect(.degrees(10))
+                                            .opacity(0.99)
+                                        
                                         Text("white linen \ndress")
                                             .font(.system(size: 20))
                                             .fontWeight(.light)
@@ -302,14 +323,7 @@ struct RRPoemContest: View {
                 
                 
     VStack {
-  
-            Text("Coming summer ...")
-                .font(.system(size: 15))
-                .italic()
-                .foregroundColor(ColorManager .grey3)
-                .fontWeight(.light)
-                .multilineTextAlignment(.center)
-                .opacity(0.7)
+   
                                            
             Spacer()
                 .frame(height: 10)
@@ -323,7 +337,7 @@ struct RRPoemContest: View {
                              
             VStack {
                 
-                Text("romantic poems")
+                Text("romantic poems / short stories")
                     .font(.system(size: 25))
                 
                     .foregroundColor(ColorManager .grey3)
