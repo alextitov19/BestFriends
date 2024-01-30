@@ -157,12 +157,12 @@ struct RRLoveTarts5: View {
             VStack {
                 
                 Spacer ()
-                    .frame(height: 40)
+                    .frame(height: 60)
                 
                 HStack {
-               
+                    
                     ZStack {
-                     
+                        
                         
                         Image(systemName: "heart.fill")
                             .resizable()
@@ -199,8 +199,39 @@ struct RRLoveTarts5: View {
                             }
                         )}
                     
-                    Spacer ()
-                        .frame(width: 20)
+                    
+            VStack {
+                    NavigationLink(
+                        destination:  PhotoPopView(user: user, friends: friends),
+                        label: {
+                            
+                            Image("IconPhotoNew")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 70, height: 70)
+                                .foregroundColor(Color.purple)
+                                .opacity(0.95)
+                            
+                        })
+                    
+                    Text("load favorite")
+                        .font(.system(size: 10))
+                        .fontWeight(.light)
+                        .multilineTextAlignment(.center)
+                        .foregroundColor(ColorManager .grey1)
+                        .rotationEffect(.degrees(-10))
+                        .opacity(0.99)
+                
+                Text("image of them")
+                    .font(.system(size: 10))
+                    .fontWeight(.light)
+                    .multilineTextAlignment(.center)
+                    .foregroundColor(ColorManager .grey1)
+                    .rotationEffect(.degrees(-10))
+                    .opacity(0.99)
+                
+                
+                }
                     
                     ZStack {
                      
@@ -226,7 +257,7 @@ struct RRLoveTarts5: View {
                                         .rotationEffect(.degrees(-10))
                                         .opacity(0.99)
                                     
-                                    Text("fairy tales")
+                                    Text("fairy tale \npoems")
                                         .font(.system(size: 17))
                                         .italic()
                                         .fontWeight(.light)

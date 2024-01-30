@@ -221,22 +221,22 @@ struct PhotoPopView: View {
                         }
                         
                         
-                        Text("Load your Today's favorite pic for yourself")
+                        Text("Load today's favorite")
                             .font(.system(size: 15))
                             .fontWeight(.medium)
                             .multilineTextAlignment(.center)
-                            .foregroundColor(Color.white)
+                            .foregroundColor(ColorManager .grey4)
 //                            .rotationEffect(.degrees(-20))
 //                            .blinking(duration: 3.0)
                             .shadow(color: ColorManager .grey3, radius: 0.7, x: 0.5, y: 0.5)
                             .opacity(0.5)
                         
                        
-                        Text("Just shake your iPhone to quickly view it")
+                        Text("romantic pic of your LoveTart")
                             .font(.system(size: 15))
                             .fontWeight(.bold)
                             .multilineTextAlignment(.center)
-                            .foregroundColor(Color.white)
+                            .foregroundColor(ColorManager .grey4)
 //                            .rotationEffect(.degrees(-20))
 //                            .blinking(duration: 3.0)
                             .shadow(color: ColorManager .grey3, radius: 0.7, x: 0.5, y: 0.5)

@@ -691,7 +691,7 @@ struct RRLoveTarts7: View {
                 Spacer()
                     .frame(height: 10)
                 
-                Text("(alert them to your message in Chat)")
+                Text("(send you romantic thoughts)")
                     .font(.system(size: 15))
                     .italic()
                     .fontWeight(.light)
