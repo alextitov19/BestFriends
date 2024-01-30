@@ -177,7 +177,7 @@ struct RRLoveTarts5: View {
                             destination: RRPoemContest(user: user, friends: friends, groups: groups),
                             label: {
                                 VStack {
-                                    Text("together in a")
+                                    Text("texting in a")
                                         .font(.system(size: 17))
                                         .fontWeight(.light)
                                         .multilineTextAlignment(.center)
