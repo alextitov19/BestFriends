@@ -174,10 +174,10 @@ struct RRLoveTarts5: View {
                         
                         
                         NavigationLink(
-                            destination: RRPoemContest(user: user, friends: friends, groups: groups),
+                            destination: RRPoemContest(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
                             label: {
                                 VStack {
-                                    Text("texting with")
+                                    Text("romantic")
                                         .font(.system(size: 17))
                                         .italic()
                                         .fontWeight(.light)
@@ -186,7 +186,7 @@ struct RRLoveTarts5: View {
                                         .rotationEffect(.degrees(-10))
                                         .opacity(0.99)
                                     
-                                    Text("romantic \nambience")
+                                    Text("ambience \ntexting")
                                         .font(.system(size: 17))
                                         .italic()
                                         .fontWeight(.light)
@@ -215,7 +215,7 @@ struct RRLoveTarts5: View {
                         
                         
                         NavigationLink(
-                            destination: RRPoemContest(user: user, friends: friends, groups: groups),
+                            destination: RRPoemContest(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
                             label: {
                                 VStack {
                                     Text("Kissing frogs")

@@ -14,9 +14,9 @@ struct RRPoemContest: View {
     @EnvironmentObject var sessionManager: SessionManager
     
     let user: User
-//    let atmosphere: Atmosphere
+   let atmosphere: Atmosphere
     let friends: [User]
-//    let friendAtmospheres: [Atmosphere]
+   let friendAtmospheres: [Atmosphere]
     let groups: [Group]
     
     
@@ -301,59 +301,57 @@ struct RRPoemContest: View {
                 
                 
                 
+    VStack {
+  
+            Text("Coming summer ...")
+                .font(.system(size: 15))
+                .italic()
+                .foregroundColor(ColorManager .grey3)
+                .fontWeight(.light)
+                .multilineTextAlignment(.center)
+                .opacity(0.7)
+                                           
+            Spacer()
+                .frame(height: 10)
+                                           
+            Text("Submit your heartfelt")
+                .font(.system(size: 25))
+                .foregroundColor(ColorManager .grey3)
+                .fontWeight(.light)
+                .multilineTextAlignment(.center)
+                .opacity(0.99)
+                             
+            VStack {
+                
+                Text("romantic poems")
+                    .font(.system(size: 25))
+                
+                    .foregroundColor(ColorManager .grey3)
+                    .fontWeight(.light)
+                    .multilineTextAlignment(.center)
+                    .opacity(0.99)
+                
+                
+                
+                
                 VStack {
                     
-                    Text("Coming summer ...")
-                                               .font(.system(size: 20))
-                                               .italic()
-                                               .foregroundColor(Color.white)
-                                               .fontWeight(.light)
-                                               .multilineTextAlignment(.center)
-                                               .opacity(0.7)
-                                           
-                                           Spacer()
-                                               .frame(height: 20)
-                                           
-                                           Text("Submit you heartfelt")
-                                               .font(.system(size: 30))
-                                               .foregroundColor(ColorManager .grey3)
-                                               .fontWeight(.light)
-                                               .multilineTextAlignment(.center)
-                                               .opacity(0.99)
-                                           
-                                           Spacer()
-                                               .frame(height: 7)
-                                           
-                                           
-                                           VStack {
-                                               
-                                               Text("romantic poems")
-                                                   .font(.system(size: 30))
-                                               
-                                                   .foregroundColor(ColorManager .grey3)
-                                                   .fontWeight(.light)
-                                                   .multilineTextAlignment(.center)
-                                                   .opacity(0.99)
-                                          
-                        
-                        
-                        
-                        VStack {
+                    NavigationLink(
+                        destination: RRPoemContest2(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
+                        label: {
+                            Text("Contest details")
+                                .fontWeight(.thin)
+                                .frame(width: 200, height: 40)
+                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                .font(.system(size: 25))
+                                .background(Color.cyan)
+                                .cornerRadius(10)
+                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
                             
-                            NavigationLink(
-                                destination: EmptyView(),
-                                label: {
-                                Text("Contest details")
-                                    .fontWeight(.thin)
-                                    .frame(width: 200, height: 40)
-                                    .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                    .font(.system(size: 25))
-                                    .background(Color.cyan)
-                                    .cornerRadius(10)
-                                    .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                
-                            }
-                        )}
+                        }
+                    )}
+                
+            
                         
                         Spacer()
                             .frame(height: 30)
@@ -375,16 +373,16 @@ struct RRPoemContest: View {
                                 
                             })
                         }
+                                               
+                                               Spacer()
+                                                   .frame(height: 140)
+                                               
+                                               
                     }
                 }
             }
         }
 
-          
-                
-                Spacer()
-                    .frame(height: 40)
-                
             }
         }
 

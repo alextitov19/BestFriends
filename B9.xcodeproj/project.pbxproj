@@ -185,6 +185,7 @@
 		CF1773F82A8C0D6800DF5A15 /* Fireworks2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF1773F72A8C0D6800DF5A15 /* Fireworks2.mp4 */; };
 		CF1773FC2A8D30D300DF5A15 /* background_7.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF1773FB2A8D30D300DF5A15 /* background_7.mp4 */; };
 		CF1A338C2B0EE1BA00D24B66 /* Fireworks1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF1A338B2B0EE1BA00D24B66 /* Fireworks1.mp4 */; };
+		CF1B26EE2B69242300BCF2E9 /* RRPoemContest2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1B26ED2B69242300BCF2E9 /* RRPoemContest2.swift */; };
 		CF1ECABB286AAD6F00D999F8 /* SendSongChat2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1ECABA286AAD6E00D999F8 /* SendSongChat2.swift */; };
 		CF1ECABF286E876900D999F8 /* AtmosphereInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1ECABE286E876900D999F8 /* AtmosphereInfo.swift */; };
 		CF1ECAC12870039500D999F8 /* HorizonPromoPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1ECAC02870039500D999F8 /* HorizonPromoPage.swift */; };
@@ -666,6 +667,7 @@
 		CF1773F72A8C0D6800DF5A15 /* Fireworks2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Fireworks2.mp4; sourceTree = "<group>"; };
 		CF1773FB2A8D30D300DF5A15 /* background_7.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = background_7.mp4; sourceTree = "<group>"; };
 		CF1A338B2B0EE1BA00D24B66 /* Fireworks1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Fireworks1.mp4; sourceTree = "<group>"; };
+		CF1B26ED2B69242300BCF2E9 /* RRPoemContest2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RRPoemContest2.swift; sourceTree = "<group>"; };
 		CF1CD75129E2905F00D1F801 /* TestPage3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TestPage3.swift; path = ../../../../../../Applications/TestPage3.swift; sourceTree = "<group>"; };
 		CF1CD75529E291BE00D1F801 /* TestPage3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestPage3.swift; sourceTree = "<group>"; };
 		CF1ECABA286AAD6E00D999F8 /* SendSongChat2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendSongChat2.swift; sourceTree = "<group>"; };
@@ -995,12 +997,13 @@
 				CF7A555A2B55CEAD0068F249 /* RRWantToTalk.swift */,
 				CF7A55732B5921E50068F249 /* RRLoveTarts.swift */,
 				CF7A55792B5B96770068F249 /* RRGuysTexting.swift */,
-				CF7A55582B55CEAD0068F249 /* RRPoemContest.swift */,
 				CF7A55502B55CEAC0068F249 /* RRLoveTarts3.swift */,
 				CF3163EC2B64A3A200A4D4B0 /* RRLoveTarts5.swift */,
 				CF3163EE2B64BC5B00A4D4B0 /* RRLoveTarts7.swift */,
 				CF3163F02B652F8300A4D4B0 /* RRDentedHeart.swift */,
 				CF3163FC2B68AF5B00A4D4B0 /* RRPreLoveTarts.swift */,
+				CF7A55582B55CEAD0068F249 /* RRPoemContest.swift */,
+				CF1B26ED2B69242300BCF2E9 /* RRPoemContest2.swift */,
 			);
 			path = RR;
 			sourceTree = "<group>";
@@ -2665,6 +2668,7 @@
 				CF3AE3B528F9F5F8002584A6 /* TeenVideo.swift in Sources */,
 				2D2A18772AEEED0500B0C1DF /* RR54.swift in Sources */,
 				622F68F9289C6B76001D1997 /* HorizonThoughts.swift in Sources */,
+				CF1B26EE2B69242300BCF2E9 /* RRPoemContest2.swift in Sources */,
 				7ACB385328208D38009559AF /* ImagePicker.swift in Sources */,
 				CF65041828931C0B0092EEB9 /* FightsDVid.swift in Sources */,
 				CFAB540F281CA79200BBF502 /* Step5_Why.swift in Sources */,

@@ -238,7 +238,7 @@ struct RRLoveTarts7: View {
                             
                             
                             NavigationLink(
-                                destination: RRPoemContest(user: user, friends: friends, groups: groups),
+                                destination: RRPoemContest(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
                                 label: {
                                     VStack {
                                         Text("Kissing frogs \nfairy tale")
