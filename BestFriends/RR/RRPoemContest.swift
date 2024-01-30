@@ -39,101 +39,269 @@ struct RRPoemContest: View {
         
         ZStack {
             
-            Color.black
-                .opacity(0.9)
+            ColorManager .grey1
                 .ignoresSafeArea()
+                .opacity(0.7)
             
-            AdPlayerView(name: "sky2")
+            //            AdPlayerView(name: "sky2")
+            //                .ignoresSafeArea()
+            //                .blendMode(.screen)
+            //                .opacity(0.5)
+            
+            AdPlayerView(name: "easyHearts2")
                 .ignoresSafeArea()
                 .blendMode(.screen)
+                .opacity(0.5)
             
+            //          ********************************************
             
             VStack {
-                VStack {
+                
+                
+                
+                Text("Two souls whose stories forever")
+                    .font(.system(size: 12))
+                    .fontWeight(.bold)
+                    .multilineTextAlignment(.center)
+                    .foregroundColor(Color.white)
+                    .rotationEffect(.degrees(-20))
+                //                            .blinking(duration: 3.0)
+                    .shadow(color: ColorManager .grey3, radius: 0.7, x: 0.5, y: 0.5)
+                    .opacity(0.9)
+                
+                Text("etched in the laugh lines and")
+                    .font(.system(size: 12))
+                    .fontWeight(.bold)
+                    .multilineTextAlignment(.center)
+                    .foregroundColor(Color.white)
+                    .rotationEffect(.degrees(-20))
+                //                            .blinking(duration: 3.0)
+                    .shadow(color: ColorManager .grey3, radius: 0.7, x: 0.5, y: 0.5)
+                    .opacity(0.9)
+                
+                Text("dreams swiriling behind their eyes.")
+                    .font(.system(size: 12))
+                    .fontWeight(.bold)
+                    .multilineTextAlignment(.center)
+                    .foregroundColor(Color.white)
+                    .rotationEffect(.degrees(-20))
+                //                            .blinking(duration: 3.0)
+                    .shadow(color: ColorManager .grey3, radius: 0.7, x: 0.5, y: 0.5)
+                    .opacity(0.9)
+                
+                
+                Text("-- Thays from Brazil")
+                    .font(.system(size: 10))
+                    .italic()
+                    .fontWeight(.bold)
+                    .italic()
+                    .multilineTextAlignment(.center)
+                    .foregroundColor(Color.white)
+                    .rotationEffect(.degrees(-20))
+                //                            .blinking(duration: 3.0)
+                    .shadow(color: ColorManager .grey3, radius: 0.7, x: 0.5, y: 0.5)
+                    .opacity(0.9)
+                
+                
+                
+                
+                
+                Spacer ()
+                    .frame(height: 30)
+                
+                HStack {
                     
-                    HStack {
+                    
+                    Spacer ()
+                        .frame(width: 20)
+                    
+                    //
+                    //            VStack {
+                    
+                    ZStack {
                         
-                        ZStack {
+                        
+                        Image(systemName: "heart.fill")
+                            .foregroundColor(ColorManager .grey2)
+                            .rotationEffect(.degrees(10))
+                        
+                        Image(systemName: "heart.fill")
+                            .resizable()
+                            .foregroundColor(ColorManager .grey2)
+                            .frame(width: 150, height: 120)
+                            .shadow(color: ColorManager .grey1, radius: 3, x: 3, y: 3)
+                            .rotationEffect(.degrees(10))
+                            .opacity(0.3)
+                        
+                        
+                        
+                        Link(destination: URL(string: "https://socialtechlabs.com/white-linen-dress/")!) {
                             
-                            Image(systemName: "heart.fill")
-                                .foregroundColor(ColorManager .grey2)
-                                .rotationEffect(.degrees(-10))
-                            
-                            Image(systemName: "heart.fill")
-                                .resizable()
-                                .foregroundColor(ColorManager .grey2)
-                                .frame(width: 150, height: 120)
-                                .shadow(color: ColorManager .grey1, radius: 3, x: 3, y: 3)
-                                .rotationEffect(.degrees(-10))
-                                .opacity(0.3)
-                            
-                            Link(destination: URL(string: "https://socialtechlabs.com/a-kisses-journey/")!) {
+                            VStack {
+                                Text("new poem \n\ncoming")
+                                    .font(.system(size: 20))
+                                    .fontWeight(.light)
+                                    .multilineTextAlignment(.center)
+                                    .foregroundColor(ColorManager .grey1)
+                                    .rotationEffect(.degrees(10))
+                                    .opacity(0.99)
                                 
-                                VStack {
-                                    Text("a kisses \n\njourney")
-                                        .font(.system(size: 20))
-                                        .fontWeight(.light)
-                                        .multilineTextAlignment(.center)
-                                        .foregroundColor(ColorManager .grey1)
-                                        .rotationEffect(.degrees(-10))
-                                        .opacity(0.99)
-                                    
-                                    
-                                    
-                                }
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
                             }
                         }
+                    }
+                    
+                    
+                    Spacer ()
+                        .frame(width: 30)
+                    
+                    
+                    
+                    ZStack {
+                        
+                        
+                        Image(systemName: "heart.fill")
+                            .resizable()
+                            .foregroundColor(ColorManager .grey2)
+                            .frame(width: 140, height: 110)
+                            .shadow(color: ColorManager .grey1, radius: 3, x: 3, y: 3)
+                            .rotationEffect(.degrees(-10))
+                            .opacity(0.4)
                         
                         
                         
-                        Spacer()
-                            .frame(width: 50)
+                        Image(systemName: "heart.fill")
+                            .foregroundColor(ColorManager .grey2)
+                            .rotationEffect(.degrees(-10))
                         
+                        Image(systemName: "heart.fill")
+                            .resizable()
+                            .foregroundColor(ColorManager .grey2)
+                            .frame(width: 150, height: 120)
+                            .shadow(color: ColorManager .grey1, radius: 3, x: 3, y: 3)
+                            .rotationEffect(.degrees(-10))
+                            .opacity(0.3)
                         
-                        ZStack {
+                        Link(destination: URL(string: "https://socialtechlabs.com/a-kisses-journey/")!) {
                             
-                            Image(systemName: "heart.fill")
-                                .foregroundColor(ColorManager .grey2)
-                                .rotationEffect(.degrees(10))
-                            
-                            Image(systemName: "heart.fill")
-                                .resizable()
-                                .foregroundColor(ColorManager .grey2)
-                                .frame(width: 150, height: 120)
-                                .shadow(color: ColorManager .grey1, radius: 3, x: 3, y: 3)
-                                .rotationEffect(.degrees(10))
-                                .opacity(0.3)
-                            
-                            
-                            
-                            Link(destination: URL(string: "https://socialtechlabs.com/white-linen-dress/")!) {
+                            VStack {
+                                Text("new poem \n\ncoming")
+                                    .font(.system(size: 20))
+                                    .fontWeight(.light)
+                                    .multilineTextAlignment(.center)
+                                    .foregroundColor(ColorManager .grey1)
+                                    .rotationEffect(.degrees(-10))
+                                    .opacity(0.99)
                                 
-                                VStack {
-                                    Text("white linen \n\ndress")
-                                        .font(.system(size: 20))
-                                        .fontWeight(.light)
-                                        .multilineTextAlignment(.center)
-                                        .foregroundColor(ColorManager .grey1)
-                                        .rotationEffect(.degrees(10))
-                                        .opacity(0.99)
-                                    
-                                }
                             }
                         }
                     }
                 }
-            }
-        }
                 
-//                ZStack {
-//
-//
-//                    Image(systemName: "circle.fill")
-//                        .resizable()
-//                        .foregroundColor(Color.purple)
-//                        .frame(width: 450, height: 450)
-//                        .shadow(color: ColorManager .purple2, radius: 65, x: 30, y: 50)
-//                        .opacity(0.85)
+                
+                
+                Spacer ()
+                    .frame(height: 30)
+                
+    //    ********************************************************
+                
+
+                        HStack {
+                            
+                            ZStack {
+                                       
+                                        Link(destination: URL(string: "https://socialtechlabs.com/a-kisses-journey/")!) {
+                                            
+                                            ZStack {
+                                                
+                                                VStack {
+                                                    
+                                                    Text("a kisses' \njourney")
+                                                        .font(.system(size: 20))
+                                                        .fontWeight(.light)
+                                                        .multilineTextAlignment(.center)
+                                                        .foregroundColor(ColorManager .grey4)
+                                                        .rotationEffect(.degrees(-10))
+                                                        .opacity(0.99)
+                                                }
+                                                
+                                                Image(systemName: "heart")
+                                                    .resizable()
+                                                    .scaledToFit()
+                                                    .frame(width: 175, height: 150)
+                                                    .foregroundColor(Color.cyan)
+                                                    .opacity(0.1)
+                                                    .rotationEffect(.degrees(-10))
+                                                    .glow(color: Color.purple, radius: 1)
+                                                    .shadow(color: Color.purple, radius: 2, x: 0, y: 3)
+                                                
+                                                Image(systemName: "heart.fill")
+                                                    .resizable()
+                                                    .scaledToFit()
+                                                    .frame(width: 160, height: 140)
+                                                    .foregroundColor(ColorManager .purple3)
+                                                    .opacity(0.1)
+                                                    .glow(color: Color.white, radius: 1)
+                                                    .shadow(color: Color.white, radius: 2, x: 0, y: 3)
+                          
+                                        
+                                    }
+                                }
+                            }
+                            
+    //        ***********************************
+                            Link(destination: URL(string: "https://socialtechlabs.com/white-linen-dress/")!) {
+                                
+                                ZStack {
+                                    
+                                    VStack {
+                                        
+                                        Text("white linen \ndress")
+                                            .font(.system(size: 20))
+                                            .fontWeight(.light)
+                                            .multilineTextAlignment(.center)
+                                            .foregroundColor(ColorManager .grey4)
+                                            .rotationEffect(.degrees(10))
+                                            .opacity(0.99)
+                                    }
+                                    
+                                    Image(systemName: "heart")
+                                        .resizable()
+                                        .scaledToFit()
+                                        .frame(width: 175, height: 150)
+                                        .foregroundColor(Color.cyan)
+                                        .opacity(0.1)
+                                        .rotationEffect(.degrees(10))
+                                        .glow(color: Color.purple, radius: 1)
+                                        .shadow(color: Color.purple, radius: 2, x: 0, y: 3)
+                                    
+                                    Image(systemName: "heart.fill")
+                                        .resizable()
+                                        .scaledToFit()
+                                        .frame(width: 160, height: 140)
+                                        .foregroundColor(ColorManager .purple3)
+                                        .opacity(0.1)
+                                        .glow(color: Color.white, radius: 1)
+                                        .shadow(color: Color.white, radius: 2, x: 0, y: 3)
+              
+                                    Spacer()
+                                        .frame(width: 50)
+                                    
+
+                                }
+                            }
+                        }
+                    }
+                    
+                }
+
                     
                     VStack {
                         

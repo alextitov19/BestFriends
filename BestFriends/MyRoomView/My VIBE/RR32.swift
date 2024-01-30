@@ -254,7 +254,7 @@ VStack {
                             
         HStack {
             VStack {
-                Text("Let friends know")
+                Text("my TODAY!")
                     .font(.system(size: 27))
                     .fontWeight(.bold)
                     .multilineTextAlignment(.center)
@@ -264,15 +264,15 @@ VStack {
                     .shadow(color: Color.white, radius: 6, x: 3, y: 5)
                     .opacity(0.35)
                 
-                Text("you're good!")
-                    .font(.system(size: 30))
-                    .fontWeight(.bold)
-                    .multilineTextAlignment(.center)
-                    .foregroundColor(Color.white)
-                    .rotationEffect(.degrees(-20))
-                //                .blinking(duration: 3.0)
-                    .shadow(color: Color.white, radius: 6, x: 3, y: 5)
-                    .opacity(0.35)
+//                Text("check me out")
+//                    .font(.system(size: 15))
+//                    .fontWeight(.bold)
+//                    .multilineTextAlignment(.center)
+//                    .foregroundColor(Color.white)
+//                    .rotationEffect(.degrees(-20))
+//                //                .blinking(duration: 3.0)
+//                    .shadow(color: Color.white, radius: 6, x: 3, y: 5)
+//                    .opacity(0.35)
                 
             }
             
