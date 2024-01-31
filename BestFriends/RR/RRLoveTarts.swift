@@ -474,7 +474,7 @@ struct RRLoveTarts: View {
                                     Spacer()
                                 }
                             }
-                            .foregroundColor(.white)
+                            .foregroundColor(ColorManager .grey4)
                             .font(.system(size: 15))
                             .shadow(color: ColorManager .purple3, radius: 65, x: 30, y: 50)
                             .submitLabel(.done)
