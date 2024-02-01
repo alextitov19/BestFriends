@@ -39,9 +39,9 @@ struct RRPoemContest: View {
         
         ZStack {
             
-//            ColorManager .grey1
-//                .ignoresSafeArea()
-//                .opacity(0.2)
+            Color.black
+                .ignoresSafeArea()
+                .opacity(0.7)
             
                         AdPlayerView(name: "sky2")
                             .ignoresSafeArea()
@@ -53,166 +53,19 @@ struct RRPoemContest: View {
                 .blendMode(.screen)
                 .opacity(0.9)
             
+            AdPlayerView(name: "dining5")
+                .ignoresSafeArea()
+                .blendMode(.screen)
+                .opacity(0.9)
+            
             //          ********************************************
             
             VStack {
                 
-                
-                
-                Text("Two souls whose stories forever")
-                    .font(.system(size: 12))
-                    .fontWeight(.bold)
-                    .multilineTextAlignment(.center)
-                    .foregroundColor(Color.white)
-                    .rotationEffect(.degrees(-20))
-                //                            .blinking(duration: 3.0)
-                    .shadow(color: ColorManager .grey3, radius: 0.7, x: 0.5, y: 0.5)
-                    .opacity(0.9)
-                
-                Text("etched in the laugh lines and")
-                    .font(.system(size: 12))
-                    .fontWeight(.bold)
-                    .multilineTextAlignment(.center)
-                    .foregroundColor(Color.white)
-                    .rotationEffect(.degrees(-20))
-                //                            .blinking(duration: 3.0)
-                    .shadow(color: ColorManager .grey3, radius: 0.7, x: 0.5, y: 0.5)
-                    .opacity(0.9)
-                
-                Text("dreams swiriling behind their eyes.")
-                    .font(.system(size: 12))
-                    .fontWeight(.bold)
-                    .multilineTextAlignment(.center)
-                    .foregroundColor(Color.white)
-                    .rotationEffect(.degrees(-20))
-                //                            .blinking(duration: 3.0)
-                    .shadow(color: ColorManager .grey3, radius: 0.7, x: 0.5, y: 0.5)
-                    .opacity(0.9)
-                
-                
-                Text("-- Thays from Brazil")
-                    .font(.system(size: 10))
-                    .italic()
-                    .fontWeight(.bold)
-                    .italic()
-                    .multilineTextAlignment(.center)
-                    .foregroundColor(Color.white)
-                    .rotationEffect(.degrees(-20))
-                //                            .blinking(duration: 3.0)
-                    .shadow(color: ColorManager .grey3, radius: 0.7, x: 0.5, y: 0.5)
-                    .opacity(0.9)
-                
-                
-                
-                
+
                 
                 Spacer ()
-                    .frame(height: 30)
-                
-                HStack {
-                    
-                    
-                    Spacer ()
-                        .frame(width: 20)
-                    
-                    //
-                    //            VStack {
-                    
-                    ZStack {
-                        
-                        
-                        Image(systemName: "heart.fill")
-                            .foregroundColor(ColorManager .grey2)
-                            .rotationEffect(.degrees(10))
-                        
-                        Image(systemName: "heart.fill")
-                            .resizable()
-                            .foregroundColor(ColorManager .grey2)
-                            .frame(width: 150, height: 120)
-                            .shadow(color: ColorManager .grey1, radius: 3, x: 3, y: 3)
-                            .rotationEffect(.degrees(10))
-                            .opacity(0.3)
-                        
-                        
-                        
-                        Link(destination: URL(string: "https://socialtechlabs.com/white-linen-dress/")!) {
-                            
-                            VStack {
-                                Text("new poem \n\ncoming")
-                                    .font(.system(size: 20))
-                                    .fontWeight(.light)
-                                    .multilineTextAlignment(.center)
-                                    .foregroundColor(ColorManager .grey1)
-                                    .rotationEffect(.degrees(10))
-                                    .opacity(0.99)
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                            }
-                        }
-                    }
-                    
-                    
-                    Spacer ()
-                        .frame(width: 30)
-                    
-                    
-                    
-                    ZStack {
-                        
-                        
-                        Image(systemName: "heart.fill")
-                            .resizable()
-                            .foregroundColor(ColorManager .grey2)
-                            .frame(width: 140, height: 110)
-                            .shadow(color: ColorManager .grey1, radius: 3, x: 3, y: 3)
-                            .rotationEffect(.degrees(-10))
-                            .opacity(0.4)
-                        
-                     
-                        
-                        Image(systemName: "heart.fill")
-                            .resizable()
-                            .foregroundColor(ColorManager .grey2)
-                            .frame(width: 150, height: 120)
-                            .shadow(color: ColorManager .grey1, radius: 3, x: 3, y: 3)
-                            .rotationEffect(.degrees(-10))
-                            .opacity(0.3)
-                        
-//                        Link(destination: URL(string: "https://socialtechlabs.com/a-kisses-journey/")!) {
-                            
-                            VStack {
-                                Text("Feb 2024 WINNER")
-                                    .font(.system(size: 12))
-                                    .fontWeight(.light)
-                                    .multilineTextAlignment(.center)
-                                    .foregroundColor(Color .black)
-                                    .rotationEffect(.degrees(-10))
-                                    .opacity(0.99)
-                                
-                                Text("submit your \npoem now")
-                                    .font(.system(size: 17))
-                                    .fontWeight(.light)
-                                    .multilineTextAlignment(.center)
-                                    .foregroundColor(ColorManager .grey4)
-                                    .rotationEffect(.degrees(-10))
-                                    .opacity(0.99)
-                                
-//                            }
-                        }
-                    }
-                }
-                
-                
-                
-                Spacer ()
-                    .frame(height: 30)
+                    .frame(height: 450)
                 
     //    ********************************************************
                 
@@ -230,17 +83,20 @@ struct RRPoemContest: View {
                                                     
                                                     Text("Dec 2023 WINNER")
                                                         .font(.system(size: 12))
+                                                        .italic()
                                                         .fontWeight(.light)
                                                         .multilineTextAlignment(.center)
-                                                        .foregroundColor(Color .black)
+                                                        .foregroundColor(ColorManager .grey1)
                                                         .rotationEffect(.degrees(-10))
                                                         .opacity(0.99)
+                                                    
+                                                 
                                                     
                                                     Text("a kisses' \njourney")
                                                         .font(.system(size: 20))
                                                         .fontWeight(.light)
                                                         .multilineTextAlignment(.center)
-                                                        .foregroundColor(ColorManager .grey4)
+                                                        .foregroundColor(Color.white)
                                                         .rotationEffect(.degrees(-10))
                                                         .opacity(0.99)
                                                 }
@@ -278,17 +134,20 @@ struct RRPoemContest: View {
                                         
                                         Text("Jan 2024 WINNER")
                                             .font(.system(size: 12))
+                                            .italic()
                                             .fontWeight(.light)
                                             .multilineTextAlignment(.center)
-                                            .foregroundColor(Color .black)
+                                            .foregroundColor(ColorManager .grey1)
                                             .rotationEffect(.degrees(10))
                                             .opacity(0.99)
+                                        
+                                        
                                         
                                         Text("white linen \ndress")
                                             .font(.system(size: 20))
                                             .fontWeight(.light)
                                             .multilineTextAlignment(.center)
-                                            .foregroundColor(ColorManager .grey4)
+                                            .foregroundColor(Color.white)
                                             .rotationEffect(.degrees(10))
                                             .opacity(0.99)
                                     }
@@ -322,40 +181,17 @@ struct RRPoemContest: View {
                 
                 
                 
-    VStack {
-   
-                                           
-            Spacer()
-                .frame(height: 10)
-                                           
-            Text("Submit your heartfelt")
-                .font(.system(size: 25))
-                .foregroundColor(ColorManager .grey3)
-                .fontWeight(.light)
-                .multilineTextAlignment(.center)
-                .opacity(0.99)
-                             
-            VStack {
-                
-                Text("romantic poems / short stories")
-                    .font(.system(size: 25))
-                
-                    .foregroundColor(ColorManager .grey3)
-                    .fontWeight(.light)
-                    .multilineTextAlignment(.center)
-                    .opacity(0.99)
-                
-                
-                
+    
+
                 
                 VStack {
                     
                     NavigationLink(
                         destination: RRPoemContest2(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
                         label: {
-                            Text("Contest details")
+                            Text("Poem Contest details")
                                 .fontWeight(.thin)
-                                .frame(width: 200, height: 40)
+                                .frame(width: 300, height: 40)
                                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                 .font(.system(size: 25))
                                 .background(Color.cyan)
@@ -370,8 +206,9 @@ struct RRPoemContest: View {
                         Spacer()
                             .frame(height: 30)
                         
-                        VStack {
+                     
                             
+
                             Button(action: {
                                 sessionManager.showLogin()
                             },
@@ -384,21 +221,15 @@ struct RRPoemContest: View {
                                     .cornerRadius(15)
                                     .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
                                     .opacity(0.70)
-                                
+
                             })
                         }
-                                               
-                                               Spacer()
-                                                   .frame(height: 140)
-                                               
-                                               
                     }
                 }
             }
-        }
-
-            }
-        }
+        
+    
+        
 
 
 

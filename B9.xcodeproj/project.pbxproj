@@ -188,8 +188,8 @@
 		CF1B26EE2B69242300BCF2E9 /* RRPoemContest2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1B26ED2B69242300BCF2E9 /* RRPoemContest2.swift */; };
 		CF1B26F02B6BA5E600BCF2E9 /* RRLoveTartsDinning.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1B26EF2B6BA5E600BCF2E9 /* RRLoveTartsDinning.swift */; };
 		CF1B26F42B6BAB0900BCF2E9 /* dining2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF1B26F32B6BAB0900BCF2E9 /* dining2.mp4 */; };
-		CF1B26F62B6BAD9200BCF2E9 /* pexels-solodsha-9008307 (720p).mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF1B26F52B6BAD9200BCF2E9 /* pexels-solodsha-9008307 (720p).mp4 */; };
 		CF1B26FA2B6BADF900BCF2E9 /* dining3.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF1B26F92B6BADF900BCF2E9 /* dining3.mp4 */; };
+		CF1B27002B6BB16E00BCF2E9 /* dining5.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF1B26FF2B6BB16D00BCF2E9 /* dining5.mp4 */; };
 		CF1ECABB286AAD6F00D999F8 /* SendSongChat2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1ECABA286AAD6E00D999F8 /* SendSongChat2.swift */; };
 		CF1ECABF286E876900D999F8 /* AtmosphereInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1ECABE286E876900D999F8 /* AtmosphereInfo.swift */; };
 		CF1ECAC12870039500D999F8 /* HorizonPromoPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1ECAC02870039500D999F8 /* HorizonPromoPage.swift */; };
@@ -674,8 +674,8 @@
 		CF1B26ED2B69242300BCF2E9 /* RRPoemContest2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RRPoemContest2.swift; sourceTree = "<group>"; };
 		CF1B26EF2B6BA5E600BCF2E9 /* RRLoveTartsDinning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RRLoveTartsDinning.swift; sourceTree = "<group>"; };
 		CF1B26F32B6BAB0900BCF2E9 /* dining2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = dining2.mp4; sourceTree = "<group>"; };
-		CF1B26F52B6BAD9200BCF2E9 /* pexels-solodsha-9008307 (720p).mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "pexels-solodsha-9008307 (720p).mp4"; sourceTree = "<group>"; };
 		CF1B26F92B6BADF900BCF2E9 /* dining3.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = dining3.mp4; sourceTree = "<group>"; };
+		CF1B26FF2B6BB16D00BCF2E9 /* dining5.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = dining5.mp4; sourceTree = "<group>"; };
 		CF1CD75129E2905F00D1F801 /* TestPage3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TestPage3.swift; path = ../../../../../../Applications/TestPage3.swift; sourceTree = "<group>"; };
 		CF1CD75529E291BE00D1F801 /* TestPage3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestPage3.swift; sourceTree = "<group>"; };
 		CF1ECABA286AAD6E00D999F8 /* SendSongChat2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendSongChat2.swift; sourceTree = "<group>"; };
@@ -1703,8 +1703,8 @@
 			children = (
 				CFB6690A2B4283FB00E9C237 /* offPlanet1.mp4 */,
 				CF4A08ED2879577E00ADA9DD /* sky2.mp4 */,
+				CF1B26FF2B6BB16D00BCF2E9 /* dining5.mp4 */,
 				CF1B26F92B6BADF900BCF2E9 /* dining3.mp4 */,
-				CF1B26F52B6BAD9200BCF2E9 /* pexels-solodsha-9008307 (720p).mp4 */,
 				CF1B26F32B6BAB0900BCF2E9 /* dining2.mp4 */,
 				CF3163FA2B66193F00A4D4B0 /* OffPlanet3.mp4 */,
 				CF3163F62B660CF300A4D4B0 /* fernShadow2.mp4 */,
@@ -2451,6 +2451,7 @@
 				CF7A55482B4E87320068F249 /* Somebody7.mp4 in Resources */,
 				CF3163C92B620C6200A4D4B0 /* CHsBackground3.mp4 in Resources */,
 				CFB669132B466B9A00E9C237 /* MiModaUnstopable.mp4 in Resources */,
+				CF1B27002B6BB16E00BCF2E9 /* dining5.mp4 in Resources */,
 				CF9ECC5D2B186AB5009E4C7C /* snowAngles2.mp4 in Resources */,
 				CFB669072B427CA700E9C237 /* moonShots2.mp4 in Resources */,
 				CFB669012B410B5500E9C237 /* CHsSend2.mp4 in Resources */,
@@ -2473,7 +2474,6 @@
 				CF8941262A8B448900AFEC39 /* TreeLake2.mp4 in Resources */,
 				CF2D30AB2B1C11ED008D9C38 /* girlFriends1.mp4 in Resources */,
 				CF221EE82AF79530005D19B7 /* blowingkissesVid.mp4 in Resources */,
-				CF1B26F62B6BAD9200BCF2E9 /* pexels-solodsha-9008307 (720p).mp4 in Resources */,
 				CFB669192B46778900E9C237 /* LongboardGirl2.mp4 in Resources */,
 				CF3163F72B660CF300A4D4B0 /* fernShadow2.mp4 in Resources */,
 				7A383FFD267AC306002F354A /* background_4.mp4 in Resources */,

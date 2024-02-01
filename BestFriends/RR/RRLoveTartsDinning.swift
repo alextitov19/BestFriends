@@ -144,7 +144,7 @@ struct RRLoveTartsDinning: View {
     //                            .rotationEffect(.degrees(-10))
 //                            .blinking(duration: 2.0)
                         
-                        Text("into your iPhone texting")
+                        Text("into your texting")
                             .font(.system(size: 20))
                             .fontWeight(.bold)
                             .multilineTextAlignment(.center)
@@ -152,15 +152,17 @@ struct RRLoveTartsDinning: View {
     //                            .rotationEffect(.degrees(-10))
 //                            .blinking(duration: 2.0)
                         
+                        Spacer ()
+                            .frame(height: 50)
                         
                         ZStack {
 //                            Image("comicBubble")
                             Image(systemName: "heart.fill")
                                
                                 .resizable()
-                                .foregroundColor(ColorManager .grey1)
+                                .foregroundColor(ColorManager .purple3)
                                 .frame(width: 300, height: 200)
-                                .shadow(color: ColorManager .grey3, radius: 3, x: 3, y: 3)
+                                .shadow(color: Color.white, radius: 3, x: 3, y: 3)
                                 .rotationEffect(.degrees(-10))
                                 .opacity(0.5)
                             //                                .blinking(duration: 2.0).blinking(duration: 3.0)
@@ -191,52 +193,52 @@ struct RRLoveTartsDinning: View {
                                 
                             }
                         }
-                    }
+//                    }
                     
                     
                     
                     
 //    **************************************************
-                    
-                    VStack {
-
-                   
-                        ZStack{
-                            Image(systemName: "star")
-                                .resizable()
-                                .foregroundColor(.white)
-                                .frame(width: 100, height: 100)
-                                .shadow(color: .blue, radius: 65, x: 30, y: 50)
-                                .opacity(0.3)
-                            
-                            VStack {
-                                
-                                
-                                Text("TAP")
-                                    .font(.system(size: 20))
-                                    .fontWeight(.medium)
-                                    .multilineTextAlignment(.center)
-                                    .foregroundColor(Color.white)
-                                    .opacity(0.5)
-                                    .padding()
-                                    .onTapGesture {
-                                        showingHeart = false
-                                        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-                                            AudioServicesPlayAlertSoundWithCompletion(SystemSoundID(kSystemSoundID_Vibrate)) {
-                                                AudioServicesPlayAlertSoundWithCompletion(SystemSoundID(kSystemSoundID_Vibrate)) {
-                                                    AudioServicesPlayAlertSoundWithCompletion(SystemSoundID(kSystemSoundID_Vibrate)) {
-                                                        AudioServicesPlayAlertSoundWithCompletion(SystemSoundID(kSystemSoundID_Vibrate)) {
-                                                            AudioServicesPlayAlertSoundWithCompletion(SystemSoundID(kSystemSoundID_Vibrate)) {
-                                                                showingHeart = true
-                                                            }
-                                                        }
-                                                    }
-                                                }
-                                            }
-                                            
-                                        }
-                                    }
-                                
+//
+//                    VStack {
+//
+//
+//                        ZStack{
+//                            Image(systemName: "star")
+//                                .resizable()
+//                                .foregroundColor(.white)
+//                                .frame(width: 100, height: 100)
+//                                .shadow(color: .blue, radius: 65, x: 30, y: 50)
+//                                .opacity(0.3)
+//
+//                            VStack {
+//
+//
+//                                Text("TAP")
+//                                    .font(.system(size: 20))
+//                                    .fontWeight(.medium)
+//                                    .multilineTextAlignment(.center)
+//                                    .foregroundColor(Color.white)
+//                                    .opacity(0.5)
+//                                    .padding()
+//                                    .onTapGesture {
+//                                        showingHeart = false
+//                                        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+//                                            AudioServicesPlayAlertSoundWithCompletion(SystemSoundID(kSystemSoundID_Vibrate)) {
+//                                                AudioServicesPlayAlertSoundWithCompletion(SystemSoundID(kSystemSoundID_Vibrate)) {
+//                                                    AudioServicesPlayAlertSoundWithCompletion(SystemSoundID(kSystemSoundID_Vibrate)) {
+//                                                        AudioServicesPlayAlertSoundWithCompletion(SystemSoundID(kSystemSoundID_Vibrate)) {
+//                                                            AudioServicesPlayAlertSoundWithCompletion(SystemSoundID(kSystemSoundID_Vibrate)) {
+//                                                                showingHeart = true
+//                                                            }
+//                                                        }
+//                                                    }
+//                                                }
+//                                            }
+//
+//                                        }
+//                                    }
+//
                                 
 //                                Text("hold iPhone to \nyour Heart")
 //                                    .font(.system(size: 15))
@@ -245,8 +247,8 @@ struct RRLoveTartsDinning: View {
 //                                    .fontWeight(.medium)
 //                                    .multilineTextAlignment(.center)
 //                                    .opacity(0.5)
-                            }
-                        }
+//                            }
+//                        }
                         
                         VStack {
                             
