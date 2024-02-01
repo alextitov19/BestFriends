@@ -104,11 +104,18 @@ struct RRLoveTartsDinning: View {
                   .opacity(0.9)
                   .ignoresSafeArea()
                 
-                ColorManager .pmbc_blue
-                    .opacity(0.4)
-                    .ignoresSafeArea()
+//                ColorManager .pmbc_blue
+//                    .opacity(0.4)
+//                    .ignoresSafeArea()
                 
-                AdPlayerView(name: "Fireworks1")
+                
+                
+                                AdPlayerView(name: "sky2")
+                                    .ignoresSafeArea()
+                                    .blendMode(.screen)
+                                    .opacity(0.4)
+                
+                AdPlayerView(name: "dining2")
                     .ignoresSafeArea()
                     .blendMode(.screen)
                     .opacity(0.4)
@@ -127,12 +134,31 @@ struct RRLoveTartsDinning: View {
                     
                     VStack {
                         
+                        
+                        
+                        Text("infusing romance into your")
+                            .font(.system(size: 35))
+                            .fontWeight(.bold)
+                            .multilineTextAlignment(.center)
+                            .foregroundColor(Color.white)
+    //                            .rotationEffect(.degrees(-10))
+                            .blinking(duration: 2.0)
+                        
+                        Text("iPhone texting")
+                            .font(.system(size: 35))
+                            .fontWeight(.bold)
+                            .multilineTextAlignment(.center)
+                            .foregroundColor(Color.white)
+    //                            .rotationEffect(.degrees(-10))
+                            .blinking(duration: 2.0)
+                        
+                        
                         ZStack {
                             Image("comicBubble")
                                 .resizable()
-                                .foregroundColor(Color.purple)
+                                .foregroundColor(ColorManager .grey1)
                                 .frame(width: 500, height: 200)
-                                .shadow(color: ColorManager .purple2, radius: 3, x: 3, y: 3)
+                                .shadow(color: ColorManager .grey3, radius: 3, x: 3, y: 3)
                                 .rotationEffect(.degrees(-10))
                                 .opacity(0.5)
                             //                                .blinking(duration: 2.0).blinking(duration: 3.0)
@@ -142,7 +168,7 @@ struct RRLoveTartsDinning: View {
                                 
                                 
                                 
-                                Text("Romance must be...")
+                                Text("creating the ambiance of")
                                     .font(.system(size: 25))
                                     .italic()
                                     .fontWeight(.light)
@@ -151,7 +177,7 @@ struct RRLoveTartsDinning: View {
                                     .rotationEffect(.degrees(-10))
                                 //                                    .blinking(duration: 2.0)
                                 
-                                Text("BUT...")
+                                Text("romance")
                                     .font(.system(size: 30))
                                     .fontWeight(.regular)
                                     .multilineTextAlignment(.center)
@@ -250,24 +276,24 @@ struct RRLoveTartsDinning: View {
                         .multilineTextAlignment(.center)
                         .foregroundColor(Color.white)
 //                            .rotationEffect(.degrees(-10))
-                        .blinking(duration: 3.0)
+                        .blinking(duration: 1.0)
                     
-                    Text("dreamed")
+                    Text("forever dreamed")
                         .font(.system(size: 35))
                         .fontWeight(.bold)
                         .multilineTextAlignment(.center)
                         .foregroundColor(Color.white)
 //                            .rotationEffect(.degrees(-10))
-                        .blinking(duration: 4.0)
+                        .blinking(duration: 2.0)
                     
                     
-                    Text("building lasting love")
-                        .font(.system(size: 35))
-                        .fontWeight(.bold)
-                        .multilineTextAlignment(.center)
-                        .foregroundColor(Color.white)
-//                            .rotationEffect(.degrees(-10))
-                        .blinking(duration: 6.0)
+//                    Text("building lasting love")
+//                        .font(.system(size: 35))
+//                        .fontWeight(.bold)
+//                        .multilineTextAlignment(.center)
+//                        .foregroundColor(Color.white)
+////                            .rotationEffect(.degrees(-10))
+//                        .blinking(duration: 4.0)
 //                }
                   
                                 
