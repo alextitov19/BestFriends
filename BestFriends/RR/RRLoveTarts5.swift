@@ -174,7 +174,7 @@ struct RRLoveTarts5: View {
                         
                         
                         NavigationLink(
-                            destination: RRPoemContest(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
+                            destination: RRLoveTartsDinning(user: user, friends: friends),
                             label: {
                                 VStack {
                                     Text("romantic")

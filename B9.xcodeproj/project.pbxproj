@@ -186,6 +186,7 @@
 		CF1773FC2A8D30D300DF5A15 /* background_7.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF1773FB2A8D30D300DF5A15 /* background_7.mp4 */; };
 		CF1A338C2B0EE1BA00D24B66 /* Fireworks1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF1A338B2B0EE1BA00D24B66 /* Fireworks1.mp4 */; };
 		CF1B26EE2B69242300BCF2E9 /* RRPoemContest2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1B26ED2B69242300BCF2E9 /* RRPoemContest2.swift */; };
+		CF1B26F02B6BA5E600BCF2E9 /* RRLoveTartsDinning.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1B26EF2B6BA5E600BCF2E9 /* RRLoveTartsDinning.swift */; };
 		CF1ECABB286AAD6F00D999F8 /* SendSongChat2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1ECABA286AAD6E00D999F8 /* SendSongChat2.swift */; };
 		CF1ECABF286E876900D999F8 /* AtmosphereInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1ECABE286E876900D999F8 /* AtmosphereInfo.swift */; };
 		CF1ECAC12870039500D999F8 /* HorizonPromoPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1ECAC02870039500D999F8 /* HorizonPromoPage.swift */; };
@@ -668,6 +669,7 @@
 		CF1773FB2A8D30D300DF5A15 /* background_7.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = background_7.mp4; sourceTree = "<group>"; };
 		CF1A338B2B0EE1BA00D24B66 /* Fireworks1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Fireworks1.mp4; sourceTree = "<group>"; };
 		CF1B26ED2B69242300BCF2E9 /* RRPoemContest2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RRPoemContest2.swift; sourceTree = "<group>"; };
+		CF1B26EF2B6BA5E600BCF2E9 /* RRLoveTartsDinning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RRLoveTartsDinning.swift; sourceTree = "<group>"; };
 		CF1CD75129E2905F00D1F801 /* TestPage3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TestPage3.swift; path = ../../../../../../Applications/TestPage3.swift; sourceTree = "<group>"; };
 		CF1CD75529E291BE00D1F801 /* TestPage3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestPage3.swift; sourceTree = "<group>"; };
 		CF1ECABA286AAD6E00D999F8 /* SendSongChat2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendSongChat2.swift; sourceTree = "<group>"; };
@@ -1004,6 +1006,7 @@
 				CF3163FC2B68AF5B00A4D4B0 /* RRPreLoveTarts.swift */,
 				CF7A55582B55CEAD0068F249 /* RRPoemContest.swift */,
 				CF1B26ED2B69242300BCF2E9 /* RRPoemContest2.swift */,
+				CF1B26EF2B6BA5E600BCF2E9 /* RRLoveTartsDinning.swift */,
 			);
 			path = RR;
 			sourceTree = "<group>";
@@ -2898,6 +2901,7 @@
 				CF3DB38328DAD2D200BF9CCD /* NewPoems.swift in Sources */,
 				CF2DBCF928554E5B008616A3 /* BuildFriendPlaylist.swift in Sources */,
 				CF85CDE4298B0B1C0040EAE4 /* ProfessionalHelp.swift in Sources */,
+				CF1B26F02B6BA5E600BCF2E9 /* RRLoveTartsDinning.swift in Sources */,
 				2DBF3EE12A61ACD400CB1CAD /* RR1.swift in Sources */,
 				2DDCD98A2A8FF0ED00B1040F /* DrawingCareHearts.swift in Sources */,
 				7A4E336926A0D72600202BB7 /* UIColorExtension.swift in Sources */,
