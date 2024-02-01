@@ -115,7 +115,7 @@ struct RRLoveTartsDinning: View {
                                     .blendMode(.screen)
                                     .opacity(0.4)
                 
-                AdPlayerView(name: "dining2")
+                AdPlayerView(name: "dining3")
                     .ignoresSafeArea()
                     .blendMode(.screen)
                     .opacity(0.4)
@@ -136,28 +136,30 @@ struct RRLoveTartsDinning: View {
                         
                         
                         
-                        Text("infusing romance into your")
+                        Text("infusing romance")
                             .font(.system(size: 35))
                             .fontWeight(.bold)
                             .multilineTextAlignment(.center)
-                            .foregroundColor(Color.white)
+                            .foregroundColor(ColorManager .grey2)
     //                            .rotationEffect(.degrees(-10))
-                            .blinking(duration: 2.0)
+//                            .blinking(duration: 2.0)
                         
-                        Text("iPhone texting")
-                            .font(.system(size: 35))
+                        Text("into your iPhone texting")
+                            .font(.system(size: 20))
                             .fontWeight(.bold)
                             .multilineTextAlignment(.center)
                             .foregroundColor(Color.white)
     //                            .rotationEffect(.degrees(-10))
-                            .blinking(duration: 2.0)
+//                            .blinking(duration: 2.0)
                         
                         
                         ZStack {
-                            Image("comicBubble")
+//                            Image("comicBubble")
+                            Image(systemName: "heart.fill")
+                               
                                 .resizable()
                                 .foregroundColor(ColorManager .grey1)
-                                .frame(width: 500, height: 200)
+                                .frame(width: 300, height: 200)
                                 .shadow(color: ColorManager .grey3, radius: 3, x: 3, y: 3)
                                 .rotationEffect(.degrees(-10))
                                 .opacity(0.5)
@@ -168,16 +170,17 @@ struct RRLoveTartsDinning: View {
                                 
                                 
                                 
-                                Text("creating the ambiance of")
+                                Text("creating your romantic")
                                     .font(.system(size: 25))
                                     .italic()
                                     .fontWeight(.light)
                                     .multilineTextAlignment(.center)
                                     .foregroundColor(Color.white)
+                                    .opacity(0.4)
                                     .rotationEffect(.degrees(-10))
                                 //                                    .blinking(duration: 2.0)
                                 
-                                Text("romance")
+                                Text("ambiance")
                                     .font(.system(size: 30))
                                     .fontWeight(.regular)
                                     .multilineTextAlignment(.center)
@@ -254,37 +257,41 @@ struct RRLoveTartsDinning: View {
                 VStack {
                     
                     
-                    Text("nurtured")
+                    Text("nurturing your romance")
                         .font(.system(size: 35))
                         .fontWeight(.bold)
                         .multilineTextAlignment(.center)
                         .foregroundColor(Color.white)
-//                            .rotationEffect(.degrees(-10))
-                        .blinking(duration: 1.0)
-                    
-                    Text("closely protected")
-                        .font(.system(size: 35))
-                        .fontWeight(.bold)
-                        .multilineTextAlignment(.center)
-                        .foregroundColor(Color.white)
+                        .opacity(0.5)
 //                            .rotationEffect(.degrees(-10))
                         .blinking(duration: 2.0)
                     
-                    Text("cherished")
+                    Text("protecting")
                         .font(.system(size: 35))
                         .fontWeight(.bold)
                         .multilineTextAlignment(.center)
                         .foregroundColor(Color.white)
+                        .opacity(0.5)
 //                            .rotationEffect(.degrees(-10))
-                        .blinking(duration: 1.0)
+                        .blinking(duration: 3.0)
                     
-                    Text("forever dreamed")
+                    Text("preciously cherishing")
                         .font(.system(size: 35))
                         .fontWeight(.bold)
                         .multilineTextAlignment(.center)
                         .foregroundColor(Color.white)
+                        .opacity(0.5)
 //                            .rotationEffect(.degrees(-10))
                         .blinking(duration: 2.0)
+                    
+                    Text("forever dreaming")
+                        .font(.system(size: 35))
+                        .fontWeight(.bold)
+                        .multilineTextAlignment(.center)
+                        .foregroundColor(Color.white)
+                        .opacity(0.5)
+//                            .rotationEffect(.degrees(-10))
+                        .blinking(duration: 3.0)
                     
                     
 //                    Text("building lasting love")
@@ -300,63 +307,63 @@ struct RRLoveTartsDinning: View {
                                 ZStack {
                                     
                                     //*********************************************** Motion
-                                    GeometryReader { geo in
-                                        HStack(spacing: 200) {
-                                            
-                                            Image("")
-                                                .aspectRatio(contentMode: .fit)
-                                            //                                        .blinking(duration: 6.0)
-                                            
-                                            Spacer()
-                                                .frame(width: 50)
-                                            
-                                            ZStack {
-                                                
-                                                //    ********************************************
-                                                Image("BalloonGuy300")
-                                                //                                            .aspectRatio(contentMode: .fit)
-                                                    .frame(width: 120, height: 120)
-                                                   .blinking(duration: 7.0)
-                                                    .opacity(0.60)
-                                                
-                                                Text("We're all happy for you")
-                                                    .fontWeight(.medium)
-                                                    .frame(width: 170, height: 30)
-                                                    .foregroundColor(Color.black)
-                                                    .font(.system(size: 15))
-                                                    .background(ColorManager .purple1)
-                                                    .cornerRadius(7)
-                                                    .rotationEffect(.degrees(-25))
+//                                    GeometryReader { geo in
+//                                        HStack(spacing: 200) {
+//
+//                                            Image("")
+//                                                .aspectRatio(contentMode: .fit)
+//                                            //                                        .blinking(duration: 6.0)
+//
+//                                            Spacer()
+//                                                .frame(width: 50)
+//
+//                                            ZStack {
+//
+//                                                //    ********************************************
+//                                                Image("BalloonGuy300")
+//                                                //                                            .aspectRatio(contentMode: .fit)
+//                                                    .frame(width: 120, height: 120)
+//                                                   .blinking(duration: 7.0)
+//                                                    .opacity(0.60)
+//
+//                                                Text("We're all happy for you")
+//                                                    .fontWeight(.medium)
+//                                                    .frame(width: 170, height: 30)
+//                                                    .foregroundColor(Color.black)
+//                                                    .font(.system(size: 15))
+//                                                    .background(ColorManager .purple1)
+//                                                    .cornerRadius(7)
+//                                                    .rotationEffect(.degrees(-25))
+////                                                    .blinking(duration: 7.0)
+//                                                    .opacity(0.99)
+//                                                //                                            .glow(color: ColorManager .grey4, radius: 3)
+//                                                    .shadow(color: ColorManager .purple3, radius: 2, x: 0, y: 3)
 //                                                    .blinking(duration: 7.0)
-                                                    .opacity(0.99)
-                                                //                                            .glow(color: ColorManager .grey4, radius: 3)
-                                                    .shadow(color: ColorManager .purple3, radius: 2, x: 0, y: 3)
-                                                    .blinking(duration: 7.0)
-                                                
-                                                //**********************************************************
-                                                
-                                            }
-                                            
-                                            Image("")
-                                                .aspectRatio(contentMode: .fit)
-                                                .frame(width: geo.size.width, alignment: .leading)
-                                            
-                                            
-                                            
-                                        }
-                                        .frame(width: geo.size.width, height: geo.size.height,
-                                               alignment: animate ? .trailing : .leading)
-                                    }
-                                    .ignoresSafeArea()
-                                    .onAppear {
-                                        withAnimation(animation) {
-                                            animate.toggle()
-                                        }
-                                        
-                                    }
+//
+//                                                //**********************************************************
+//
+//                                            }
+//
+//                                            Image("")
+//                                                .aspectRatio(contentMode: .fit)
+//                                                .frame(width: geo.size.width, alignment: .leading)
+//
+//
+//
+//                                        }
+//                                        .frame(width: geo.size.width, height: geo.size.height,
+//                                               alignment: animate ? .trailing : .leading)
+//                                    }
+//                                    .ignoresSafeArea()
+//                                    .onAppear {
+//                                        withAnimation(animation) {
+//                                            animate.toggle()
+//                                        }
+//
+//                                    }
                                 }
                             }
-                        
+
                                                         
                 VStack {
             
