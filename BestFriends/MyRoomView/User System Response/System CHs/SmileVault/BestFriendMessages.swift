@@ -32,12 +32,10 @@ struct BestFriendMessages: View {
                 .ignoresSafeArea()
             
             
-            Image("background_9")
-                .resizable()
-                .scaledToFill()
-                .edgesIgnoringSafeArea(.all)
+            AdPlayerView(name: "sky2")
+                .ignoresSafeArea()
                 .blendMode(.screen)
-                .onAppear(perform: createPlanets)
+                .opacity(0.8)
             
             
             
