@@ -44,7 +44,7 @@ struct RR56: View {
             AdPlayerView(name: "girlFriends1")
                 .ignoresSafeArea()
                 .blendMode(.screen)
-                .opacity(0.2)
+                .opacity(0.25)
             
             
             ZStack{
