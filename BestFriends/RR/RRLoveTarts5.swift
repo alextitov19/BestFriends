@@ -140,10 +140,10 @@ struct RRLoveTarts5: View {
                     .blendMode(.screen)
                     .opacity(0.3)
                 
-                AdPlayerView(name: "TaylorSwift2")
-                    .ignoresSafeArea()
-                    .blendMode(.screen)
-                    .opacity(0.0)
+//                AdPlayerView(name: "TaylorSwift2")
+//                    .ignoresSafeArea()
+//                    .blendMode(.screen)
+//                    .opacity(0.0)
                 
                 AdPlayerView(name: "moonShots")
                     .ignoresSafeArea()

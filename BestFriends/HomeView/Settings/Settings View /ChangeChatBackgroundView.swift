@@ -68,7 +68,7 @@ struct ChangeChatBackgroundView: View {
                     BackgroundCard(title: "Circling Planets", backgroundNumber: 7, user: user, selectedBackground: $selectedBackground)
                         .padding(5)
                     
-                    BackgroundCard(title: "Easy Hearts", backgroundNumber: 11, user: user, selectedBackground: $selectedBackground)
+                    BackgroundCard(title: "LoveTarts Background", backgroundNumber: 11, user: user, selectedBackground: $selectedBackground)
                         .padding(5)
                   
                 }

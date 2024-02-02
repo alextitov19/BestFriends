@@ -144,7 +144,7 @@ struct RRLoveTartsDinning: View {
     //                            .rotationEffect(.degrees(-10))
 //                            .blinking(duration: 2.0)
                         
-                        Text("into your texting")
+                        Text("background into your texting")
                             .font(.system(size: 20))
                             .fontWeight(.bold)
                             .multilineTextAlignment(.center)
@@ -154,6 +154,38 @@ struct RRLoveTartsDinning: View {
                         
                         Spacer ()
                             .frame(height: 50)
+                        
+                        
+                        NavigationLink(
+                            destination:  ChangeChatBackgroundView(user: user),
+                            label: {
+                                ZStack {
+                                    
+                                    Image(systemName: "circle.fill")
+                                        .resizable()
+                                        .scaledToFit()
+                                        .frame(width: 80, height: 80)
+                                        .foregroundColor(Color.cyan)
+                                        .opacity(0.95)
+                                    
+                                    Image(systemName: "heart.fill")
+                                        .resizable()
+                                        .scaledToFit()
+                                        .frame(width: 70, height: 70)
+                                        .foregroundColor(Color.purple)
+                                        .glow(color: Color.white, radius: 0.3)
+                                        .shadow(color: .white, radius: 1, x: 3, y: -0.5)
+                                        .opacity(0.95)
+                                    
+                                    Text("set Chat \nbackground")
+                                        .font(.system(size: 10))
+                                        .fontWeight(.medium)
+                                        .multilineTextAlignment(.center)
+                                        .foregroundColor(Color.white)
+                                        .opacity(0.99)
+                                    
+                                }
+                            })
                         
                         ZStack {
 //                            Image("comicBubble")
