@@ -126,10 +126,10 @@ struct RR20: View {
                         .ignoresSafeArea()
                       
                       
-                      Image("Fish")
-                          .resizable()
-                          .ignoresSafeArea()
-                          .onAppear()
+//                      Image("Fish")
+//                          .resizable()
+//                          .ignoresSafeArea()
+//                          .onAppear()
                       
                       AdPlayerView(name: "sky2")
                           .ignoresSafeArea()

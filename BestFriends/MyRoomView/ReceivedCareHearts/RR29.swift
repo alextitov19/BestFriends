@@ -78,10 +78,10 @@ struct RR29: View {
                     .blendMode(.screen)
                     .opacity(0.0)
            
-                AdPlayerView(name: "thumbsUp")
-                    .ignoresSafeArea()
-                    .blendMode(.screen)
-                    .opacity(0.8)
+//                AdPlayerView(name: "thumbsUp")
+//                    .ignoresSafeArea()
+//                    .blendMode(.screen)
+//                    .opacity(0.8)
 
 
             }

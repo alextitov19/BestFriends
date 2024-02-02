@@ -339,60 +339,60 @@ struct InfoSafeChat: View {
                                 ZStack {
                                     
                                     //*********************************************** Motion
-                                    GeometryReader { geo in
-                                        HStack(spacing: 200) {
-                                            
-                                            Image("")
-                                                .aspectRatio(contentMode: .fit)
-                                            //                                        .blinking(duration: 6.0)
-                                            
-                                            Spacer()
-                                                .frame(width: 50)
-                                            
-                                            ZStack {
-                                                
-                                                //    ********************************************
-                                                Image("BalloonGuy300")
-                                                //                                            .aspectRatio(contentMode: .fit)
-                                                    .frame(width: 120, height: 120)
-                                                   .blinking(duration: 7.0)
-                                                    .opacity(0.8)
-                                                
-                                                Text("You're not alone here")
-                                                    .fontWeight(.medium)
-                                                    .frame(width: 200, height: 40)
-                                                    .foregroundColor(Color.black)
-                                                    .font(.system(size: 15))
-                                                    .background(ColorManager .purple1)
-                                                    .cornerRadius(7)
-                                                    .rotationEffect(.degrees(-25))
+//                                    GeometryReader { geo in
+//                                        HStack(spacing: 200) {
+//                                            
+//                                            Image("")
+//                                                .aspectRatio(contentMode: .fit)
+//                                            //                                        .blinking(duration: 6.0)
+//                                            
+//                                            Spacer()
+//                                                .frame(width: 50)
+//                                            
+//                                            ZStack {
+//                                                
+//                                                //    ********************************************
+//                                                Image("BalloonGuy300")
+//                                                //                                            .aspectRatio(contentMode: .fit)
+//                                                    .frame(width: 120, height: 120)
+//                                                   .blinking(duration: 7.0)
+//                                                    .opacity(0.8)
+//                                                
+//                                                Text("You're not alone here")
+//                                                    .fontWeight(.medium)
+//                                                    .frame(width: 200, height: 40)
+//                                                    .foregroundColor(Color.black)
+//                                                    .font(.system(size: 15))
+//                                                    .background(ColorManager .purple1)
+//                                                    .cornerRadius(7)
+//                                                    .rotationEffect(.degrees(-25))
+////                                                    .blinking(duration: 7.0)
+//                                                    .opacity(0.99)
+//                                                //                                            .glow(color: ColorManager .grey4, radius: 3)
+//                                                    .shadow(color: ColorManager .purple3, radius: 2, x: 0, y: 3)
 //                                                    .blinking(duration: 7.0)
-                                                    .opacity(0.99)
-                                                //                                            .glow(color: ColorManager .grey4, radius: 3)
-                                                    .shadow(color: ColorManager .purple3, radius: 2, x: 0, y: 3)
-                                                    .blinking(duration: 7.0)
-                                                
-                                                //**********************************************************
-                                                
-                                            }
-                                            
-                                            Image("")
-                                                .aspectRatio(contentMode: .fit)
-                                                .frame(width: geo.size.width, alignment: .leading)
-                                            
-                                            
-                                            
-                                        }
-                                        .frame(width: geo.size.width, height: geo.size.height,
-                                               alignment: animate ? .trailing : .leading)
-                                    }
-                                    .ignoresSafeArea()
-                                    .onAppear {
-                                        withAnimation(animation) {
-                                            animate.toggle()
-                                        }
-                                        
-                                    }
+//                                                
+//                                                //**********************************************************
+//                                                
+//                                            }
+//                                            
+//                                            Image("")
+//                                                .aspectRatio(contentMode: .fit)
+//                                                .frame(width: geo.size.width, alignment: .leading)
+//                                            
+//                                            
+//                                            
+//                                        }
+//                                        .frame(width: geo.size.width, height: geo.size.height,
+//                                               alignment: animate ? .trailing : .leading)
+//                                    }
+//                                    .ignoresSafeArea()
+//                                    .onAppear {
+//                                        withAnimation(animation) {
+//                                            animate.toggle()
+//                                        }
+//                                        
+//                                    }
                                 }
                             }
                         

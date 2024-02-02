@@ -98,9 +98,16 @@ struct RR54: View {
                   .opacity(0.9)
                   .ignoresSafeArea()
                 
-                AdPlayerView(name: "fistpumpVideo")
+                
+                
+                AdPlayerView(name: "sky2")
+                    .opacity(0.5)
                     .ignoresSafeArea()
                     .blendMode(.screen)
+//
+//                AdPlayerView(name: "fistpumpVideo")
+//                    .ignoresSafeArea()
+//                    .blendMode(.screen)
             }
             
             
@@ -129,7 +136,7 @@ struct RR54: View {
                                 .foregroundColor(.purple)
                                 .frame(width: 150, height: 125)
                                 .shadow(color: .blue, radius: 65, x: 30, y: 50)
-                                .opacity(0.7)
+                                .opacity(0.3)
                             
                             
                             Text("TAP")
