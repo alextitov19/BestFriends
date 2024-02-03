@@ -113,7 +113,7 @@ struct RRLoveTarts5: View {
                     .opacity(0.8)
                 
                 AdPlayerView(name: "dramaLights")
-                    .opacity(0.5)
+                    .opacity(0.6)
                     .ignoresSafeArea()
                     .blendMode(.screen)
                 //
@@ -140,6 +140,11 @@ struct RRLoveTarts5: View {
                     .blendMode(.screen)
                     .opacity(0.3)
                 
+                AdPlayerView(name: "dramaLights")
+                    .opacity(0.5)
+                    .ignoresSafeArea()
+                    .blendMode(.screen)
+                
 //                AdPlayerView(name: "TaylorSwift2")
 //                    .ignoresSafeArea()
 //                    .blendMode(.screen)
@@ -148,7 +153,7 @@ struct RRLoveTarts5: View {
                 AdPlayerView(name: "moonShots")
                     .ignoresSafeArea()
                     .blendMode(.screen)
-                    .opacity(0.9)
+                    .opacity(0.7)
                 
                 
                 

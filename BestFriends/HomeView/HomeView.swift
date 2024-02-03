@@ -286,7 +286,7 @@ struct HomeView: View {
 //                                .multilineTextAlignment(.center)
                             
                             
-                            Text("yes...")
+                            Text("yes")
                                 .font(.system(size: 35))
                                 .foregroundColor(Color.white)
                                 .fontWeight(.medium)

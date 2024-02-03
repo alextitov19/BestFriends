@@ -129,13 +129,7 @@ struct RR51: View {
                                 label: {
                                     
                                     ZStack {
-                                        
-                                        Image(systemName: "heart.fill")
-                                            .resizable()
-                                            .scaledToFit()
-                                            .frame(width: 80, height: 80)
-                                            .foregroundColor(ColorManager .grey4)
-                                            .opacity(0.075)
+            
                                         
                                         Text("First Time User \n(TAP)")
                                             .fontWeight(.medium)

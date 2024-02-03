@@ -24,7 +24,7 @@ struct ChangeChatBackgroundView: View {
                 
 
                 
-                Text("Customize Your background")
+                Text("Customize chat background")
                     .font(.system(size: 30))
                     .fontWeight(.light)
                     .multilineTextAlignment(.center)
@@ -51,11 +51,12 @@ struct ChangeChatBackgroundView: View {
                 HStack {
                   
          
-                    BackgroundCard(title: "Recommended: \n(same background as Homepage)", backgroundNumber: 10, user: user, selectedBackground: $selectedBackground)
+                    BackgroundCard(title: "Same as Homepage", backgroundNumber: 10, user: user, selectedBackground: $selectedBackground)
 //                        .blinking(duration: 2.0)
                         .padding(5)
                     
-                  
+                    BackgroundCard(title: "LoveTarts Romantic", backgroundNumber: 11, user: user, selectedBackground: $selectedBackground)
+                        .padding(5)
                  
                 }
                 .padding(.horizontal, 10)
@@ -68,8 +69,7 @@ struct ChangeChatBackgroundView: View {
                     BackgroundCard(title: "Circling Planets", backgroundNumber: 7, user: user, selectedBackground: $selectedBackground)
                         .padding(5)
                     
-                    BackgroundCard(title: "LoveTarts Romantic Background", backgroundNumber: 11, user: user, selectedBackground: $selectedBackground)
-                        .padding(5)
+                 
                   
                 }
                 .padding(.horizontal, 10)
@@ -81,11 +81,11 @@ struct ChangeChatBackgroundView: View {
                     BackgroundCard(title: "Poppies in breeze", backgroundNumber: 4, user: user, selectedBackground: $selectedBackground)
                         .padding(5)
                     
-                    BackgroundCard(title: "Default - Static Gray", backgroundNumber: 0, user: user, selectedBackground: $selectedBackground)
-                        .padding(5)
+//                    BackgroundCard(title: "Default - Static Gray", backgroundNumber: 0, user: user, selectedBackground: $selectedBackground)
+//                        .padding(5)
                   
-                    BackgroundCard(title: "Bull in snow", backgroundNumber: 5, user: user, selectedBackground: $selectedBackground)
-                        .padding(5)
+//                    BackgroundCard(title: "Bull in snow", backgroundNumber: 5, user: user, selectedBackground: $selectedBackground)
+//                        .padding(5)
                 }
                 .padding(.horizontal, 10)
             }
