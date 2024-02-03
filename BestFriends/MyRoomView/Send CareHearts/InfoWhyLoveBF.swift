@@ -165,14 +165,14 @@ struct InfoWhyLoveBF: View {
                             } else{
                                 Text("Say,")
                                     .font(.system(size: 25, weight: .light))
-                                    .foregroundColor(ColorManager .red)
+                                    .foregroundColor(ColorManager .grey4)
                                     .multilineTextAlignment(.center)
                                     .opacity(0.5)
                                 
                                 
                                 Text("'You look nice today'")
                                     .font(.system(size: 30, weight: .light))
-                                    .foregroundColor(ColorManager .red)
+                                    .foregroundColor(ColorManager .grey4)
                                     .multilineTextAlignment(.center)
                                     .opacity(0.5)
                                     .frame(height: 10)
@@ -208,7 +208,7 @@ struct InfoWhyLoveBF: View {
                                                     .fontWeight(.thin)
                                             } else{
                                                 Text("Let them know why ...")
-                                                    .foregroundColor(ColorManager .red)
+                                                    .foregroundColor(ColorManager .grey4)
                                                     .fontWeight(.thin)
                                             }
                                             Spacer()
@@ -253,7 +253,7 @@ struct InfoWhyLoveBF: View {
                             .font(.system(size: 15))
                             .italic()
                             .fontWeight(.light)
-                            .foregroundColor(ColorManager .red)
+                            .foregroundColor(ColorManager .grey4)
                             .multilineTextAlignment(.center)
                     }
                     VStack {

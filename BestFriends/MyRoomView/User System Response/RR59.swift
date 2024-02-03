@@ -135,12 +135,16 @@ struct RR59: View {
            
                     HStack {
                         VStack {
-                            NavigationLink(destination: InfoView(user: user, friends: friends), label: {
-                                HugCircle (color: ColorManager .grey1, friendName: "My \nDreams")
+                            
+                            
+                            NavigationLink(destination: RR20(user: user, friend: user, friends: friends, groups: groups), label: {
+                                HugCircle (color: ColorManager .grey1, friendName: "Friend \naffirmation")
                             })
-                            .offset(x: showItems ? -80 : 0, y: showItems ? 220: 0)
-                            .shadow(color: Color.white, radius: 5, x: -2, y: -2)
-                            .opacity(0.8)
+                            .offset(x: showItems ? -120 : 0, y: showItems ? 100: 0)
+                            .shadow(color: Color.white, radius: 10, x: -4, y: 4)
+                            .opacity(0.75)
+                            
+                      
                         }
                         
                         
@@ -164,7 +168,7 @@ struct RR59: View {
                             
                             
                             NavigationLink(destination:  BestFriendMessages(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres), label: {
-                                HugCircle (color: ColorManager .grey1, friendName: "Message \nVault")
+                                HugCircle (color: ColorManager .grey1, friendName: "my \nMessage \nVault")
                             })
                             .offset(x: showItems ? -100 : 0, y: showItems ? -140: 0)
                             .shadow(color: Color .white, radius: 5, x: 2, y: -2)
@@ -266,29 +270,27 @@ struct RR59: View {
                    HStack {
                         
                   
-
-                       NavigationLink(destination: FH2(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups), label: {
-                           HugCircle (color: ColorManager .grey1, friendName: "AI \ncoming \n2024")
-                       })
-                       .offset(x: showItems ? 85 : 0, y: showItems ? 400: 0)
-                       .shadow(color: Color.white, radius: 4, x: 2, y: 3)
-                       .opacity(0.75)
-
+//
+//                       NavigationLink(destination: FH2(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups), label: {
+//                           HugCircle (color: ColorManager .grey1, friendName: "AI \ncoming \n2024")
+//                       })
+//                       .offset(x: showItems ? 85 : 0, y: showItems ? 400: 0)
+//                       .shadow(color: Color.white, radius: 4, x: 2, y: 3)
+//                       .opacity(0.75)
+//
 
                         
-                       Spacer()
-                           .frame(width: 50)
-                        
+//                       Spacer()
+//                           .frame(width: 50)
+//
                         ZStack {
                             
-                            
-                            NavigationLink(destination: RR20(user: user, friend: user, friends: friends, groups: groups), label: {
-                                HugCircle (color: ColorManager .grey1, friendName: "Friend \naffirmation")
+                            NavigationLink(destination: InfoView(user: user, friends: friends), label: {
+                                HugCircle (color: ColorManager .grey1, friendName: "my \nDreams")
                             })
-                            .offset(x: showItems ? -120 : 0, y: showItems ? 100: 0)
-                            .shadow(color: Color.white, radius: 10, x: -4, y: 4)
-                            .opacity(0.75)
-                      
+                            .offset(x: showItems ? -80 : 0, y: showItems ? 220: 0)
+                            .shadow(color: Color.white, radius: 5, x: -2, y: -2)
+                            .opacity(0.8)
                         }
                     }
 

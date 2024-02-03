@@ -147,61 +147,61 @@ struct RRLoveTarts: View {
             }
             
             VStack {
-                
-                Spacer()
-                    .frame(height: 30)
-                
-                HStack {
-                    
-                    Image(systemName: "")
-                        .resizable()
-                    //                        .foregroundColor(.purple)
-                    //                        .frame(width: 150, height: 110)
-                    //                        .shadow(color: .blue, radius: 65, x: 30, y: 50)
-                    //                        .opacity(0.4)
-                    
-                    ZStack {
-                        //                Image(systemName: "heart.fill")
-                        //                    .rotationEffect(.degrees(10))
-                        
-                        Image(systemName: "heart.fill")
-                            .resizable()
-                            .foregroundColor(ColorManager .grey3)
-                            .frame(width: 150, height: 110)
-                            .shadow(color: .blue, radius: 65, x: 30, y: 50)
-                            .opacity(0.5)
-                        
-                        Image(systemName: "heart.fill")
-                            .resizable()
-                            .foregroundColor(ColorManager .purple3)
-                            .frame(width: 140, height: 110)
-                            .shadow(color: ColorManager .purple1, radius: 3, x: 3, y: 3)
-                            .rotationEffect(.degrees(10))
-                            .opacity(0.5)
-                        
-                        
-                        
-                        NavigationLink(destination:  WhyFiveFriends(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
-                                       label: {
-                            
-                            VStack {
-                                Text("Hurt \nFeelings")
-                                    .font(.system(size: 20))
-                                    .fontWeight(.bold)
-                                    .multilineTextAlignment(.center)
-                                    .foregroundColor(Color.white)
-                                //                            .blinking(duration: 3.0)
-                                    .rotationEffect(.degrees(10))
-                                    .opacity(0.5)
-                                
-                                Spacer ()
-                                    .frame(height: 10)
-                             
-                            }
-                        }
-                    )}
-                }
-          
+//
+//                Spacer()
+//                    .frame(height: 30)
+//
+//                HStack {
+//
+//                    Image(systemName: "")
+//                        .resizable()
+//                    //                        .foregroundColor(.purple)
+//                    //                        .frame(width: 150, height: 110)
+//                    //                        .shadow(color: .blue, radius: 65, x: 30, y: 50)
+//                    //                        .opacity(0.4)
+//
+//                    ZStack {
+//                        //                Image(systemName: "heart.fill")
+//                        //                    .rotationEffect(.degrees(10))
+//
+//                        Image(systemName: "heart.fill")
+//                            .resizable()
+//                            .foregroundColor(ColorManager .grey3)
+//                            .frame(width: 150, height: 110)
+//                            .shadow(color: .blue, radius: 65, x: 30, y: 50)
+//                            .opacity(0.5)
+//
+//                        Image(systemName: "heart.fill")
+//                            .resizable()
+//                            .foregroundColor(ColorManager .purple3)
+//                            .frame(width: 140, height: 110)
+//                            .shadow(color: ColorManager .purple1, radius: 3, x: 3, y: 3)
+//                            .rotationEffect(.degrees(10))
+//                            .opacity(0.5)
+//
+//
+//
+//                        NavigationLink(destination:  WhyFiveFriends(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
+//                                       label: {
+//
+//                            VStack {
+//                                Text("Hurt \nFeelings")
+//                                    .font(.system(size: 20))
+//                                    .fontWeight(.bold)
+//                                    .multilineTextAlignment(.center)
+//                                    .foregroundColor(Color.white)
+//                                //                            .blinking(duration: 3.0)
+//                                    .rotationEffect(.degrees(10))
+//                                    .opacity(0.5)
+//
+//                                Spacer ()
+//                                    .frame(height: 10)
+//
+//                            }
+//                        }
+//                    )}
+//                }
+//
                 
                 Spacer ()
                     .frame(height: 100)
@@ -242,37 +242,37 @@ struct RRLoveTarts: View {
                                 }
                             })
                         
-                        //
-                        //                        NavigationLink(
-                        //                            destination:  RRLoveTarts5(user: user, friend: user, friends: friends, groups: groups, atmosphere: atmosphere, friendAtmospheres: friendAtmospheres),
-                        //                            label: {
-                        //                                ZStack {
-                        //
-                        //                                    Image(systemName: "circle.fill")
-                        //                                        .resizable()
-                        //                                        .scaledToFit()
-                        //                                        .frame(width: 100, height: 100)
-                        //                                        .foregroundColor(Color.cyan)
-                        //                                        .opacity(0.95)
-                        //
-                        //                                    Image(systemName: "heart.fill")
-                        //                                        .resizable()
-                        //                                        .scaledToFit()
-                        //                                        .frame(width: 50, height: 50)
-                        //                                        .foregroundColor(Color.purple)
-                        //                                        .glow(color: Color.white, radius: 0.3)
-                        //                                        .shadow(color: .white, radius: 1, x: 3, y: -0.5)
-                        //                                        .opacity(0.95)
-                        //
-                        //                                    Text("LoveTarts")
-                        //                                        .font(.system(size: 10))
-                        //                                        .fontWeight(.medium)
-                        //                                        .multilineTextAlignment(.center)
-                        //                                        .foregroundColor(Color.white)
-                        //                                        .opacity(0.99)
-                        //
-                        //                                }
-                        //                            })
+                        
+                        NavigationLink(
+                            destination:  RR20(user: user, friend: user, friends: friends, groups: groups),
+                            label: {
+                                ZStack {
+
+                                    Image(systemName: "circle.fill")
+                                        .resizable()
+                                        .scaledToFit()
+                                        .frame(width: 60, height: 60)
+                                        .foregroundColor(Color.cyan)
+                                        .opacity(0.95)
+
+                                    Image(systemName: "heart.fill")
+                                        .resizable()
+                                        .scaledToFit()
+                                        .frame(width: 50, height: 50)
+                                        .foregroundColor(Color.purple)
+                                        .glow(color: Color.white, radius: 0.3)
+                                        .shadow(color: .white, radius: 1, x: 3, y: -0.5)
+                                        .opacity(0.95)
+
+                                    Text("why best \nfriend")
+                                        .font(.system(size: 10))
+                                        .fontWeight(.medium)
+                                        .multilineTextAlignment(.center)
+                                        .foregroundColor(Color.white)
+                                        .opacity(0.99)
+
+                                }
+                            })
                         
                         
                         NavigationLink(
@@ -452,9 +452,7 @@ struct RRLoveTarts: View {
                         })
                 }
                 
-                Spacer ()
-                    .frame(height: 10)
-                
+           
                 
                 //                **************************************
                 //                **************************************
