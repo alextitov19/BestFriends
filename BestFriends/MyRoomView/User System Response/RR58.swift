@@ -305,9 +305,9 @@ struct RR58: View {
                                 HStack {
                                
                                     ZStack {
-                                        Text("  say good luck                  say Congrats!!!    ")
+                                        Text("  good luck                   Congrats!!!    ")
                                             .fontWeight(.regular)
-                                            .frame(width: 370, height: 35)
+                                            .frame(width: 300, height: 35)
                                             .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                             .font(.system(size: 20))
                                             .background(Color.purple)
@@ -336,16 +336,16 @@ struct RR58: View {
                                             .shadow(color: Color.purple, radius: 2, x: 0, y: 3)
                                      
                                         VStack {
-                                            Text("send")
-                                                .font(.system(size: 20))
+                                            Text("Say")
+                                                .font(.system(size: 21))
                                                 .foregroundColor(ColorManager .grey3)
-                                                .fontWeight(.regular)
+                                                .fontWeight(.medium)
                                                 .opacity(0.99)
                                                 .rotationEffect(.degrees(10))
                                                 .multilineTextAlignment(.center)
                                             
-                                            Spacer ()
-                                                .frame(height: 7)
+//                                            Spacer ()
+//                                                .frame(height: 7)
                                         }
                                         
                                     }

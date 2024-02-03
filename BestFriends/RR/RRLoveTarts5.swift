@@ -286,10 +286,11 @@ struct RRLoveTarts5: View {
                                         .foregroundColor(Color.white)
                                         .fontWeight(.light)
                                     Spacer()
+                                       
                                 }
                             }
                             .foregroundColor(.white)
-                            .font(.system(size: 12))
+                            .font(.system(size: 11))
                             .shadow(color: ColorManager .purple3, radius: 65, x: 30, y: 50)
                             .submitLabel(.done)
                             .onReceive(Just(customMessage)) { _ in limitText(65) }
