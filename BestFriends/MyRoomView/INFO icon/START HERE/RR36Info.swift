@@ -67,67 +67,67 @@ struct RR36Info: View {
             
         VStack {
        
-            HStack {
-                   
-                ZStack {
-                        
-                        Image("comicBubble")
-                            .resizable()
-                            .foregroundColor(Color.purple)
-                            .frame(width: 500, height: 220)
-                            .shadow(color: ColorManager .purple2, radius: 3, x: 3, y: 3)
-                            .rotationEffect(.degrees(-10))
-                            .opacity(0.95)
-                        
-                        
-                        
-                        Link(destination: URL(string: "https://youtu.be/PizcnExQjsc")!) {
-                           
-//                            ZStack {
-                                
-                             
-                                
-                            VStack {
-                                
-                                
-                                    Image("in bushes")
-                                        .resizable()
-                                        .foregroundColor(Color.purple)
-                                        .frame(width: 325, height: 150)
-                                        .shadow(color: ColorManager .purple2, radius: 3, x: 3, y: 3)
-                                        .rotationEffect(.degrees(-10))
-                                        .opacity(0.95)
-                                    
-                                    Text("Demo Video")
-                                        .font(.system(size: 25))
-                                        .fontWeight(.light)
-                                        .multilineTextAlignment(.center)
-                                        .foregroundColor(Color.white)
-                                        .rotationEffect(.degrees(-10))
-                                    
-                                
-                                
-                                Spacer ()
-                                    .frame(height: 80)
-                                
-                              
-                            }
-                        }
-                    }
-                }
+//            HStack {
+//
+//                ZStack {
+//
+//                        Image("comicBubble")
+//                            .resizable()
+//                            .foregroundColor(Color.purple)
+//                            .frame(width: 500, height: 220)
+//                            .shadow(color: ColorManager .purple2, radius: 3, x: 3, y: 3)
+//                            .rotationEffect(.degrees(-10))
+//                            .opacity(0.95)
+//
+//
+//
+//                        Link(destination: URL(string: "https://youtu.be/PizcnExQjsc")!) {
+//
+////                            ZStack {
+//
+//
+//
+//                            VStack {
+//
+//
+//                                    Image("in bushes")
+//                                        .resizable()
+//                                        .foregroundColor(Color.purple)
+//                                        .frame(width: 325, height: 150)
+//                                        .shadow(color: ColorManager .purple2, radius: 3, x: 3, y: 3)
+//                                        .rotationEffect(.degrees(-10))
+//                                        .opacity(0.95)
+//
+//                                    Text("Demo Video")
+//                                        .font(.system(size: 25))
+//                                        .fontWeight(.light)
+//                                        .multilineTextAlignment(.center)
+//                                        .foregroundColor(Color.white)
+//                                        .rotationEffect(.degrees(-10))
+//
+//
+//
+//                                Spacer ()
+//                                    .frame(height: 80)
+//
+//
+//                            }
+//                        }
+//                    }
+//                }
             
-       
-            Text("Quick SetUp")
-                .fontWeight(.medium)
-                .font(.system(size: 40))
-                .foregroundColor(.white)
-                .glow(color: ColorManager.purple4, radius: 3)
-                .opacity(0.15)
-                
-                
-                
-                
-                
+//
+//            Text("Quick SetUp")
+//                .fontWeight(.medium)
+//                .font(.system(size: 40))
+//                .foregroundColor(.white)
+//                .glow(color: ColorManager.purple4, radius: 3)
+//                .opacity(0.15)
+//
+//
+//
+//
+//
                 
     
 //******************************************************************
@@ -293,8 +293,8 @@ VStack {
                              .opacity(0.70)
                      })
                                 
-            Spacer()
-                .frame(height: 170)
+//            Spacer()
+//                .frame(height: 170)
           
                             }
                         }
