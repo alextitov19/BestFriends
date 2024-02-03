@@ -34,47 +34,24 @@ struct RR58: View {
 //    @State private var summary = ""
 //    @State private var sharedWith: [String] = []
 //    @State private var colorChangeTap: String = ""
-//   @State private var shareTapped: Bool = false
+   @State private var shareTapped: Bool = false
     //    *************************
 //    @State var audioPlayer: AVAudioPlayer!
     
     
     var body: some View {
-        //        ScrollView {
-        
-//        ZStack {
-//
-//            Color.gray
-//                .opacity(0.2)
-//                .ignoresSafeArea()
-//
-//            AdPlayerView(name: "sky2")
-//                .ignoresSafeArea()
-//                .blendMode(.screen)
-            
-// ********************************* if tapped ********
-            
+     
+
             ZStack {
                 
                 
-//                if shareTapped {
-//
-//
-//
-//                    Color.black
-//                        .ignoresSafeArea()
-//                        .onAppear()
-//
-//
-//                    AdPlayerView(name: "dramaLights")
-//                        .ignoresSafeArea()
-//                        .blendMode(.screen)
-//
-//
-//
-//
-//
-//                } else {
+                if shareTapped {
+                
+                    Color.black
+                        .ignoresSafeArea()
+                        .onAppear()
+
+                } else {
                     
                 Color.black
                     .opacity(0.99)
@@ -89,146 +66,15 @@ struct RR58: View {
                         .ignoresSafeArea()
                         .blendMode(.screen)
                         .opacity(0.9)
-             
+               
+                }
                 
-//                }
-           
-//*****************************************************
-            VStack {
- 
-                    HStack {
-                        
-                        
-                        NavigationLink(destination: RRLoveTarts5(user: user, friend: user, friends: friends, groups: groups, atmosphere: atmosphere, friendAtmospheres: friendAtmospheres), label: {
-                            ZStack {
-                                VStack {
-                                    Text("my")
-                                        .font(.system(size: 17))
-                                        .italic()
-                                        .foregroundColor(Color.white)
-                                        .fontWeight(.regular)
-                                        .rotationEffect(.degrees(-10))
-                                        .multilineTextAlignment(.center)
-                                        .glow(color: ColorManager .purple3, radius: 2)
-                                        .opacity(0.3)
-                                    
-                                    Spacer ()
-                                        .frame(height: 5)
-                                    
-                                    Text("LoveTarts")
-                                        .font(.system(size: 21))
-                                        .foregroundColor(Color.white)
-                                        .fontWeight(.regular)
-                                        .rotationEffect(.degrees(-10))
-                                        .multilineTextAlignment(.center)
-                                        .glow(color: ColorManager .purple3, radius: 2)
-                                        .opacity(0.3)
-                                    
-                                    
-                                    
-                                    Spacer ()
-                                        .frame(height: 20)
-                                    
-                                }
-                                
-                                Image(systemName: "heart")
-                                    .resizable()
-                                    .scaledToFit()
-                                    .frame(width: 160, height: 160)
-                                    .foregroundColor(Color.cyan)
-                                    .opacity(0.05)
-                                    .rotationEffect(.degrees(-10))
-                                    .glow(color: Color.purple, radius: 1)
-                                    .shadow(color: Color.purple, radius: 2, x: 0, y: 3)
-                                
-                                Image(systemName: "heart.fill")
-                                    .resizable()
-                                    .scaledToFit()
-                                    .frame(width: 150, height: 150)
-                                    .foregroundColor(ColorManager .purple4)
-                                    .opacity(0.075)
-                                //                                        .rotationEffect(.degrees(10))
-                                    .glow(color: Color.white, radius: 1)
-                                    .shadow(color: Color.white, radius: 2, x: 0, y: 3)
-                                
-                            }
-                        })
-                        
-                        
-                        
-                        Spacer ()
-                            .frame(width: 40)
-                        
-                        NavigationLink(destination: RRLoveTarts(user: user, friend: user, friends: friends, groups: groups, atmosphere: atmosphere, friendAtmospheres: friendAtmospheres), label: {
-                            ZStack {
-                                VStack {
-                                    
-                                    Text("  sending")
-                                        .font(.system(size: 17))
-                                        .italic()
-                                        .foregroundColor(Color.white)
-                                        .fontWeight(.regular)
-                                        .rotationEffect(.degrees(10))
-                                        .multilineTextAlignment(.center)
-                                        .glow(color: ColorManager .purple3, radius: 2)
-                                        .opacity(0.3)
-                                    
-                                    Spacer ()
-                                        .frame(height: 4)
-                                    
-                                    Text("CareHearts")
-                                        .font(.system(size: 20))
-                                        .foregroundColor(Color.white)
-                                        .fontWeight(.regular)
-                                        .rotationEffect(.degrees(10))
-                                        .multilineTextAlignment(.center)
-                                        .glow(color: ColorManager .purple3, radius: 2)
-                                        .opacity(0.3)
-                                    
-                                    
-                                    
-                                    Spacer ()
-                                        .frame(height: 20)
-                                    
-                                }
-                                
-                                Image(systemName: "heart")
-                                    .resizable()
-                                    .scaledToFit()
-                                    .frame(width: 160, height: 160)
-                                    .foregroundColor(Color.cyan)
-                                    .opacity(0.05)
-                                    .rotationEffect(.degrees(10))
-                                    .glow(color: Color.purple, radius: 1)
-                                    .shadow(color: Color.purple, radius: 2, x: 0, y: 3)
-                                
-                                Image(systemName: "heart.fill")
-                                    .resizable()
-                                    .scaledToFit()
-                                    .frame(width: 150, height: 150)
-                                    .foregroundColor(ColorManager .purple4)
-                                    .opacity(0.075)
-                                    .glow(color: Color.white, radius: 1)
-                                    .shadow(color: Color.white, radius: 2, x: 0, y: 3)
-       
-                            }
-                        })
-                        
-                    }
-                
-        
-            
-                        
-                       
-                    
-                    
-                // *********************************** My Vibe *************
-                
+    VStack {
                 VStack {
 //                    Spacer ()
 //                        .frame(height: 20)
                     
-                    HStack {
+//                    HStack {
                         NavigationLink(
                             destination:  RR32(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
                             label: {
@@ -257,11 +103,11 @@ struct RR58: View {
                                             Image(systemName: "circle")
                                                 .resizable()
                                                 .scaledToFit()
-                                                .frame(width: 157, height: 157)
+                                                .frame(width: 165, height: 165)
                                                 .foregroundColor(Color.purple)
                                                 .opacity(0.08)
-//                                                .glow(color: Color.white, radius: 15)
-//                                                .shadow(color: Color.white, radius: 10, x: -10, y: 0)
+                                                .glow(color: Color.white, radius: 15)
+                                                .shadow(color: Color.white, radius: 10, x: -10, y: 0)
                                             
                                             Image(systemName: "circle.fill")
                                                 .resizable()
@@ -272,11 +118,11 @@ struct RR58: View {
                                                 .glow(color: Color.white, radius: 1)
                                                 .shadow(color: Color.white, radius: 2, x: 0, y: 3)
                                             
-                                            Image("planet_6")
-                                                .resizable()
-                                                .scaledToFit()
-                                                .frame(width: 150, height: 150)
-                                                .opacity(0.3)
+//                                            Image("planet_6")
+//                                                .resizable()
+//                                                .scaledToFit()
+//                                                .frame(width: 150, height: 150)
+//                                                .opacity(0.3)
                                         
                                         
                                         
@@ -285,10 +131,137 @@ struct RR58: View {
                                 }
                             }
                         )}
+//                    }
+           
+//*****************************************************
+                
+                
+                
+                
+        VStack {
+            
+            HStack {
+                
+                
+                NavigationLink(destination: RRLoveTarts5(user: user, friend: user, friends: friends, groups: groups, atmosphere: atmosphere, friendAtmospheres: friendAtmospheres), label: {
+                    ZStack {
+                        VStack {
+                            Text("my")
+                                .font(.system(size: 17))
+                                .italic()
+                                .foregroundColor(Color.white)
+                                .fontWeight(.regular)
+                                .rotationEffect(.degrees(-10))
+                                .multilineTextAlignment(.center)
+                                .glow(color: ColorManager .purple3, radius: 2)
+                                .opacity(0.3)
+                            
+                            Spacer ()
+                                .frame(height: 5)
+                            
+                            Text("LoveTarts")
+                                .font(.system(size: 21))
+                                .foregroundColor(Color.white)
+                                .fontWeight(.regular)
+                                .rotationEffect(.degrees(-10))
+                                .multilineTextAlignment(.center)
+                                .glow(color: ColorManager .purple3, radius: 2)
+                                .opacity(0.3)
+                            
+                            
+                            
+                            Spacer ()
+                                .frame(height: 20)
+                            
+                        }
+                        
+                        Image(systemName: "heart")
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 160, height: 160)
+                            .foregroundColor(Color.cyan)
+                            .opacity(0.05)
+                            .rotationEffect(.degrees(-10))
+                            .glow(color: Color.purple, radius: 1)
+                            .shadow(color: Color.purple, radius: 2, x: 0, y: 3)
+                        
+                        Image(systemName: "heart.fill")
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 150, height: 150)
+                            .foregroundColor(ColorManager .purple4)
+                            .opacity(0.075)
+                        //                                        .rotationEffect(.degrees(10))
+                            .glow(color: Color.white, radius: 1)
+                            .shadow(color: Color.white, radius: 2, x: 0, y: 3)
+                        
                     }
+                })
                 
                 
                 
+                Spacer ()
+                    .frame(width: 40)
+                
+                NavigationLink(destination: RRLoveTarts(user: user, friend: user, friends: friends, groups: groups, atmosphere: atmosphere, friendAtmospheres: friendAtmospheres), label: {
+                    ZStack {
+                        VStack {
+                            
+                            Text("  sending")
+                                .font(.system(size: 17))
+                                .italic()
+                                .foregroundColor(Color.white)
+                                .fontWeight(.regular)
+                                .rotationEffect(.degrees(10))
+                                .multilineTextAlignment(.center)
+                                .glow(color: ColorManager .purple3, radius: 2)
+                                .opacity(0.3)
+                            
+                            Spacer ()
+                                .frame(height: 4)
+                            
+                            Text("CareHearts")
+                                .font(.system(size: 20))
+                                .foregroundColor(Color.white)
+                                .fontWeight(.regular)
+                                .rotationEffect(.degrees(10))
+                                .multilineTextAlignment(.center)
+                                .glow(color: ColorManager .purple3, radius: 2)
+                                .opacity(0.3)
+                            
+                            
+                            
+                            Spacer ()
+                                .frame(height: 20)
+                            
+                        }
+                        
+                        Image(systemName: "heart")
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 160, height: 160)
+                            .foregroundColor(Color.cyan)
+                            .opacity(0.05)
+                            .rotationEffect(.degrees(10))
+                            .glow(color: Color.purple, radius: 1)
+                            .shadow(color: Color.purple, radius: 2, x: 0, y: 3)
+                        
+                        Image(systemName: "heart.fill")
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 150, height: 150)
+                            .foregroundColor(ColorManager .purple4)
+                            .opacity(0.075)
+                            .glow(color: Color.white, radius: 1)
+                            .shadow(color: Color.white, radius: 2, x: 0, y: 3)
+                        
+                    }
+                })
+                
+            }
+        }
+        
+ 
 //  ********************************************** Motivation **********
                 
                 VStack {
