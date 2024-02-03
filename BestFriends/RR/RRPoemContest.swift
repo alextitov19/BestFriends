@@ -49,7 +49,7 @@ struct RRPoemContest: View {
                             .opacity(0.5)
             
             
-            AdPlayerView(name: "TaylorSwift2")
+            AdPlayerView(name: "alwaysForever2")
                 .ignoresSafeArea()
                 .blendMode(.screen)
                 .opacity(0.0)

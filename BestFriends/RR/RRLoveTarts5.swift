@@ -284,12 +284,12 @@ struct RRLoveTarts5: View {
                                 HStack {
                                     Text("say something romatic - take a chance, trust your heart...")
                                         .foregroundColor(Color.white)
-                                        .fontWeight(.thin)
+                                        .fontWeight(.light)
                                     Spacer()
                                 }
                             }
                             .foregroundColor(.white)
-                            .font(.system(size: 11))
+                            .font(.system(size: 12))
                             .shadow(color: ColorManager .purple3, radius: 65, x: 30, y: 50)
                             .submitLabel(.done)
                             .onReceive(Just(customMessage)) { _ in limitText(65) }
@@ -299,7 +299,7 @@ struct RRLoveTarts5: View {
                                 RoundedRectangle(cornerRadius: 10)
                                     .stroke(Color.purple)
                                 //                                                            .background(ColorManager.purple3)
-                                    .frame(height: 50)
+                                    .frame(height: 30)
                                     .padding(.horizontal, 25)
                             )
                             .padding(.bottom, 5)
