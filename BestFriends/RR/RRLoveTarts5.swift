@@ -178,7 +178,7 @@ struct RRLoveTarts5: View {
                             label: {
                                 VStack {
                                     Text("romantic")
-                                        .font(.system(size: 17))
+                                        .font(.system(size: 19))
                                         .italic()
                                         .fontWeight(.light)
                                         .multilineTextAlignment(.center)
@@ -187,7 +187,7 @@ struct RRLoveTarts5: View {
                                         .opacity(0.99)
                                     
                                     Text("ambience \ntexting")
-                                        .font(.system(size: 17))
+                                        .font(.system(size: 19))
                                         .italic()
                                         .fontWeight(.light)
                                         .multilineTextAlignment(.center)
@@ -250,7 +250,7 @@ struct RRLoveTarts5: View {
                             label: {
                                 VStack {
                                     Text("Kissing frogs")
-                                        .font(.system(size: 22))
+                                        .font(.system(size: 23))
                                         .fontWeight(.light)
                                         .multilineTextAlignment(.center)
                                         .foregroundColor(ColorManager .grey1)
@@ -773,6 +773,7 @@ struct RRLoveTarts5: View {
                                         Text("Uggg")
                                             .font(.system(size: 25))
                                             .foregroundColor(Color .white)
+                                            .italic()
                                             .fontWeight(.bold)
                                             .rotationEffect(.degrees(-13))
                                             .opacity(0.99)
@@ -781,9 +782,8 @@ struct RRLoveTarts5: View {
                                         Spacer ()
                                             .frame(height: 7)
                                         
-                                        Text("dented")
-                                            .font(.system(size: 14))
-                                            .italic()
+                                        Text("   hurt")
+                                            .font(.system(size: 20))
                                             .foregroundColor(Color .white)
                                             .fontWeight(.medium)
                                             .rotationEffect(.degrees(-10))
@@ -791,8 +791,7 @@ struct RRLoveTarts5: View {
                                             .multilineTextAlignment(.center)
                                         
                                         Text("    heart")
-                                            .font(.system(size: 14))
-                                            .italic()
+                                            .font(.system(size: 20))
                                             .foregroundColor(Color .white)
                                             .fontWeight(.medium)
                                             .rotationEffect(.degrees(-10))
