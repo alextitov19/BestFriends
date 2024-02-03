@@ -74,18 +74,18 @@ VStack {
         HStack {
             HStack {
                 VStack {
-                    Text("I'm having a")
-                        .font(.system(size: 19))
-                        .fontWeight(.bold)
-                        .multilineTextAlignment(.center)
-                        .foregroundColor(Color.white)
-                        .rotationEffect(.degrees(-20))
-                    //                .blinking(duration: 3.0)
-                        .shadow(color: Color.white, radius: 6, x: 3, y: 5)
-                        .opacity(0.35)
+//                    Text("I'm having a")
+//                        .font(.system(size: 19))
+//                        .fontWeight(.bold)
+//                        .multilineTextAlignment(.center)
+//                        .foregroundColor(Color.white)
+//                        .rotationEffect(.degrees(-20))
+//                    //                .blinking(duration: 3.0)
+//                        .shadow(color: Color.white, radius: 6, x: 3, y: 5)
+//                        .opacity(0.35)
                     
-                    Text("difficult day")
-                        .font(.system(size: 19))
+                    Text("BAD day!")
+                        .font(.system(size: 30))
                         .fontWeight(.bold)
                         .multilineTextAlignment(.center)
                         .foregroundColor(Color.white)
@@ -95,6 +95,11 @@ VStack {
                         .opacity(0.35)
                     
                 }
+                
+        Spacer ()
+                    .frame(width: 10)
+                
+                
                 
                 VStack {
                     
@@ -209,7 +214,7 @@ VStack {
                         
                         VStack {
                             
-                            Text("Important day")
+                            Text("BIG day!")
                                 .font(.system(size: 30))
                                 .fontWeight(.bold)
                                 .multilineTextAlignment(.center)
@@ -254,8 +259,8 @@ VStack {
                             
         HStack {
             VStack {
-                Text("my TODAY!")
-                    .font(.system(size: 27))
+                Text("my DAY")
+                    .font(.system(size: 30))
                     .fontWeight(.bold)
                     .multilineTextAlignment(.center)
                     .foregroundColor(Color.white)

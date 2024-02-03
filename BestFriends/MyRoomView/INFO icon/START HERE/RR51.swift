@@ -101,7 +101,7 @@ struct RR51: View {
                     
                     VStack {
                         
-                        Text("Designed by over 150 \nteens worldwide \nso you can let")
+                        Text("Designed by over 150 \nteens worldwide")
                             .font(.system(size: 20))
                             .italic()
                             .foregroundColor(Color.white)
@@ -110,9 +110,9 @@ struct RR51: View {
                             .opacity(0.7)
                         
                         Spacer()
-                            .frame(height: 20)
+                            .frame(height: 40)
                         
-                        Text("the outside of you")
+                        Text("Let the outside of you")
                             .font(.system(size: 35))
                             .foregroundColor(Color.white)
                             .fontWeight(.light)
@@ -196,7 +196,7 @@ struct RR51: View {
                                 .opacity(0.90)
                             
                             Spacer()
-                                .frame(height: 10)
+                                .frame(height: 5)
                             
                             
                             Text("in a safe, non-toxic space")
@@ -212,7 +212,7 @@ struct RR51: View {
                           
                             
                             Spacer()
-                                .frame(height: 10)
+                                .frame(height: 30)
                             
                             VStack {
                                 
