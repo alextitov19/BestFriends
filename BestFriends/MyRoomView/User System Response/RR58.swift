@@ -82,15 +82,15 @@ struct RR58: View {
                                 ZStack {
                                     VStack {
                                     
-                                    Text("set my \natmosphere \n'color'")
-                                        .font(.system(size: 21))
+                                    Text("today's \natmosphere \n'color' / 'vibe'")
+                                        .font(.system(size: 20))
                                         .foregroundColor(Color.white)
                                         .fontWeight(.regular)
                                         .multilineTextAlignment(.center)
                                         .glow(color: ColorManager .purple3, radius: 2)
-                                        .opacity(0.6)
+                                        .opacity(0.3)
                                     
-                                    Text("(so my friends \ncan see)")
+                                    Text("(alerting friends)")
                                         .font(.system(size: 12))
                                         .italic()
                                         .foregroundColor(Color.white)
@@ -103,19 +103,21 @@ struct RR58: View {
                                             Image(systemName: "circle")
                                                 .resizable()
                                                 .scaledToFit()
-                                                .frame(width: 165, height: 165)
+//                                                .blinking(duration: 10.0)
+                                                .frame(width: 155, height: 155)
                                                 .foregroundColor(Color.purple)
                                                 .opacity(0.08)
                                                 .glow(color: Color.white, radius: 15)
                                                 .shadow(color: Color.white, radius: 10, x: -10, y: 0)
+                                               
                                             
                                             Image(systemName: "circle.fill")
                                                 .resizable()
                                                 .scaledToFit()
                                                 .frame(width: 140, height: 140)
-                                                .foregroundColor(Color.white)
+                                                .foregroundColor(ColorManager .purple3)
                                                 .opacity(0.05)
-                                                .glow(color: Color.white, radius: 1)
+                                                .glow(color: ColorManager .purple3, radius: 1)
                                                 .shadow(color: Color.white, radius: 2, x: 0, y: 3)
                                             
 //                                            Image("planet_6")

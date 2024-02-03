@@ -54,9 +54,9 @@ struct RR36Info: View {
                 
             } else {
                 
-                Color.black
-                    .opacity(0.9)
+                ColorManager .grey4
                     .ignoresSafeArea()
+                    .opacity(0.7)
                 
                 
                 AdPlayerView(name: "sky2")
@@ -131,6 +131,34 @@ struct RR36Info: View {
                 
     
 //******************************************************************
+            
+            
+            
+            
+            
+            VStack {
+                
+                Text("sharing special \nmoments & emotions")
+                    .font(.system(size: 40))
+                    .fontWeight(.light)
+                    .multilineTextAlignment(.center)
+                    .foregroundColor(ColorManager .grey1)
+//                    .rotationEffect(.degrees(-20))
+                //                                .blinking(duration: 3.0)
+//                    .shadow(color: Color.white, radius: 3, x: 3, y: 3)
+                    .opacity(0.3)
+                
+                Text("with your 5 most endearing friends")
+                    .font(.system(size: 20))
+                    .italic()
+                    .foregroundColor(Color.white)
+                    .fontWeight(.light)
+                    .multilineTextAlignment(.center)
+                    .opacity(0.7)
+                
+                
+                
+//            }
 
 VStack {
     
@@ -152,11 +180,11 @@ VStack {
             
             Image("comicBubble")
                 .resizable()
-                .foregroundColor(Color.purple)
+                .foregroundColor(ColorManager .purple2)
                 .frame(width: 250, height: 110)
                 .shadow(color: ColorManager .purple2, radius: 3, x: 3, y: 3)
             //                    .rotationEffect(.degrees(-10))
-                .opacity(0.95)
+                .opacity(0.4)
             
             VStack {
                 
@@ -173,8 +201,8 @@ VStack {
             }
         }
 //                **************  Chat Setup **************************
-    
-    VStack {
+    Spacer ()
+        .frame(height: 40)
         
         HStack {
             
@@ -186,7 +214,7 @@ VStack {
          
             
             Spacer()
-                .frame(width: 0)
+                .frame(width: 50)
             
             
             
@@ -198,7 +226,7 @@ VStack {
                     .frame(width: 250, height: 110)
                     .shadow(color: ColorManager .purple2, radius: 3, x: 3, y: 3)
                 //                    .rotationEffect(.degrees(-10))
-                    .opacity(0.95)
+                    .opacity(0.2)
                 
                 VStack {
                     

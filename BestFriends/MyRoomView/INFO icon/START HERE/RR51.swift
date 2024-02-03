@@ -122,28 +122,66 @@ struct RR51: View {
                         Spacer()
                             .frame(height: 5)
                         
+//                        ZStack {
+//
+//                            NavigationLink(
+//                                destination:  RR36Info(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
+//                                label: {
+//                                    VStack {
+//                                        Text("Quick Setup")
+//                                            .fontWeight(.light)
+//                                            .frame(width: 200, height: 40)
+//                                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+//                                            .font(.system(size: 25))
+//                                            .background(Color.cyan)
+//                                            .cornerRadius(15)
+//                                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+//
+//                                        Text("It's sort of like teachers giving out")
+//                                            .fontWeight(.light)
+//                                            .italic()
+//                                            .font(.system(size: 15))
+//                                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+//                                        Text("cupcakes instead of grades")
+//                                            .fontWeight(.light)
+//                                            .italic()
+//                                            .font(.system(size: 15))
+//                                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+//                                    }
+//                                }
+//                            )}
+                        
+//                        RR18(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
+                        
                         
                         VStack {
                             NavigationLink(
-                                destination:  RR18(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
+                                destination:  RR36Info(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
                                 label: {
-                                    
-                                    ZStack {
-            
-                                        
-                                        Text("First Time User \n(TAP)")
-                                            .fontWeight(.medium)
-                                            .frame(width: 170, height: 40)
-                                            .foregroundColor(Color.white)
-                                            .font(.system(size: 15))
-                                            .background(ColorManager .grey3)
-                                            .cornerRadius(7)
-//                                            .rotationEffect(.degrees(-38))
-                                            .opacity(0.7)
-            //                                .blinking(duration: 3.0)
-                                            .shadow(color: ColorManager .purple3, radius: 2, x: 0, y: 3)
 
-                             
+                                    ZStack {
+                                        Text("Quick Setup")
+                                            .fontWeight(.light)
+                                            .frame(width: 200, height: 40)
+                                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                            .font(.system(size: 25))
+                                            .background(Color.cyan)
+                                            .cornerRadius(10)
+                                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+
+//                                        Text("First Time User \n(TAP)")
+//                                            .fontWeight(.medium)
+//                                            .frame(width: 170, height: 40)
+//                                            .foregroundColor(Color.white)
+//                                            .font(.system(size: 15))
+//                                            .background(ColorManager .grey3)
+//                                            .cornerRadius(7)
+////                                            .rotationEffect(.degrees(-38))
+//                                            .opacity(0.7)
+//            //                                .blinking(duration: 3.0)
+//                                            .shadow(color: ColorManager .purple3, radius: 2, x: 0, y: 3)
+
+
                                     }
                                 })
                             
