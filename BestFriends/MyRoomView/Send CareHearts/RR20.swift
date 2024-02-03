@@ -124,23 +124,18 @@ struct RR20: View {
                       Color.black
                         .opacity(0.9)
                         .ignoresSafeArea()
-                      
-                      
-//                      Image("Fish")
-//                          .resizable()
-//                          .ignoresSafeArea()
-//                          .onAppear()
+    
                       
                       AdPlayerView(name: "sky2")
                           .ignoresSafeArea()
                           .blendMode(.screen)
                           .opacity(0.9)
                       
-//                      AdPlayerView(name: "girlFriends1")
-//                          .ignoresSafeArea()
-//                          .blendMode(.screen)
-//                          .opacity(0.6)
-//                      
+                      AdPlayerView(name: "CHsBackground3")
+                          .ignoresSafeArea()
+                          .blendMode(.screen)
+                          .opacity(0.99)
+                     
             }
             
 
@@ -158,13 +153,13 @@ struct RR20: View {
                     ZStack {
                   
                         
-                        Image(systemName: "cube.fill")
-                            .resizable()
-                            .foregroundColor(Color.purple)
-                            .frame(width: 330, height: 200)
-                            .shadow(color: ColorManager .purple3, radius: 65, x: 30, y: 50)
-                            .opacity(0.5)
-                       
+//                        Image(systemName: "cube.fill")
+//                            .resizable()
+//                            .foregroundColor(Color.purple)
+//                            .frame(width: 330, height: 200)
+//                            .shadow(color: ColorManager .purple3, radius: 65, x: 30, y: 50)
+//                            .opacity(0.5)
+//
                         
                         
                         VStack {
@@ -178,7 +173,7 @@ struct RR20: View {
                                 .foregroundColor(ColorManager .grey1)
                                     .multilineTextAlignment(.center)
                           
-                            Text("most about your friendship")
+                            Text("most about their friendship")
                                 .font(.system(size: 25, weight: .light))
                                 .foregroundColor(ColorManager .grey1)
                                     .multilineTextAlignment(.center)
@@ -205,15 +200,15 @@ struct RR20: View {
                                 Spacer()
                                 // TextField for userInput
                                 TextField("", text: $customMessage)
-                                    .placeholder(when: customMessage.isEmpty) {
-                                        HStack {
-                                            Text("You are...")
-                                                .foregroundColor(Color.white)
-                                                .fontWeight(.thin)
-                                            Spacer()
-                                        }
-                                    }
-                                    .foregroundColor(.white)
+                            .placeholder(when: customMessage.isEmpty) {
+                                HStack {
+                                    Text("Say what quality you like most...")
+                                        .foregroundColor(ColorManager .grey4)
+                                        .fontWeight(.thin)
+                                    Spacer()
+                                }
+                            }
+                            .foregroundColor(ColorManager .grey4)
                                     .font(.system(size: 15))
                                     .shadow(color: ColorManager .purple3, radius: 65, x: 30, y: 50)
                                     .submitLabel(.done)
@@ -247,10 +242,30 @@ struct RR20: View {
                         Text("(alert friends to your message in Chat)")
                             .font(.system(size: 15, weight: .light))
                             .italic()
-                            .foregroundColor(ColorManager .grey1)
+                            .foregroundColor(ColorManager .grey4)
                                 .multilineTextAlignment(.center)
                         
-                        
+//                        VStack {
+//
+//                            Spacer()
+//                                .frame(height: 30)
+//
+//                            if (colorScheme == .dark){
+//                                Text("(alert them to your message in Chat)")
+//                                    .font(.system(size: 15))
+//                                    .italic()
+//                                    .fontWeight(.light)
+//                                    .foregroundColor(ColorManager .grey3)
+//                                    .multilineTextAlignment(.center)
+//                            } else {
+//                                Text("(alert them to your message in Chat)")
+//                                    .font(.system(size: 15))
+//                                    .italic()
+//                                    .fontWeight(.light)
+//                                    .foregroundColor(ColorManager .grey4)
+//                                    .multilineTextAlignment(.center)
+//                            }
+//                        }
                         
                         HStack {
                             
