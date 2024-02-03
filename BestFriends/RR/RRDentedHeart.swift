@@ -74,6 +74,12 @@ struct RRDentedHeart: View {
                     .ignoresSafeArea()
                     .blendMode(.screen)
                     .opacity(0.4)
+                
+                
+                AdPlayerView(name: "Download (8)")
+                    .ignoresSafeArea()
+                    .blendMode(.screen)
+                   .opacity(0.0)
               
                 
                 AdPlayerView(name: "missingYou3")

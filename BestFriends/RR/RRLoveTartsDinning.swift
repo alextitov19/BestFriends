@@ -104,11 +104,11 @@ struct RRLoveTartsDinning: View {
                   .opacity(0.9)
                   .ignoresSafeArea()
                 
-//                ColorManager .pmbc_blue
-//                    .opacity(0.4)
-//                    .ignoresSafeArea()
-                
-                
+
+                AdPlayerView(name: "TaylorSwift2")
+                    .ignoresSafeArea()
+                    .blendMode(.screen)
+                    .opacity(0.0)
                 
                                 AdPlayerView(name: "sky2")
                                     .ignoresSafeArea()
@@ -144,7 +144,7 @@ struct RRLoveTartsDinning: View {
     //                            .rotationEffect(.degrees(-10))
 //                            .blinking(duration: 2.0)
                         
-                        Text("background into your texting")
+                        Text("into your texting")
                             .font(.system(size: 20))
                             .fontWeight(.bold)
                             .multilineTextAlignment(.center)

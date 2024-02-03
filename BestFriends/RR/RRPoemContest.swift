@@ -48,6 +48,13 @@ struct RRPoemContest: View {
                             .blendMode(.screen)
                             .opacity(0.5)
             
+            
+            AdPlayerView(name: "TaylorSwift2")
+                .ignoresSafeArea()
+                .blendMode(.screen)
+                .opacity(0.0)
+            
+            
             AdPlayerView(name: "easyHearts2")
                 .ignoresSafeArea()
                 .blendMode(.screen)

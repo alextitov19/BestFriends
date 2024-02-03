@@ -190,6 +190,7 @@
 		CF1B26F42B6BAB0900BCF2E9 /* dining2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF1B26F32B6BAB0900BCF2E9 /* dining2.mp4 */; };
 		CF1B26FA2B6BADF900BCF2E9 /* dining3.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF1B26F92B6BADF900BCF2E9 /* dining3.mp4 */; };
 		CF1B27002B6BB16E00BCF2E9 /* dining5.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF1B26FF2B6BB16D00BCF2E9 /* dining5.mp4 */; };
+		CF1B27022B6DD1F100BCF2E9 /* Download (8).mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CF1B27012B6DD1F100BCF2E9 /* Download (8).mp4 */; };
 		CF1ECABB286AAD6F00D999F8 /* SendSongChat2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1ECABA286AAD6E00D999F8 /* SendSongChat2.swift */; };
 		CF1ECABF286E876900D999F8 /* AtmosphereInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1ECABE286E876900D999F8 /* AtmosphereInfo.swift */; };
 		CF1ECAC12870039500D999F8 /* HorizonPromoPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1ECAC02870039500D999F8 /* HorizonPromoPage.swift */; };
@@ -676,6 +677,7 @@
 		CF1B26F32B6BAB0900BCF2E9 /* dining2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = dining2.mp4; sourceTree = "<group>"; };
 		CF1B26F92B6BADF900BCF2E9 /* dining3.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = dining3.mp4; sourceTree = "<group>"; };
 		CF1B26FF2B6BB16D00BCF2E9 /* dining5.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = dining5.mp4; sourceTree = "<group>"; };
+		CF1B27012B6DD1F100BCF2E9 /* Download (8).mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Download (8).mp4"; sourceTree = "<group>"; };
 		CF1CD75129E2905F00D1F801 /* TestPage3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TestPage3.swift; path = ../../../../../../Applications/TestPage3.swift; sourceTree = "<group>"; };
 		CF1CD75529E291BE00D1F801 /* TestPage3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestPage3.swift; sourceTree = "<group>"; };
 		CF1ECABA286AAD6E00D999F8 /* SendSongChat2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendSongChat2.swift; sourceTree = "<group>"; };
@@ -1703,6 +1705,7 @@
 			children = (
 				CFB6690A2B4283FB00E9C237 /* offPlanet1.mp4 */,
 				CF4A08ED2879577E00ADA9DD /* sky2.mp4 */,
+				CF1B27012B6DD1F100BCF2E9 /* Download (8).mp4 */,
 				CF1B26FF2B6BB16D00BCF2E9 /* dining5.mp4 */,
 				CF1B26F92B6BADF900BCF2E9 /* dining3.mp4 */,
 				CF1B26F32B6BAB0900BCF2E9 /* dining2.mp4 */,
@@ -2440,6 +2443,7 @@
 				CFB669382B47EF2C00E9C237 /* UnstoppableZ.mp4 in Resources */,
 				CF2D30972B19C627008D9C38 /* sadGirl2.mp4 in Resources */,
 				CFB669302B47E21D00E9C237 /* surfer4.mp4 in Resources */,
+				CF1B27022B6DD1F100BCF2E9 /* Download (8).mp4 in Resources */,
 				CFADFD8C2AFF99FC0090071A /* moonRose1.mp4 in Resources */,
 				CF3163E52B624F8900A4D4B0 /* photopopWhite2.mp4 in Resources */,
 				CF2D30B52B1D7FFE008D9C38 /* background_11.mp4 in Resources */,
