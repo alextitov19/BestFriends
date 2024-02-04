@@ -23,20 +23,21 @@ struct RR58: View {
     
     
     
-//    @State private var selectedFriends: [String] = []
-//    @State private var colors: [Color] = [ColorManager.purple3, ColorManager.purple3, ColorManager.purple3, ColorManager.purple3, ColorManager.purple3]
-//    @State private var shareColor = ColorManager.purple5
-//    @State private var showingAlert = false
-//
-//    @State private var counter = 0
-//
-//    @State private var mood: Int = -1
-//    @State private var summary = ""
-//    @State private var sharedWith: [String] = []
-//    @State private var colorChangeTap: String = ""
+    @State private var selectedFriends: [String] = []
+    @State private var colors: [Color] = [ColorManager.purple3, ColorManager.purple3, ColorManager.purple3, ColorManager.purple3, ColorManager.purple3]
+    @State private var shareColor = ColorManager.purple5
+    @State private var showingAlert = false
+
+    @State private var counter = 0
+
+    @State private var mood: Int = -1
+    @State private var summary = ""
+    @State private var sharedWith: [String] = []
+    @State private var colorChangeTap: String = ""
+    
    @State private var shareTapped: Bool = false
-    //    *************************
-//    @State var audioPlayer: AVAudioPlayer!
+    
+    @State var audioPlayer: AVAudioPlayer!
     
     
     var body: some View {
@@ -87,7 +88,7 @@ struct RR58: View {
                                         .foregroundColor(Color.white)
                                         .fontWeight(.regular)
                                         .multilineTextAlignment(.center)
-                                        .glow(color: ColorManager .purple3, radius: 2)
+                                        .glow(color: ColorManager .grey2, radius: 2)
                                         .opacity(0.3)
                                     
                                     Text("(alerting friends)")
@@ -364,7 +365,7 @@ struct RR58: View {
 //                                                .opacity(0.99)
 //                                                .rotationEffect(.degrees(10))
 //                                                .multilineTextAlignment(.center)
-//                                            
+//
 ////                                            Spacer ()
 ////                                                .frame(height: 7)
 //                                        }

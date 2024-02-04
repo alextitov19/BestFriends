@@ -23,6 +23,7 @@ struct BestFriendMessages: View {
     let friendAtmospheres: [Atmosphere]
     
     @State private var planets: [Planet] = []
+    @State private var shareTapped: Bool = false
     
     var body: some View {
         ZStack {
@@ -32,7 +33,7 @@ struct BestFriendMessages: View {
                 .ignoresSafeArea()
             
             
-            AdPlayerView(name: "background_9")
+            AdPlayerView(name: "sky2")
                 .ignoresSafeArea()
                 .blendMode(.screen)
                 .opacity(0.8)
@@ -82,40 +83,32 @@ struct BestFriendMessages: View {
                     }
                 }
                 
-                ZStack {
-                    
-                    //                    Image(systemName: "triangle")
-                    //                        .resizable()
-                    //                        .foregroundColor(Color.purple)
-                    //                        .frame(width: 320, height: 320)
-                    //                        .rotationEffect(.degrees(180))
-                    //                        .shadow(color: ColorManager .purple2, radius: 65, x: 30, y: 50)
-                    //                        .opacity(0.25)
-                    //
-                    
+               ZStack {
+
+
                     VStack {
                         
-                        Text("Vault of Hearts")
-                            .font(.system(size: 23))
-                            .foregroundColor(ColorManager .grey1)
-                            .fontWeight(.regular)
-                            .multilineTextAlignment(.center)
-                        
-                        
+//                        Text("")
+//                            .font(.system(size: 23))
+//                            .foregroundColor(ColorManager .grey1)
+//                            .fontWeight(.regular)
+//                            .multilineTextAlignment(.center)
+//
+//
                         
                         
                         Spacer ()
                             .frame(height: 10)
                         
-                        Text("(Best messages")
-                            .font(.system(size: 17))
-                            .italic()
+                        Text("Long-tap best messages in Chat")
+                            .font(.system(size: 25))
+                            
                             .foregroundColor(ColorManager .grey1)
                             .fontWeight(.regular)
                             .multilineTextAlignment(.center)
                         
-                        Text("I long-tapped in Chat)")
-                            .font(.system(size: 17))
+                        Text("(we archive them here for easy access)")
+                            .font(.system(size: 15))
                             .italic()
                             .foregroundColor(ColorManager .grey1)
                             .fontWeight(.regular)
@@ -127,18 +120,18 @@ struct BestFriendMessages: View {
                             .frame(height: 30)
                         
                         Text("TAP")
-                            .font(.system(size: 50))
+                            .font(.system(size: 30))
                             .foregroundColor(Color.white)
                             .fontWeight(.regular)
                             .multilineTextAlignment(.center)
                         
-                        //                        Image("IconRoomNew")
-                        //                            .resizable()
-                        //                            .scaledToFit()
-                        //                            .frame(width: 100, height: 100)
-                        //                            .foregroundColor(ColorManager .purple5)
-                        //                            .glow(color: Color.purple, radius: 2)
-                        //                            .opacity(0.9)
+                                                Image("IconRoomNew")
+                                                    .resizable()
+                                                    .scaledToFit()
+                                                    .frame(width: 100, height: 100)
+                                                    .foregroundColor(ColorManager .purple5)
+                                                    .glow(color: Color.purple, radius: 2)
+                                                    .opacity(0.9)
                         
                         Spacer ()
                             .frame(height: 1)
