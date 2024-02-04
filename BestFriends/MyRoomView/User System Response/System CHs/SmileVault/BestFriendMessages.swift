@@ -100,30 +100,39 @@ struct BestFriendMessages: View {
                         Spacer ()
                             .frame(height: 10)
                         
-                        Text("Long-tap best messages in Chat")
+                        Text("Did you receive \na special message in Chat?")
+                            .font(.system(size: 30))
+                            
+                            .foregroundColor(ColorManager .grey1)
+                            .fontWeight(.regular)
+                            .multilineTextAlignment(.center)
+                            .opacity(0.5)
+                        
+                        Spacer ()
+                            .frame(height: 7)
+                        
+                        Text("Long-tap it")
                             .font(.system(size: 25))
                             
                             .foregroundColor(ColorManager .grey1)
                             .fontWeight(.regular)
                             .multilineTextAlignment(.center)
                         
-                        Text("(we archive them here for easy access)")
-                            .font(.system(size: 15))
-                            .italic()
-                            .foregroundColor(ColorManager .grey1)
-                            .fontWeight(.regular)
-                            .multilineTextAlignment(.center)
+                        Spacer ()
+                            .frame(height: 7)
+                        
+                   
                         
                         
                         
                         Spacer ()
                             .frame(height: 30)
-                        
-                        Text("TAP")
-                            .font(.system(size: 30))
-                            .foregroundColor(Color.white)
-                            .fontWeight(.regular)
-                            .multilineTextAlignment(.center)
+//                        
+//                        Text("TAP")
+//                            .font(.system(size: 30))
+//                            .foregroundColor(Color.white)
+//                            .fontWeight(.regular)
+//                            .multilineTextAlignment(.center)
                         
                                                 Image("IconRoomNew")
                                                     .resizable()
@@ -134,9 +143,23 @@ struct BestFriendMessages: View {
                                                     .opacity(0.9)
                         
                         Spacer ()
-                            .frame(height: 1)
+                            .frame(height: 10)
                         
+                        Text("(we archive them here for easy access)")
+                            .font(.system(size: 15))
+                            .italic()
+                            .foregroundColor(ColorManager .grey1)
+                            .fontWeight(.regular)
+                            .multilineTextAlignment(.center)
+                            .opacity(0.5)
                         
+                        Text("(coming summer 2024)")
+                            .font(.system(size: 15))
+                            .italic()
+                            .foregroundColor(ColorManager .grey1)
+                            .fontWeight(.regular)
+                            .multilineTextAlignment(.center)
+                            .opacity(0.5)
                         
                                             }
                         

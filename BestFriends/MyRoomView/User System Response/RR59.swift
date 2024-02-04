@@ -167,12 +167,12 @@ struct RR59: View {
 //                                .blinking(duration: 2.0)
                             
                             
-//                            NavigationLink(destination:  BestFriendMessages(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres), label: {
-//                                HugCircle (color: ColorManager .grey1, friendName: "my \nMessage \nVault")
-//                            })
-//                            .offset(x: showItems ? -100 : 0, y: showItems ? -140: 0)
-//                            .shadow(color: Color .white, radius: 5, x: 2, y: -2)
-//                            .opacity(0.75)
+                            NavigationLink(destination:  BestFriendMessages(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres), label: {
+                                HugCircle (color: ColorManager .grey1, friendName: "my \nSpecial \nmessages")
+                            })
+                            .offset(x: showItems ? -100 : 0, y: showItems ? -140: 0)
+                            .shadow(color: Color .white, radius: 5, x: 2, y: -2)
+                            .opacity(0.75)
                             
                             
 //                            NavigationLink(destination: InfoSilence(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres), label: {
@@ -209,7 +209,7 @@ struct RR59: View {
                            
                             
                             Spacer ()
-                                .frame(width: 80)
+                                .frame(width: 70)
 
         ZStack {
 //

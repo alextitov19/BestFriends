@@ -141,9 +141,9 @@ struct InfoView: View {
                         NavigationLink(
                             destination: JournalsView(friends: friends),
                             label: {
-                                Text("Dream Journal")
+                                Text("Dream Journal (Q2: 2024)")
                                     .fontWeight(.thin)
-                                    .frame(width: 180, height: 40)
+                                    .frame(width: 320, height: 40)
                                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                     .font(.system(size: 25))
                                     .background(Color.cyan)
@@ -158,9 +158,9 @@ struct InfoView: View {
                         NavigationLink(
                             destination: EmptyView(),
                             label: {
-                                Text("Self-dought (Q:1 2024")
+                                Text("Self-dought (Q:2 2024)")
                                     .fontWeight(.thin)
-                                    .frame(width: 250, height: 40)
+                                    .frame(width: 320, height: 40)
                                     .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                     .font(.system(size: 25))
                                     .background(Color.cyan)
