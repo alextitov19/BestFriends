@@ -253,7 +253,7 @@ struct RRWantToTalk: View {
                         .placeholder(when: customMessage.isEmpty) {
                             HStack {
                                 VStack {
-                                    Text("Send a comforting message ...")
+                                    Text("Let know you're available...")
                                         .foregroundColor(ColorManager .grey4)
                                         .fontWeight(.thin)
 

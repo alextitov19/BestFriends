@@ -294,26 +294,33 @@ struct RRLoveTarts5: View {
                         TextField("", text: $customMessage)
                             .placeholder(when: customMessage.isEmpty) {
                                 HStack {
-                                    Text("say something romatic - take a chance, trust your heart...")
-                                        .foregroundColor(Color.white)
-                                        .fontWeight(.light)
+                                    VStack {
+                                        Text("say something romantic from the heart...")
+                                            .foregroundColor(ColorManager .grey1)
+                                            .fontWeight(.thin)
+
+                                        
+                                        Spacer()
+                                            .frame(height: 20)
+                                        
+                                    }
+                                    
+                                    
                                     Spacer()
-                                       
                                 }
                             }
-                            .foregroundColor(.white)
-                            .font(.system(size: 11))
-                            .shadow(color: ColorManager .purple3, radius: 65, x: 30, y: 50)
+                            .foregroundColor(.black)
+                            .font(.system(size: 13))
                             .submitLabel(.done)
                             .onReceive(Just(customMessage)) { _ in limitText(65) }
                             .padding(.top, 20)
-                            .padding(.horizontal, 42)
+                            .padding(.horizontal, 80)
                             .overlay(
                                 RoundedRectangle(cornerRadius: 10)
-                                    .stroke(Color.purple)
+                                    .stroke(Color.white)
                                 //                                                            .background(ColorManager.purple3)
-                                    .frame(height: 30)
-                                    .padding(.horizontal, 25)
+                                    .frame(height: 50)
+                                    .padding(.horizontal, 50)
                             )
                             .padding(.bottom, 5)
                     }

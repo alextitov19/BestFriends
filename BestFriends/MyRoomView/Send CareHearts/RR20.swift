@@ -25,8 +25,6 @@ import SwiftUI
 import ConfettiSwiftUI
 import AVKit
 import Combine
-
-
 struct RR20: View {
     
     @EnvironmentObject var sessionManager: SessionManager
@@ -199,30 +197,38 @@ struct RR20: View {
                     VStack {
                                 Spacer()
                                 // TextField for userInput
-                                TextField("", text: $customMessage)
+                        TextField("", text: $customMessage)
                             .placeholder(when: customMessage.isEmpty) {
                                 HStack {
-                                    Text("Say what quality you like most...")
-                                        .foregroundColor(ColorManager .grey4)
-                                        .fontWeight(.thin)
+                                    VStack {
+                                        Text("type best quality here...")
+                                            .foregroundColor(ColorManager .grey4)
+                                            .fontWeight(.thin)
+
+                                        
+                                        Spacer()
+                                            .frame(height: 20)
+                                        
+                                    }
+                                    
+                                    
                                     Spacer()
                                 }
                             }
-                            .foregroundColor(ColorManager .grey4)
-                                    .font(.system(size: 15))
-                                    .shadow(color: ColorManager .purple3, radius: 65, x: 30, y: 50)
-                                    .submitLabel(.done)
-                                    .onReceive(Just(customMessage)) { _ in limitText(65) }
-                                    .padding(.top, 20)
+                            .foregroundColor(.black)
+                            .font(.system(size: 15))
+                            .submitLabel(.done)
+                            .onReceive(Just(customMessage)) { _ in limitText(65) }
+                            .padding(.top, 20)
+                            .padding(.horizontal, 80)
+                            .overlay(
+                                RoundedRectangle(cornerRadius: 10)
+                                    .stroke(Color.purple)
+                                //                                                            .background(ColorManager.purple3)
+                                    .frame(height: 50)
                                     .padding(.horizontal, 50)
-                                    .overlay(
-                                        RoundedRectangle(cornerRadius: 10)
-                                            .stroke(Color.purple)
-                                        //                                                            .background(ColorManager.purple3)
-                                            .frame(height: 50)
-                                            .padding(.horizontal, 40)
-                                    )
-                                    .padding(.bottom, 5)
+                            )
+                            .padding(.bottom, 5)
                             }
                         }
                 
