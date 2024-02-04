@@ -112,6 +112,11 @@ struct LoginView: View {
                         CustomButtonInterior(text: "Login", backgroundColor: ColorManager.purple4, textColor: Color.white)
                     }
                     
+                    Link("forgot password", destination: URL(string: "https://socialtechlabs.com/terms-service/")!)
+                        .foregroundColor(Color.blue)
+                    
+                    
+                    
                     Button(action: {
                         sessionManager.showSignUp()
                     }) {

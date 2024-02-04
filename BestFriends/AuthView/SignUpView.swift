@@ -171,13 +171,13 @@ struct SignUpView: View {
                 
                 HStack {
                     Link("Terms of Service", destination: URL(string: "https://socialtechlabs.com/terms-service/")!)
-                        .foregroundColor(ColorManager.purple5)
+                        .foregroundColor(Color.blue)
                     
                     Text("and")
                         .foregroundColor(.white)
                     
                     Link("Privacy Policy", destination: URL(string: "https://socialtechlabs.com/privacy-policy-2/")!)
-                        .foregroundColor(ColorManager.purple5)
+                        .foregroundColor(Color.blue)
                 }
                 
                 Text("Login")
