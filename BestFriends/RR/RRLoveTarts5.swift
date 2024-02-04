@@ -125,6 +125,13 @@ struct RRLoveTarts5: View {
                 
             } else {
                 
+                
+                
+//                Image("purpleBackground")
+//                    .resizable()
+//                    .ignoresSafeArea()
+//                    .scaledToFill()
+                
                 Color.black
                     .opacity(0.99)
                     .ignoresSafeArea()

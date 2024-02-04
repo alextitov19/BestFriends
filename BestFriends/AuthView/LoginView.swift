@@ -19,6 +19,9 @@ struct LoginView: View {
         NavigationView {
             ZStack {
  
+                Color.black
+                    .opacity(0.9)
+                    .ignoresSafeArea()
                 
                 Image("purpleBackground")
                     .resizable()
@@ -28,12 +31,12 @@ struct LoginView: View {
                 AdPlayerView(name: "sky2")
                     .ignoresSafeArea()
                     .blendMode(.screen)
-                    .opacity(0.75)
+                    .opacity(0.9)
                 
                 AdPlayerView(name: "moonShots")
                     .ignoresSafeArea()
                     .blendMode(.screen)
-                    .opacity(0.7)
+                    .opacity(0.9)
                 
                 
                 //TODO: Remove the onAppear for production
@@ -58,14 +61,14 @@ struct LoginView: View {
                   
                     Text("For your protection:")
                         .font(.system(size: 20, weight: .light))
-                        .foregroundColor(ColorManager .grey1)
+                        .foregroundColor(Color.white)
                         .shadow(color: .black, radius: 1, x: 0, y: 1)
                         .opacity(0.50)
                         .multilineTextAlignment(.center)
                        
                     Text("We don't sell user data or use 3rd party cookies")
                         .font(.system(size: 15, weight: .light))
-                        .foregroundColor(ColorManager .grey1)
+                        .foregroundColor(Color.white)
                         .shadow(color: .black, radius: 1, x: 0, y: 1)
                         .opacity(0.50)
                         .multilineTextAlignment(.center)
@@ -106,7 +109,7 @@ struct LoginView: View {
                         }
                         
                     }) {
-                        CustomButtonInterior(text: "Login", backgroundColor: ColorManager.purple4, textColor: ColorManager.grey1)
+                        CustomButtonInterior(text: "Login", backgroundColor: ColorManager.purple4, textColor: Color.white)
                     }
                     
                     Button(action: {
@@ -116,7 +119,7 @@ struct LoginView: View {
                             .font(.system(size: 25))
                             .underline()
                             .frame(width: 150, height: 30)
-                            .foregroundColor(ColorManager.purple3)
+                            .foregroundColor(Color.white)
                     }
                 }
             }

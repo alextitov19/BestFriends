@@ -36,6 +36,11 @@ struct RR56: View {
                 .opacity(0.9)
                 .ignoresSafeArea()
             
+            Image("purpleBackground")
+                .resizable()
+                .ignoresSafeArea()
+                .scaledToFill()
+            
             AdPlayerView(name: "sky2")
                 .ignoresSafeArea()
                 .blendMode(.screen)

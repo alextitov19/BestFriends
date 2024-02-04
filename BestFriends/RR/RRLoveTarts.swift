@@ -129,6 +129,12 @@ struct RRLoveTarts: View {
                     .opacity(0.99)
                     .ignoresSafeArea()
                 
+                Image("purpleBackground")
+                    .resizable()
+                    .ignoresSafeArea()
+                    .scaledToFill()
+                    .opacity(0.9)
+                
 //                AdPlayerView(name: "sky2")
 //                    .ignoresSafeArea()
 //                    .blendMode(.screen)
