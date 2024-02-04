@@ -30,18 +30,23 @@ struct SignUpView: View {
     var body: some View {
         ZStack {
             
-//            ColorManager.grey4
-//                .ignoresSafeArea()
-            
-            Image("purpleBackground")
-                .resizable()
+            ColorManager.grey4
                 .ignoresSafeArea()
-                .scaledToFill()
+            
+//            Image("purpleBackground")
+//                .resizable()
+//                .ignoresSafeArea()
+//                .scaledToFill()
 
             AdPlayerView(name: "sky2")
                 .ignoresSafeArea()
                 .blendMode(.screen)
                 .opacity(0.75)
+            
+            AdPlayerView(name: "moonShots")
+                .ignoresSafeArea()
+                .blendMode(.screen)
+                .opacity(0.7)
             
             ZStack {
                 Circle()

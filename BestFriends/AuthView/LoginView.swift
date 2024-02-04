@@ -30,6 +30,11 @@ struct LoginView: View {
                     .blendMode(.screen)
                     .opacity(0.75)
                 
+                AdPlayerView(name: "moonShots")
+                    .ignoresSafeArea()
+                    .blendMode(.screen)
+                    .opacity(0.7)
+                
                 
                 //TODO: Remove the onAppear for production
                     .onAppear {
