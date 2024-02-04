@@ -309,7 +309,7 @@ struct RRLoveTarts5: View {
                                     Spacer()
                                 }
                             }
-                            .foregroundColor(.black)
+                            .foregroundColor(.white)
                             .font(.system(size: 13))
                             .submitLabel(.done)
                             .onReceive(Just(customMessage)) { _ in limitText(65) }

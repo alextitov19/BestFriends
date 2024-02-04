@@ -236,29 +236,38 @@ struct RR12: View {
                         VStack {
                                     Spacer()
                                     // TextField for userInput
-                                    TextField("", text: $customMessage)
-                                        .placeholder(when: customMessage.isEmpty) {
-                                            HStack {
-                                                Text("Tell me the good news in Chat...")
-                                                    .foregroundColor(Color.white)
-                                                    .fontWeight(.thin)
-                                                Spacer()
-                                            }
+                            TextField("", text: $customMessage)
+                                .placeholder(when: customMessage.isEmpty) {
+                                    HStack {
+                                        VStack {
+                                            Text("share the excitement...")
+                                                .foregroundColor(ColorManager .grey1)
+                                                .fontWeight(.thin)
+
+                                            
+                                            Spacer()
+                                                .frame(height: 20)
+                                            
                                         }
-                                        .foregroundColor(.white)
-                                        .font(.system(size: 15))
-                                        .submitLabel(.done)
-                                        .onReceive(Just(customMessage)) { _ in limitText(65) }
-                                        .padding(.top, 20)
+                                        
+                                        
+                                        Spacer()
+                                    }
+                                }
+                                .foregroundColor(.white)
+                                .font(.system(size: 15))
+                                .submitLabel(.done)
+                                .onReceive(Just(customMessage)) { _ in limitText(65) }
+                                .padding(.top, 20)
+                                .padding(.horizontal, 80)
+                                .overlay(
+                                    RoundedRectangle(cornerRadius: 10)
+                                        .stroke(Color.purple)
+                                    //                                                            .background(ColorManager.purple3)
+                                        .frame(height: 50)
                                         .padding(.horizontal, 50)
-                                        .overlay(
-                                            RoundedRectangle(cornerRadius: 10)
-                                                .stroke(Color.white)
-                                            //                                                            .background(ColorManager.purple3)
-                                                .frame(height: 50)
-                                                .padding(.horizontal, 40)
-                                        )
-                                        .padding(.bottom, 5)
+                                )
+                                .padding(.bottom, 5)
                                 }
                             }
                         
