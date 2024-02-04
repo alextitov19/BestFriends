@@ -27,9 +27,14 @@ struct SaySomethingNice6: View {
            
          
             
-            ColorManager.grey4
+            Color.black
                 .ignoresSafeArea()
                 .onAppear()
+            
+            AdPlayerView(name: "sky2")
+                .ignoresSafeArea()
+                .blendMode(.screen)
+                .opacity(0.9)
             
             VStack {
                 

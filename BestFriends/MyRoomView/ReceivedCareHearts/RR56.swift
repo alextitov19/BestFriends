@@ -32,9 +32,10 @@ struct RR56: View {
     var body: some View {
         
         ZStack {
-            ColorManager .grey3
+            ColorManager .grey4
                 .opacity(0.9)
                 .ignoresSafeArea()
+                .opacity(0.5)
             
             Image("purpleBackground")
                 .resizable()
@@ -53,6 +54,21 @@ struct RR56: View {
             
             
             ZStack{
+                
+                
+                
+                
+                Circle()
+                    .frame(width: 400, height: 400)
+                    .foregroundColor(ColorManager.purple3)
+                    .offset(x: 200, y: -420)
+                    .opacity(0.2)
+                
+//                Circle()
+//                    .frame(width: 300, height: 300)
+//                    .foregroundColor(ColorManager.purple5)
+//                    .offset(x: -200, y: 400)
+//                    .opacity(0.4)
                 
                 VStack {
      

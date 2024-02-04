@@ -98,46 +98,42 @@ struct HomeView: View {
                             .frame(height: 50)
                         
                         
-                        HStack {
+//                        HStack {
                             
-                            ZStack {
-                                
-                                Image(systemName: "bell")
-                                    .resizable()
-                                    .scaledToFit()
-                                    .frame(width: 30, height: 30)
-                                    .foregroundColor(Color.purple)
-                                    .shadow(color: Color.purple, radius: 3, x: -2, y: -2)
-                                    .shadow(color: Color.purple, radius: 7, x: -2, y: -2)
-            
-                                    .opacity(0.5)
-                                    .onTapGesture {
-                                        print("Clicked notification bell")
-                                        presentingIANs.toggle()
-                                    }
-                                
-                                NavigationLink(destination: SaySomethingNice6(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, groups: homeData!.groups, friendAtmospheres: homeData!.friendAtmospheres), isActive: $inviteClicked
-                                ) { EmptyView() }
-                                
+                        ZStack {
+                            
+                            Image(systemName: "bell")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 30, height: 30)
+                                .foregroundColor(Color.purple)
+                                .shadow(color: Color.purple, radius: 3, x: -2, y: -2)
+                                .shadow(color: Color.purple, radius: 7, x: -2, y: -2)
+                            
+                                .opacity(0.5)
+                                .onTapGesture {
+                                    print("Clicked notification bell")
+                                    presentingIANs.toggle()
+                                }
+                            
+                            NavigationLink(destination: SaySomethingNice6(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, groups: homeData!.groups, friendAtmospheres: homeData!.friendAtmospheres), isActive: $inviteClicked
+                            ) { EmptyView() }
+                        
                                 
                                 Image(systemName: "bell.fill")
                                     .resizable()
                                     .scaledToFit()
                                     .frame(width: 27, height: 27)
-                                    .foregroundColor(Color.white)
+                                    .foregroundColor(ColorManager .purple5)
                                     .opacity(0.125)
                                     .glow(color: Color.white, radius: 1)
                                     .shadow(color: Color.white, radius: 2, x: 0, y: 3)
                                     .blinking(duration: 2.0)
-                                
-                            }
                             
-                            Spacer()
-                                .frame(width: 50)
+                    }
                             
-                            
-                            
-                            
+          Spacer ()
+                            .frame(height: 17)
                       
                             NavigationLink(destination:  RR51(user: homeData!.user, atmosphere: homeData!.atmosphere, friends: homeData!.friends, friendAtmospheres: homeData!.friendAtmospheres, groups: homeData!.groups),
                                 label: {
@@ -149,31 +145,31 @@ struct HomeView: View {
                                     .background(Color.black)
                                     .opacity(0.95)
                                     .cornerRadius(10)
-                                    .shadow(color: Color.purple, radius: 3, x: -2, y: -2)
                                     .shadow(color: Color.purple, radius: 7, x: -2, y: -2)
+                                    .shadow(color: Color.purple, radius: 7, x: 2, y: 2)
                                         })
-                                    
+
+                        
+//                        Spacer()
+//                            .frame(width: 50)
                             
-                        Spacer()
-                            .frame(width: 50)
+//                            NavigationLink(
+//                                destination:  SettingsView(user: homeData!.user, friends: homeData!.friends, atmosphere: homeData!.atmosphere),
+//                                label: {
+//
+//                                    Image("iconSettings")
+//                                        .resizable()
+//                                        .scaledToFit()
+//                                        .frame(width: 30, height: 30)
+//                                        .foregroundColor(ColorManager .purple5)
+//                                        .glow(color: Color.purple, radius: 2)
+//                                        .opacity(0.9)
+////                                        .shadow(color: Color.purple, radius: 2, x: -2, y: -2)
+////                                        .shadow(color: Color.purple, radius: 7, x: -2, y: -2)
+//
+//                                })
                             
-                            NavigationLink(
-                                destination:  SettingsView(user: homeData!.user, friends: homeData!.friends, atmosphere: homeData!.atmosphere),
-                                label: {
-                                    
-                                    Image("iconSettings")
-                                        .resizable()
-                                        .scaledToFit()
-                                        .frame(width: 30, height: 30)
-                                        .foregroundColor(ColorManager .purple5)
-                                        .glow(color: Color.purple, radius: 2)
-                                        .opacity(0.9)
-//                                        .shadow(color: Color.purple, radius: 2, x: -2, y: -2)
-//                                        .shadow(color: Color.purple, radius: 7, x: -2, y: -2)
-                                        
-                                })
-                            
-                        }
+//                        }
                         
                                                 
                         //       **********************************************

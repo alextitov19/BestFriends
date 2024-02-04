@@ -36,7 +36,7 @@ struct NotificationsView: View {
             ZStack {
                 
                 Color.black
-                    .opacity(0.2)
+                    .opacity(0.9)
                     .onAppear(perform: getNotifications)
             
                 

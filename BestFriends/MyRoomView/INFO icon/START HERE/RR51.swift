@@ -95,7 +95,7 @@ struct RR51: View {
                     Image(systemName: "circle.fill")
                         .resizable()
                         .foregroundColor(Color.purple)
-                        .frame(width: 450, height: 450)
+                        .frame(width: 500, height: 500)
                         .shadow(color: ColorManager .purple2, radius: 65, x: 30, y: 50)
                         .opacity(0.95)
                     
@@ -109,8 +109,29 @@ struct RR51: View {
                             .multilineTextAlignment(.center)
                             .opacity(0.7)
                         
+                        
+                        NavigationLink(
+                            destination:   SettingsView(user: user, friends: friends, atmosphere: atmosphere),
+                            label: {
+
+                                ZStack {
+                                    Text("Settings")
+                                        .fontWeight(.light)
+                                        .frame(width: 200, height: 40)
+                                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                        .font(.system(size: 25))
+                                        .background(Color.cyan)
+                                        .cornerRadius(10)
+                                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+
+
+                                }
+                            })
+                        
+                        
+                        
                         Spacer()
-                            .frame(height: 40)
+                            .frame(height: 30)
                         
                         Text("Let the outside of you")
                             .font(.system(size: 35))
@@ -153,7 +174,7 @@ struct RR51: View {
                                 .frame(height: 5)
                             
                             
-                            Text("it's protected & non-toxic")
+                            Text("- protected & non-toxic")
                                 .font(.system(size: 20))
                                 .italic()
                                 .foregroundColor(Color.white)
@@ -162,7 +183,7 @@ struct RR51: View {
                                 .opacity(0.7)
                             
                             
-                            Text("with no likes, profiles or comments")
+                            Text("- no likes, profiles or comments")
                                 .font(.system(size: 20))
                                 .italic()
                                 .foregroundColor(Color.white)
@@ -173,7 +194,7 @@ struct RR51: View {
                             
                             Text("shelter from the storm ")
                                 .font(.system(size: 25))
-                                .italic()
+                                
                                 .foregroundColor(Color.white)
                                 .fontWeight(.light)
                                 .multilineTextAlignment(.center)

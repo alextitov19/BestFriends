@@ -40,6 +40,10 @@ struct RR58: View {
     @State var audioPlayer: AVAudioPlayer!
     
     
+//    @State private var inviteClicked = false
+//    @State private var presentingIANs = false
+    
+    
     var body: some View {
      
 
@@ -71,9 +75,7 @@ struct RR58: View {
                 }
                 
     VStack {
-                VStack {
-//                    Spacer ()
-//                        .frame(height: 20)
+          VStack {
                     
 //                    HStack {
                         NavigationLink(
