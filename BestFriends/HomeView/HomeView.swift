@@ -141,12 +141,12 @@ struct HomeView: View {
                                     .fontWeight(.thin)
                                     .foregroundColor(Color.white)
                                     .frame(width: 80, height: 30)
-                                    .font(.system(size: 15))
+                                    .font(.system(size: 16))
                                     .background(Color.black)
-                                    .opacity(0.95)
+                                    .opacity(0.7)
                                     .cornerRadius(10)
-                                    .shadow(color: Color.purple, radius: 7, x: -2, y: -2)
-                                    .shadow(color: Color.purple, radius: 7, x: 2, y: 2)
+                                    .shadow(color: Color.purple, radius: 7, x: 10, y: -7)
+                                   .shadow(color: Color.purple, radius: 5, x: 5, y: -2)
                                         })
 
                         

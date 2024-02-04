@@ -40,8 +40,9 @@ struct RR58: View {
     @State var audioPlayer: AVAudioPlayer!
     
     
-//    @State private var inviteClicked = false
-//    @State private var presentingIANs = false
+  @State private var homeData: HomeData?
+    @State private var inviteClicked = false
+    @State private var presentingIANs = false
     
     
     var body: some View {
@@ -74,7 +75,51 @@ struct RR58: View {
                
                 }
                 
+//*************************************************** in-app notifications
+                
+    
+//  **************************************************************
+                
     VStack {
+        if ((homeData) != nil) {
+        ZStack {
+            
+            Image(systemName: "bell")
+                .resizable()
+                .scaledToFit()
+                .frame(width: 35, height: 35)
+                .foregroundColor(Color.purple)
+                .shadow(color: Color.purple, radius: 3, x: -2, y: -2)
+                .shadow(color: Color.purple, radius: 7, x: -2, y: -2)
+            
+                .opacity(0.5)
+                .onTapGesture {
+                    print("Clicked notification bell")
+                    presentingIANs.toggle()
+                }
+            
+            NavigationLink(destination: SaySomethingNice6(user: user, atmosphere: atmosphere, friends: friends, groups: groups, friendAtmospheres: friendAtmospheres), isActive: $inviteClicked
+            ) { EmptyView() }
+            
+            
+            Image(systemName: "bell.fill")
+                .resizable()
+                .scaledToFit()
+                .frame(width: 30, height: 30)
+                .foregroundColor(ColorManager .purple5)
+                .opacity(0.125)
+                .glow(color: Color.white, radius: 1)
+                .shadow(color: Color.white, radius: 2, x: 0, y: 3)
+                .blinking(duration: 2.0)
+            
+        }
+    }
+
+
+        
+        
+        
+        
           VStack {
                     
 //                    HStack {
@@ -407,7 +452,10 @@ struct RR58: View {
                                             .opacity(0.8)
                                     }
                                     
+//  ******************************
+      
                                     
+//**********************************************
                                     
                                     Spacer ()
                                         .frame(height: 20)
