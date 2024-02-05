@@ -179,8 +179,10 @@ struct SaySomethingNice5: View {
                             
                         }
                             
-//                            Spacer()
-//                            .frame(height: 20)
+                        Text("(alert friend with push notification)")
+                            .font(.system(size: 15, weight: .light))
+                            .italic()
+                            .foregroundColor(ColorManager .grey4)
                         
                         HStack {
                             
