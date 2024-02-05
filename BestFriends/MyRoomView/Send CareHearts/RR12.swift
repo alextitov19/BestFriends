@@ -279,12 +279,10 @@ struct RR12: View {
                     Spacer()
                         .frame(height: 30)
                     
-                    Text("(alert friend)")
-                        .font(.system(size: 15))
+                    Text("(alert friends with push notification)")
+                        .font(.system(size: 15, weight: .light))
                         .italic()
-                        .fontWeight(.light)
                         .foregroundColor(ColorManager .grey1)
-                        .multilineTextAlignment(.center)
             
                     VStack {
                         

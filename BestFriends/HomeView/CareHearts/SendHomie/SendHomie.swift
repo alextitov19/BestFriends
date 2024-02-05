@@ -123,7 +123,11 @@ struct SendHomie: View {
 
                     VStack {
 
-            
+                        Text("(alert friends with push notification)")
+                            .font(.system(size: 15, weight: .light))
+                            .italic()
+                            .foregroundColor(ColorManager .grey1)
+                        
                         HStack {
                       
 //                            Text("select >")
