@@ -286,7 +286,7 @@ struct VirtualHug: View {
                                 Text("(say thanks)")
                                     .font(.system(size: 15))
                                     .italic()
-                                    .foregroundColor(ColorManager .grey2)
+                                    .foregroundColor(ColorManager .grey4)
                                     .fontWeight(.light)
                                     .multilineTextAlignment(.center)
                                 
