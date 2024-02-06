@@ -153,7 +153,7 @@ struct RRLoveTarts: View {
             }
             
             VStack {
-//
+
 //                Spacer()
 //                    .frame(height: 30)
 //
@@ -207,13 +207,18 @@ struct RRLoveTarts: View {
 //                        }
 //                    )}
 //                }
-//
+
                 
                 Spacer ()
                     .frame(height: 100)
                 
                 
                 VStack {
+                    
+                    
+                    
+                    
+                    
                     HStack {
                         
                         
