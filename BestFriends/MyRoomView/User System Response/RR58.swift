@@ -142,12 +142,12 @@ struct RR58: View {
                           
                           Image("comicBubble")
                               .resizable()
-                              .foregroundColor(ColorManager .purple2)
+                              .foregroundColor(ColorManager .purple1)
                               .frame(width: 100, height: 70)
-                              .shadow(color: ColorManager .purple2, radius: 3, x: 3, y: 3)
+                              .shadow(color: ColorManager .purple1, radius: 3, x: 3, y: 3)
                               .rotationEffect(.degrees(-10))
                               .blinking(duration: 2.0)
-                              .opacity(0.2)
+                              .opacity(0.7)
                           
                           VStack {
                               
@@ -519,10 +519,10 @@ struct RR58: View {
                                                     .resizable()
                                                     .scaledToFit()
                                                     .frame(width: 70, height: 70)
-                                                    .foregroundColor(Color.purple)
-//                                                    .glow(color: Color.white, radius: 0.3)
-//                                                    .shadow(color: .white, radius: 1, x: 3, y: -0.5)
-                                                    .opacity(0.95)
+                                                    .foregroundColor(ColorManager .purple3)
+                                                    .glow(color: ColorManager .purple4, radius: 0.2)
+                                                    .shadow(color: .white, radius: 1, x: 3, y: -0.5)
+                                                    .opacity(0.7)
 
                                         })
                                     }
