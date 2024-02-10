@@ -190,19 +190,29 @@ struct PhotoPopView: View {
                                             .shadow(color: Color.white, radius: 2, x: 0, y: 3)
                                             .blinking(duration: 2.0)
                                         
-                                        Text("Today's")
-                                            .fontWeight(.regular)
-                                            .frame(width: 80, height: 30)
-                                            .foregroundColor(.white)
-                                            .background(Color.cyan)
-                                            .cornerRadius(10)
-//                                            .alert("Image sent. \n\nFriend receives push notification asking them to 'tap' notification and 'shake' iPhone - image pops up!", isPresented: $showingAlert) {
-//                                                Button("OK", role: .cancel) { }
-                                        
-                                        
-                                        
+                                        Image(systemName: "heart.fill")
+                                            .resizable()
+                                            .foregroundColor(Color .cyan)
+                                            .frame(width: 90, height: 75)
+                                            .shadow(color: ColorManager .grey1, radius: 3, x: 3, y: 3)
+        //                                    .rotationEffect(.degrees(-10))
+                                            .opacity(0.6)
+                                       
+                                        VStack {
+                                            
+                                            Spacer ()
+                                                .frame(height: 2)
+                                            
+                                            Text("LoveTart")
+                                                .fontWeight(.regular)
+                                                .font(.system(size: 17.5))
+                                                .frame(width: 80, height: 30)
+                                                .foregroundColor(.white)
+                                                .cornerRadius(10)
+                               
+                                        }
                                     }
-                                    })
+                                })
                                 
                             } else {
                                 Button(action: {
@@ -220,27 +230,27 @@ struct PhotoPopView: View {
                             }
                         }
                         
-                        
-                        Text("Load today's favorite")
-                            .font(.system(size: 15))
-                            .fontWeight(.medium)
-                            .multilineTextAlignment(.center)
-                            .foregroundColor(ColorManager .grey4)
-//                            .rotationEffect(.degrees(-20))
-//                            .blinking(duration: 3.0)
-                            .shadow(color: ColorManager .grey3, radius: 0.7, x: 0.5, y: 0.5)
-                            .opacity(0.5)
+//                        
+//                        Text("LoveTart \nimage")
+//                            .font(.system(size: 15))
+//                            .fontWeight(.medium)
+//                            .multilineTextAlignment(.center)
+//                            .foregroundColor(ColorManager .grey4)
+////                            .rotationEffect(.degrees(-20))
+////                            .blinking(duration: 3.0)
+//                            .shadow(color: ColorManager .grey3, radius: 0.7, x: 0.5, y: 0.5)
+//                            .opacity(0.5)
                         
                        
-                        Text("romantic pic of your LoveTart")
-                            .font(.system(size: 15))
-                            .fontWeight(.bold)
-                            .multilineTextAlignment(.center)
-                            .foregroundColor(ColorManager .grey4)
-//                            .rotationEffect(.degrees(-20))
-//                            .blinking(duration: 3.0)
-                            .shadow(color: ColorManager .grey3, radius: 0.7, x: 0.5, y: 0.5)
-                            .opacity(0.5)
+//                        Text("romantic pic of your LoveTart")
+//                            .font(.system(size: 15))
+//                            .fontWeight(.bold)
+//                            .multilineTextAlignment(.center)
+//                            .foregroundColor(ColorManager .grey4)
+////                            .rotationEffect(.degrees(-20))
+////                            .blinking(duration: 3.0)
+//                            .shadow(color: ColorManager .grey3, radius: 0.7, x: 0.5, y: 0.5)
+//                            .opacity(0.5)
                         
                         Button(action: {
                             showingRecipients = false

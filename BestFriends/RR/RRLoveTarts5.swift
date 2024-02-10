@@ -157,7 +157,7 @@ struct RRLoveTarts5: View {
 //                    .blendMode(.screen)
 //                    .opacity(0.0)
                 
-                AdPlayerView(name: "moonShots")
+                AdPlayerView(name: "moonShots3")
                     .ignoresSafeArea()
                     .blendMode(.screen)
                     .opacity(0.7)
@@ -217,32 +217,63 @@ struct RRLoveTarts5: View {
                         destination:  PhotoPopView(user: user, friends: friends),
                         label: {
                             
-                            Image("IconPhotoNew")
-                                .resizable()
-                                .scaledToFit()
-                                .frame(width: 70, height: 70)
-                                .foregroundColor(Color.purple)
-                                .opacity(0.95)
+                            ZStack {
+                                Image(systemName: "heart")
+                                    .resizable()
+                                    .scaledToFit()
+                                    .frame(width: 80, height: 80)
+                                    .foregroundColor(Color.white)
+                                    .opacity(0.1)
+                                    .glow(color: Color.white, radius: 1)
+                                    .shadow(color: Color.white, radius: 2, x: 0, y: 3)
+                                    .blinking(duration: 4.0)
+                                
+                                
+                                Image(systemName: "heart.fill")
+                                    .resizable()
+                                    .foregroundColor(Color .cyan)
+                                    .frame(width: 75, height: 75)
+                                    .shadow(color: ColorManager .grey1, radius: 3, x: 3, y: 3)
+//                                    .rotationEffect(.degrees(-10))
+                                    .opacity(0.6)
+                                
+                                Text("Load Today's \nfavorite image \nof them")
+                                    .fontWeight(.light)
+                                    .font(.system(size: 10))
+//                                    .frame(width: 80, height: 30)
+                                    .foregroundColor(.white)
+//                                    .background(Color.cyan)
+//                                    .cornerRadius(10)
+                                    .opacity(0.5)
+                                
+                            }
+                            
+//                            Image("IconPhotoNew")
+//                                .resizable()
+//                                .scaledToFit()
+//                                .frame(width: 70, height: 70)
+//                                .foregroundColor(Color.purple)
+//                                .opacity(0.95)
                             
                         })
-                    
-                    Text("load favorite")
-                        .font(.system(size: 10))
-                        .fontWeight(.light)
-                        .multilineTextAlignment(.center)
-                        .foregroundColor(ColorManager .grey1)
-                        .rotationEffect(.degrees(-10))
-                        .opacity(0.99)
-                
-                Text("image of them")
-                    .font(.system(size: 10))
-                    .fontWeight(.light)
-                    .multilineTextAlignment(.center)
-                    .foregroundColor(ColorManager .grey1)
-                    .rotationEffect(.degrees(-10))
-                    .opacity(0.99)
-                
-                
+//                    
+//                    Text("load favorite")
+//                        .font(.system(size: 10))
+//                        .fontWeight(.light)
+//                        .multilineTextAlignment(.center)
+//                        .foregroundColor(ColorManager .grey1)
+//                        .rotationEffect(.degrees(-10))
+//                        .opacity(0.99)
+//                
+//                Text("image of them")
+//                    .font(.system(size: 10))
+//                    .fontWeight(.light)
+//                    .multilineTextAlignment(.center)
+//                    .foregroundColor(ColorManager .grey1)
+//                    .rotationEffect(.degrees(-10))
+//                    .opacity(0.99)
+//                
+//                
                 }
                     
                     ZStack {

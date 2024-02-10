@@ -45,6 +45,10 @@ struct RR58: View {
     @State private var presentingIANs = false
     
     
+    @State var animate: Bool = false
+    let animation: Animation = Animation.linear(duration: 5.0).repeatForever(autoreverses: false)
+    
+    
     var body: some View {
      
 
@@ -68,74 +72,93 @@ struct RR58: View {
                     .blendMode(.screen)
                     .opacity(0.9)
                     
-                    AdPlayerView(name: "moonShots3")
+//                    AdPlayerView(name: "moonShots3")
+//                        .ignoresSafeArea()
+//                        .blendMode(.screen)
+//                        .opacity(0.9)
+                    
+                    AdPlayerView(name: "moonShots")
                         .ignoresSafeArea()
                         .blendMode(.screen)
-                        .opacity(0.9)
+                        .opacity(0.7)
                
                 }
                 
 //*************************************************** in-app notifications
                 
-    
-//  **************************************************************
-                
-//    VStack {
-//        if ((homeData) != nil) {
-//        ZStack {
-//            
-//            Image(systemName: "bell")
-//                .resizable()
-//                .scaledToFit()
-//                .frame(width: 35, height: 35)
-//                .foregroundColor(Color.purple)
-//                .shadow(color: Color.purple, radius: 3, x: -2, y: -2)
-//                .shadow(color: Color.purple, radius: 7, x: -2, y: -2)
-//            
-//                .opacity(0.5)
-//                .onTapGesture {
-//                    print("Clicked notification bell")
-//                    presentingIANs.toggle()
-//                }
-//            
-//            NavigationLink(destination: SaySomethingNice6(user: user, atmosphere: atmosphere, friends: friends, groups: groups, friendAtmospheres: friendAtmospheres), isActive: $inviteClicked
-//            ) { EmptyView() }
-//            
-//            
-//            Image(systemName: "bell.fill")
-//                .resizable()
-//                .scaledToFit()
-//                .frame(width: 30, height: 30)
-//                .foregroundColor(ColorManager .purple5)
-//                .opacity(0.125)
-//                .glow(color: Color.white, radius: 1)
-//                .shadow(color: Color.white, radius: 2, x: 0, y: 3)
-//                .blinking(duration: 2.0)
-//            
-//        }
-//    }
-
-
-        
-        
+ 
         
         
           VStack {
+              
+      
+//              *******************
+              
+            
+//          }
+//      }
+
+              
+              
+//              *********************************************
               
               VStack {
                   
                   HStack {
                       
-                      Image("")
-                          .resizable()
-                          .scaledToFit()
-                          .frame(width: 1, height: 1)
-                          .opacity(0.9)
-                        
+                      
+                      Text(".")
+                          .font(.system(size: 12))
+                          .fontWeight(.light)
+                          .multilineTextAlignment(.center)
+                          .rotationEffect(.degrees(-10))
+                          .blinking(duration: 2.0)
+                          .foregroundColor(ColorManager .grey2)
+                      
                       
                       Spacer()
-                          .frame(width: 275)
+                          .frame(width: 200)
                       
+                      GeometryReader { geo in
+                          HStack(spacing: -5) {
+                              
+                              
+                              ZStack {
+
+                             
+                                  
+                                  
+                                  NavigationLink(destination:  PhotoPopView(user: user, friends: friends),
+                                                 label: {
+                                      
+                                      Image("IconPhotoNew")
+            //                              .aspectRatio(contentMode: .fit)
+                                          .resizable()
+                                          .scaledToFit()
+                                          .frame(width: 70, height: 70)
+
+                                  })
+                                  
+                              }
+                              
+                              Image("")
+                                  .aspectRatio(contentMode: .fit)
+                                  .frame(width: geo.size.width, alignment: .leading)
+                          }
+                          .frame(width: geo.size.width, height: geo.size.height,
+                                 alignment: animate ? .trailing : .leading)
+                      }
+                      .ignoresSafeArea()
+                      .onAppear {
+                          withAnimation(animation) {
+                              animate.toggle()
+                          }
+                          
+                      }
+                      
+                      Spacer()
+                          .frame(width: 100)
+//                      
 
                       
                       ZStack {
@@ -506,34 +529,29 @@ struct RR58: View {
 //**********************************************
                                     
                                     Spacer ()
-                                        .frame(height: 20)
+                                        .frame(height: 90)
                                     
-                                    ZStack {
-                                        
-                                        
-                                        NavigationLink(
-                                            destination:  PhotoPopView(user: user, friends: friends),
-                                            label: {
-
-                                                Image("IconPhotoNew")
-                                                    .resizable()
-                                                    .scaledToFit()
-                                                    .frame(width: 70, height: 70)
-                                                    .foregroundColor(ColorManager .purple3)
-                                                    .glow(color: ColorManager .purple4, radius: 0.2)
-                                                    .shadow(color: .white, radius: 1, x: 3, y: -0.5)
-                                                    .opacity(0.7)
-
-                                        })
-                                    }
+//                                    ZStack {
+//                                        
+//                                        
+//                                        NavigationLink(
+//                                            destination:  PhotoPopView(user: user, friends: friends),
+//                                            label: {
+//
+//                                                Image("IconPhotoNew")
+//                                                    .resizable()
+//                                                    .scaledToFit()
+//                                                    .frame(width: 70, height: 70)
+//                                                    .foregroundColor(ColorManager .purple3)
+//                                                    .glow(color: ColorManager .purple4, radius: 0.2)
+//                                                    .shadow(color: .white, radius: 1, x: 3, y: -0.5)
+//                                                    .opacity(0.7)
+//
+//                                        })
+//                                    }
                                 }
                             }
                         )}
-                    
-                    
-//                                            Spacer()
-//                                                .frame(height: 30)
-                    
                 }
             }
         }

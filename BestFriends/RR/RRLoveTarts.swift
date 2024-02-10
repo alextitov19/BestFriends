@@ -145,10 +145,10 @@ struct RRLoveTarts: View {
                     .blendMode(.screen)
                     .opacity(0.99)
                 
-//                AdPlayerView(name: "CHsMain")
-//                    .ignoresSafeArea()
-//                    .blendMode(.screen)
-//                    .opacity(0.99)
+                AdPlayerView(name: "moonShots3")
+                    .ignoresSafeArea()
+                    .blendMode(.screen)
+                    .opacity(0.9)
                 
             }
             
