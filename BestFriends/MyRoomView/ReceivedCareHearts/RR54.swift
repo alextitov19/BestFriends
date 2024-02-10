@@ -133,14 +133,14 @@ struct RR54: View {
                         ZStack{
                             Image(systemName: "circle.fill")
                                 .resizable()
-                                .foregroundColor(ColorManager .purple3)
+                                .foregroundColor(.purple)
                                 .frame(width: 150, height: 125)
                                 .shadow(color: .blue, radius: 65, x: 30, y: 50)
-                                .opacity(0.5)
+                                .opacity(0.3)
                             
                             
                             Text("TAP")
-                                .font(.system(size: 30))
+                                .font(.system(size: 15))
                                 .fontWeight(.light)
                                 .multilineTextAlignment(.center)
                                 .foregroundColor(Color.white)

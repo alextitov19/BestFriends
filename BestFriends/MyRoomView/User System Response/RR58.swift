@@ -80,40 +80,40 @@ struct RR58: View {
     
 //  **************************************************************
                 
-    VStack {
-        if ((homeData) != nil) {
-        ZStack {
-            
-            Image(systemName: "bell")
-                .resizable()
-                .scaledToFit()
-                .frame(width: 35, height: 35)
-                .foregroundColor(Color.purple)
-                .shadow(color: Color.purple, radius: 3, x: -2, y: -2)
-                .shadow(color: Color.purple, radius: 7, x: -2, y: -2)
-            
-                .opacity(0.5)
-                .onTapGesture {
-                    print("Clicked notification bell")
-                    presentingIANs.toggle()
-                }
-            
-            NavigationLink(destination: SaySomethingNice6(user: user, atmosphere: atmosphere, friends: friends, groups: groups, friendAtmospheres: friendAtmospheres), isActive: $inviteClicked
-            ) { EmptyView() }
-            
-            
-            Image(systemName: "bell.fill")
-                .resizable()
-                .scaledToFit()
-                .frame(width: 30, height: 30)
-                .foregroundColor(ColorManager .purple5)
-                .opacity(0.125)
-                .glow(color: Color.white, radius: 1)
-                .shadow(color: Color.white, radius: 2, x: 0, y: 3)
-                .blinking(duration: 2.0)
-            
-        }
-    }
+//    VStack {
+//        if ((homeData) != nil) {
+//        ZStack {
+//            
+//            Image(systemName: "bell")
+//                .resizable()
+//                .scaledToFit()
+//                .frame(width: 35, height: 35)
+//                .foregroundColor(Color.purple)
+//                .shadow(color: Color.purple, radius: 3, x: -2, y: -2)
+//                .shadow(color: Color.purple, radius: 7, x: -2, y: -2)
+//            
+//                .opacity(0.5)
+//                .onTapGesture {
+//                    print("Clicked notification bell")
+//                    presentingIANs.toggle()
+//                }
+//            
+//            NavigationLink(destination: SaySomethingNice6(user: user, atmosphere: atmosphere, friends: friends, groups: groups, friendAtmospheres: friendAtmospheres), isActive: $inviteClicked
+//            ) { EmptyView() }
+//            
+//            
+//            Image(systemName: "bell.fill")
+//                .resizable()
+//                .scaledToFit()
+//                .frame(width: 30, height: 30)
+//                .foregroundColor(ColorManager .purple5)
+//                .opacity(0.125)
+//                .glow(color: Color.white, radius: 1)
+//                .shadow(color: Color.white, radius: 2, x: 0, y: 3)
+//                .blinking(duration: 2.0)
+//            
+//        }
+//    }
 
 
         
@@ -121,7 +121,55 @@ struct RR58: View {
         
         
           VStack {
-                    
+              
+              VStack {
+                  
+                  HStack {
+                      
+                      Image("")
+                          .resizable()
+                          .scaledToFit()
+                          .frame(width: 1, height: 1)
+                          .opacity(0.9)
+                        
+                      
+                      Spacer()
+                          .frame(width: 275)
+                      
+
+                      
+                      ZStack {
+                          
+                          Image("comicBubble")
+                              .resizable()
+                              .foregroundColor(ColorManager .purple2)
+                              .frame(width: 100, height: 70)
+                              .shadow(color: ColorManager .purple2, radius: 3, x: 3, y: 3)
+                              .rotationEffect(.degrees(-10))
+                              .blinking(duration: 2.0)
+                              .opacity(0.2)
+                          
+                          VStack {
+                              
+                              Link(destination: URL(string: "https://docs.google.com/forms/d/e/1FAIpQLSeR-uflz8Y3slsu8utnYIoN9QPKL4Dx6-sOh6r30Y8yB5I5VQ/viewform")!) {
+                                  
+                                  
+                                  
+                                  Text("your \nfeedback")
+                                      .font(.system(size: 12))
+                                      .fontWeight(.light)
+                                      .multilineTextAlignment(.center)
+                                      .rotationEffect(.degrees(-10))
+                                      .blinking(duration: 2.0)
+                                      .foregroundColor(ColorManager .grey2)
+                                  
+                            
+                                  
+                              }
+                          }
+                          }
+                      }
+              
 //                    HStack {
                         NavigationLink(
                             destination:  RR32(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
