@@ -389,7 +389,7 @@ VStack {
                                     .shadow(color: Color.white, radius: 6, x: 3, y: 5)
                                     .opacity(0.35)
            
-                                Text("(tap friends to set 'color')")
+                                Text("(alert friends & set 'color')")
                                     .font(.system(size: 15))
                                     .italic()
                                     .fontWeight(.light)

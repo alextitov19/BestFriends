@@ -93,7 +93,7 @@ struct RR59: View {
                                 .shadow(color: Color.white, radius: 6, x: 3, y: 5)
                                 .opacity(0.25)
     
-                            Text("When friends aren't around,")
+                            Text("When friends aren't around")
                                 .font(.system(size: 17))
                                 .fontWeight(.regular)
                                 .multilineTextAlignment(.center)
@@ -101,7 +101,15 @@ struct RR59: View {
                                 .shadow(color: Color.white, radius: 3, x: 3, y: 5)
                                 .opacity(0.25)
                             
-                            Text("we're here for you")
+                            Text("- or -")
+                                .font(.system(size: 17))
+                                .fontWeight(.regular)
+                                .multilineTextAlignment(.center)
+                                .foregroundColor(Color.white)
+                                .shadow(color: Color.white, radius: 3, x: 3, y: 5)
+                                .opacity(0.25)
+                            
+                            Text("what some quiet alone time")
                                 .font(.system(size: 17))
                                 .fontWeight(.regular)
                                 .multilineTextAlignment(.center)
@@ -209,54 +217,33 @@ struct RR59: View {
                            
                             
                             Spacer ()
-                                .frame(width: 70)
+                                .frame(width: 50)
 
         ZStack {
-//
-//            NavigationLink(
-//                destination: RRBrokenHeart(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
-//                label: {
-//
-//                    ZStack {
-//                        Text("Dented \nHeart")
-//                            .font(.system(size: 14))
-//                            .foregroundColor(ColorManager .grey4)
-//                            .fontWeight(.bold)
-//                            .opacity(0.99)
-//                            .multilineTextAlignment(.center)
-//                        //                        .blinking(duration: 2.0)
-//
-//                        Image(systemName: "heart")
-//                            .resizable()
-//                            .scaledToFit()
-//                            .frame(width: 120, height: 120)
-//                            .foregroundColor(Color.cyan)
-//                            .opacity(0.1)
-//                            .rotationEffect(.degrees(10))
-//                            .glow(color: Color.purple, radius: 1)
-//                            .shadow(color: Color.purple, radius: 2, x: 0, y: 3)
-//
-//                        Image(systemName: "heart.fill")
-//                            .resizable()
-//                            .scaledToFit()
-//                            .frame(width: 110, height: 110)
-//                            .foregroundColor(ColorManager .purple3)
-//                            .opacity(0.1)
-//                        //                                        .rotationEffect(.degrees(10))
-//                            .glow(color: Color.white, radius: 1)
-//                            .shadow(color: Color.white, radius: 2, x: 0, y: 3)
-//                    }
-                         
-//                })
+
+            
+            
+            NavigationLink(destination: RRDidGood(user: user, friends: friends), label: {
+                HugCircle (color: ColorManager .grey1, friendName: "request \nCareHearts")
+            })
+            .offset(x: showItems ? -100 : 0, y: showItems ? -140: 0)
+            .shadow(color: Color .white, radius: 5, x: 2, y: -2)
+            .opacity(0.75)
+            
+            
+            
+            
+            
+            
             }
 
                             
                             Spacer ()
-                                .frame(width: 80)
+                                .frame(width: 60)
                             
                             
                             NavigationLink(destination: RRDidGood(user: user, friends: friends), label: {
-                                HugCircle (color: ColorManager .grey1, friendName: "I did\n it!!!")
+                                HugCircle (color: ColorManager .grey1, friendName: "Yep \nI did\n it!!!")
                             })
                             .offset(x: showItems ? -100 : 0, y: showItems ? -140: 0)
                             .shadow(color: Color .white, radius: 5, x: 2, y: -2)
@@ -265,7 +252,9 @@ struct RR59: View {
 
                     }
                 }
-                    
+                  
+                    Spacer ()
+                        .frame(height: 30)
 
                    HStack {
                         
