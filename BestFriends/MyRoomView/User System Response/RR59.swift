@@ -223,7 +223,7 @@ struct RR59: View {
 
             
             
-            NavigationLink(destination: RRDidGood(user: user, friends: friends), label: {
+            NavigationLink(destination: RR32(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups), label: {
                 HugCircle (color: ColorManager .grey1, friendName: "request \nCareHearts")
             })
             .offset(x: showItems ? -100 : 0, y: showItems ? -140: 0)
