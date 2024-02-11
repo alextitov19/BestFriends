@@ -85,7 +85,7 @@ struct PhotoPopView: View {
                                HStack {
                                    
                                
-                               Text("to view images \n'shake' phone")
+                               Text("to view images \n'shake' iPhone")
                                    .font(.system(size: 27))
                                    .fontWeight(.bold)
                                    .multilineTextAlignment(.center)

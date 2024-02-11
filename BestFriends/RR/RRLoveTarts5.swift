@@ -226,7 +226,7 @@ struct RRLoveTarts5: View {
                                     .opacity(0.1)
                                     .glow(color: Color.white, radius: 1)
                                     .shadow(color: Color.white, radius: 2, x: 0, y: 3)
-                                    .blinking(duration: 4.0)
+                                    .blinking(duration: 6.0)
                                 
                                 
                                 Image(systemName: "heart.fill")
@@ -236,8 +236,9 @@ struct RRLoveTarts5: View {
                                     .shadow(color: ColorManager .grey1, radius: 3, x: 3, y: 3)
 //                                    .rotationEffect(.degrees(-10))
                                     .opacity(0.6)
+                                    .blinking(duration: 6.0)
                                 
-                                Text("Load Today's \nfavorite image \nof them")
+                                Text("Load today's \nLoveTart \nimage")
                                     .fontWeight(.light)
                                     .font(.system(size: 10))
 //                                    .frame(width: 80, height: 30)
@@ -245,6 +246,7 @@ struct RRLoveTarts5: View {
 //                                    .background(Color.cyan)
 //                                    .cornerRadius(10)
                                     .opacity(0.5)
+                                    .blinking(duration: 6.0)
                                 
                             }
                             
