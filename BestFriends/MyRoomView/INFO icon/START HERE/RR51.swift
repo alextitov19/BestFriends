@@ -109,27 +109,64 @@ struct RR51: View {
                             .multilineTextAlignment(.center)
                             .opacity(0.7)
                         
-                        
-                        NavigationLink(
-                            destination:   SettingsView(user: user, friends: friends, atmosphere: atmosphere),
-                            label: {
-
-                                ZStack {
-                                    Text("Settings")
-                                        .fontWeight(.light)
-                                        .frame(width: 200, height: 40)
-                                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                        .font(.system(size: 25))
-                                        .background(Color.cyan)
-                                        .cornerRadius(10)
-                                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-
-
+                        HStack {
+                            NavigationLink(
+                                destination:   SettingsView(user: user, friends: friends, atmosphere: atmosphere),
+                                label: {
+                                    
+                                    ZStack {
+                                        Text("Settings")
+                                            .fontWeight(.light)
+                                            .frame(width: 200, height: 40)
+                                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                            .font(.system(size: 25))
+                                            .background(Color.cyan)
+                                            .cornerRadius(10)
+                                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                                        
+                                        
+                                    }
+                                })
+                           
+//  ***********************************
+                            
+                            
+                            ZStack {
+                                
+                                Image("comicBubble")
+                                    .resizable()
+                                    .foregroundColor(ColorManager .orange3)
+                                    .frame(width: 130, height: 90)
+                                    .shadow(color: ColorManager .purple1, radius: 3, x: 3, y: 3)
+                                    .rotationEffect(.degrees(-10))
+                                    .blinking(duration: 2.0)
+                                    .opacity(0.7)
+                                
+                                VStack {
+                                    
+                                    Link(destination: URL(string: "https://docs.google.com/forms/d/e/1FAIpQLSeR-uflz8Y3slsu8utnYIoN9QPKL4Dx6-sOh6r30Y8yB5I5VQ/viewform")!) {
+                                        
+                                        
+                                        
+                                        Text("your \nfeedback")
+                                            .font(.system(size: 12))
+                                            .fontWeight(.light)
+                                            .multilineTextAlignment(.center)
+                                            .rotationEffect(.degrees(-10))
+                                            .blinking(duration: 2.0)
+                                            .foregroundColor(ColorManager .grey2)
+                                        
+                                  
+                                        
+                                    }
                                 }
-                            })
-                        
-                        
-                        
+                                }
+                            
+                            
+                            
+//**********************************************************
+                            
+                        }
                         Spacer()
                             .frame(height: 30)
                         

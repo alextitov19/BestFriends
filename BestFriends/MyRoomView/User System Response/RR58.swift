@@ -161,36 +161,36 @@ struct RR58: View {
 //                      
 
                       
-                      ZStack {
-                          
-                          Image("comicBubble")
-                              .resizable()
-                              .foregroundColor(ColorManager .purple1)
-                              .frame(width: 100, height: 70)
-                              .shadow(color: ColorManager .purple1, radius: 3, x: 3, y: 3)
-                              .rotationEffect(.degrees(-10))
-                              .blinking(duration: 2.0)
-                              .opacity(0.7)
-                          
-                          VStack {
-                              
-                              Link(destination: URL(string: "https://docs.google.com/forms/d/e/1FAIpQLSeR-uflz8Y3slsu8utnYIoN9QPKL4Dx6-sOh6r30Y8yB5I5VQ/viewform")!) {
-                                  
-                                  
-                                  
-                                  Text("your \nfeedback")
-                                      .font(.system(size: 12))
-                                      .fontWeight(.light)
-                                      .multilineTextAlignment(.center)
-                                      .rotationEffect(.degrees(-10))
-                                      .blinking(duration: 2.0)
-                                      .foregroundColor(ColorManager .grey2)
-                                  
-                            
-                                  
-                              }
-                          }
-                          }
+//                      ZStack {
+//                          
+//                          Image("comicBubble")
+//                              .resizable()
+//                              .foregroundColor(ColorManager .purple1)
+//                              .frame(width: 100, height: 70)
+//                              .shadow(color: ColorManager .purple1, radius: 3, x: 3, y: 3)
+//                              .rotationEffect(.degrees(-10))
+//                              .blinking(duration: 2.0)
+//                              .opacity(0.7)
+//                          
+//                          VStack {
+//                              
+//                              Link(destination: URL(string: "https://docs.google.com/forms/d/e/1FAIpQLSeR-uflz8Y3slsu8utnYIoN9QPKL4Dx6-sOh6r30Y8yB5I5VQ/viewform")!) {
+//                                  
+//                                  
+//                                  
+//                                  Text("your \nfeedback")
+//                                      .font(.system(size: 12))
+//                                      .fontWeight(.light)
+//                                      .multilineTextAlignment(.center)
+//                                      .rotationEffect(.degrees(-10))
+//                                      .blinking(duration: 2.0)
+//                                      .foregroundColor(ColorManager .grey2)
+//                                  
+//                            
+//                                  
+//                              }
+//                          }
+//                          }
                       }
               
 //                    HStack {
