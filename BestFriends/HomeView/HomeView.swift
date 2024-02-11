@@ -146,10 +146,11 @@ struct HomeView: View {
                                     .frame(width: 80, height: 30)
                                     .font(.system(size: 16))
                                     .background(Color.black)
+                                    .background(Color.purple)
                                     .opacity(0.7)
                                     .cornerRadius(10)
-                                    .shadow(color: Color.purple, radius: 7, x: 10, y: -7)
-                                   .shadow(color: Color.purple, radius: 5, x: 5, y: -2)
+                                    .shadow(color: ColorManager .grey3, radius: 4, x: -5, y: -5)
+//                                   .shadow(color: Color.purple, radius: 5, x: -4, y: -2)
                                         })
 
                         

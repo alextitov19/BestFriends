@@ -70,7 +70,7 @@ struct RR58: View {
                 AdPlayerView(name: "sky2")
                     .ignoresSafeArea()
                     .blendMode(.screen)
-                    .opacity(0.9)
+                    .opacity(0.99)
                     
 //                    AdPlayerView(name: "moonShots3")
 //                        .ignoresSafeArea()
@@ -80,7 +80,7 @@ struct RR58: View {
                     AdPlayerView(name: "moonShots")
                         .ignoresSafeArea()
                         .blendMode(.screen)
-                        .opacity(0.7)
+                        .opacity(0.6)
                
                 }
                 
@@ -136,6 +136,7 @@ struct RR58: View {
                                           .resizable()
                                           .scaledToFit()
                                           .frame(width: 70, height: 70)
+                                          .opacity(0.7)
 
                                   })
                                   
@@ -235,7 +236,7 @@ struct RR58: View {
                                                 .scaledToFit()
                                                 .frame(width: 140, height: 140)
                                                 .foregroundColor(ColorManager .purple3)
-                                                .opacity(0.05)
+                                                .opacity(0.1)
                                                 .glow(color: ColorManager .purple3, radius: 1)
                                                 .shadow(color: Color.white, radius: 2, x: 0, y: 3)
                                             
@@ -310,11 +311,11 @@ struct RR58: View {
                             .resizable()
                             .scaledToFit()
                             .frame(width: 150, height: 150)
-                            .foregroundColor(ColorManager .purple4)
-                            .opacity(0.075)
+                            .foregroundColor(Color.cyan)
+                            .opacity(0.2)
                         //                                        .rotationEffect(.degrees(10))
-                            .glow(color: Color.white, radius: 1)
-                            .shadow(color: Color.white, radius: 2, x: 0, y: 3)
+//                            .glow(color: Color.white, radius: 1)
+//                            .shadow(color: Color.white, radius: 2, x: 0, y: 3)
                         
                     }
                 })
@@ -336,7 +337,7 @@ struct RR58: View {
                                 .rotationEffect(.degrees(10))
                                 .multilineTextAlignment(.center)
                                 .glow(color: ColorManager .purple3, radius: 2)
-                                .opacity(0.3)
+                                .opacity(0.9)
                             
                             Spacer ()
                                 .frame(height: 4)
@@ -347,8 +348,8 @@ struct RR58: View {
                                 .fontWeight(.regular)
                                 .rotationEffect(.degrees(10))
                                 .multilineTextAlignment(.center)
-                                .glow(color: Color.cyan, radius: 2)
-                                .opacity(0.5)
+                                .glow(color: Color.cyan, radius: 1)
+                                .opacity(0.99)
                             
                             
                             
@@ -371,9 +372,9 @@ struct RR58: View {
                             .resizable()
                             .scaledToFit()
                             .frame(width: 150, height: 150)
-                            .foregroundColor(ColorManager .purple4)
-                            .opacity(0.075)
-                            .glow(color: Color.white, radius: 1)
+                            .foregroundColor(ColorManager .grey3)
+                            .opacity(0.03)
+                            .glow(color: ColorManager .grey3, radius: 1)
                             .shadow(color: Color.white, radius: 2, x: 0, y: 3)
                         
                     }
@@ -399,11 +400,18 @@ struct RR58: View {
                                 .frame(width: 200, height: 35)
                                 .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                 .font(.system(size: 25))
-                                .background(ColorManager .pmbc_blue)
+                            
+                                .background(ColorManager .purple4)
                                 .cornerRadius(15)
                                 .glow(color: Color.white, radius: 1)
                                 .shadow(color: Color.white, radius: 2, x: 0, y: 3)
-                                .opacity(0.8)
+                                .opacity(0.6)
+                            
+//                                .background(ColorManager .pmbc_blue)
+//                                .cornerRadius(15)
+//                                .glow(color: Color.white, radius: 1)
+//                                .shadow(color: Color.white, radius: 2, x: 0, y: 3)
+//                                .opacity(0.8)
                             
                             Image("")
                                 .resizable()
@@ -454,7 +462,7 @@ struct RR58: View {
                                             .cornerRadius(15)
                                             .glow(color: Color.white, radius: 1)
                                             .shadow(color: Color.white, radius: 2, x: 0, y: 3)
-                                            .opacity(0.8)
+                                            .opacity(0.6)
                                            
 //
 //                                        Image(systemName: "star")
@@ -516,11 +524,20 @@ struct RR58: View {
                                             .frame(width: 200, height: 35)
                                             .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
                                             .font(.system(size: 25))
-                                            .background(ColorManager .purple4)
+                                        
+                                            .background(ColorManager .pmbc_blue)
                                             .cornerRadius(15)
                                             .glow(color: Color.white, radius: 1)
                                             .shadow(color: Color.white, radius: 2, x: 0, y: 3)
                                             .opacity(0.8)
+                                        
+                                        
+//                                        **********************
+//                                            .background(ColorManager .purple4)
+//                                            .cornerRadius(15)
+//                                            .glow(color: Color.white, radius: 1)
+//                                            .shadow(color: Color.white, radius: 2, x: 0, y: 3)
+//                                            .opacity(0.8)
                                     }
                                     
 //  ******************************

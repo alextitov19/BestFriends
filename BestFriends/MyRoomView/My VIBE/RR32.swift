@@ -74,16 +74,7 @@ VStack {
         HStack {
             HStack {
                 VStack {
-//                    Text("I'm having a")
-//                        .font(.system(size: 19))
-//                        .fontWeight(.bold)
-//                        .multilineTextAlignment(.center)
-//                        .foregroundColor(Color.white)
-//                        .rotationEffect(.degrees(-20))
-//                    //                .blinking(duration: 3.0)
-//                        .shadow(color: Color.white, radius: 6, x: 3, y: 5)
-//                        .opacity(0.35)
-                    
+
                     Text("BAD day!")
                         .font(.system(size: 30))
                         .fontWeight(.bold)
@@ -93,6 +84,23 @@ VStack {
                     //                .blinking(duration: 3.0)
                         .shadow(color: Color.white, radius: 6, x: 3, y: 5)
                         .opacity(0.35)
+                    
+                
+                        
+                        Text("I'm")
+                            .font(.system(size: 15))
+                            .fontWeight(.light)
+                            .multilineTextAlignment(.center)
+                            .foregroundColor(Color.white)
+                            .rotationEffect(.degrees(-20))
+                        
+                        Text("   Off Planet")
+                            .font(.system(size: 20))
+                            .fontWeight(.light)
+                            .multilineTextAlignment(.center)
+                            .foregroundColor(Color .green)
+                            .rotationEffect(.degrees(-20))
+                    
                     
                 }
                 
@@ -260,7 +268,7 @@ VStack {
         HStack {
             VStack {
                 Text("my DAY")
-                    .font(.system(size: 30))
+                    .font(.system(size: 25))
                     .fontWeight(.bold)
                     .multilineTextAlignment(.center)
                     .foregroundColor(Color.white)
@@ -269,8 +277,8 @@ VStack {
                     .shadow(color: Color.white, radius: 6, x: 3, y: 5)
                     .opacity(0.35)
                 
-                Text("AI generated aura")
-                    .font(.system(size: 12))
+                Text("AI generated \naura")
+                    .font(.system(size: 14))
                     .fontWeight(.bold)
                     .multilineTextAlignment(.center)
                     .foregroundColor(Color.white)
@@ -279,21 +287,31 @@ VStack {
                     .shadow(color: Color.white, radius: 6, x: 3, y: 5)
                     .opacity(0.35)
                 
-                Text("(coming summer)")
-                    .font(.system(size: 12))
-                    .italic()
-                    .fontWeight(.bold)
-                    .multilineTextAlignment(.center)
-                    .foregroundColor(Color.white)
-                    .rotationEffect(.degrees(-20))
-                //                .blinking(duration: 3.0)
-                    .shadow(color: Color.white, radius: 6, x: 3, y: 5)
-                    .opacity(0.35)
-                
+      
             }
             
-        Spacer ()
-                .frame(width: 30)
+            Spacer ()
+                        .frame(width: 10)
+                    
+                    
+                    
+                    VStack {
+                        
+                        Text("(coming \nsummer)")
+                            .font(.system(size: 12))
+                            .italic()
+                            .fontWeight(.bold)
+                            .multilineTextAlignment(.center)
+                            .foregroundColor(Color.white)
+                            .rotationEffect(.degrees(-20))
+                        //                .blinking(duration: 3.0)
+                            .shadow(color: Color.white, radius: 6, x: 3, y: 5)
+                            .opacity(0.35)
+                        
+                    }
+            
+            Spacer ()
+                        .frame(width: 25)
       
             ZStack {
                 
