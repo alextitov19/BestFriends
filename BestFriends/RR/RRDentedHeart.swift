@@ -172,14 +172,14 @@ struct RRDentedHeart: View {
                                     
                                 
                                     
-                                    Text("omg")
+                                    Text("omg,")
                                         .font(.system(size: 45, weight: .medium))
                                         .foregroundColor(ColorManager .grey1)
                                         .shadow(color: ColorManager .purple3, radius: 65, x: 30, y: 50)
                                         .opacity(0.5)
                                     
                                     Text("this Hurts!!!")
-                                        .font(.system(size: 45, weight: .medium))
+                                        .font(.system(size: 45, weight: .regular))
                                         .foregroundColor(ColorManager .grey1)
                                         .shadow(color: ColorManager .purple3, radius: 65, x: 30, y: 50)
                                         .opacity(0.5)
