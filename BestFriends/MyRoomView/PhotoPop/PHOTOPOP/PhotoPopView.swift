@@ -59,29 +59,13 @@ struct PhotoPopView: View {
                     
             VStack {
 
-                           HStack {
-                               
-                               Text("")
-                                   .fontWeight(.light)
+                Spacer ()
+                .frame(height: 30)
                          
-                               
-                               Spacer ()
-                                   .frame(width: 300)
-                           
-                               NavigationLink( destination:  CH5(user: user, friends: friends),
-                                               label: {
-                                   Image(systemName: "info.circle")
-                                       .resizable()
-                                       .scaledToFit()
-                                       .frame(width: 35, height: 35)
-                                       .foregroundColor(Color.white)
-                                       .opacity(0.5)
-                               
-                       }
-                   )}
-                           
-                           ZStack {
-                               
+                ZStack {
+                    
+                  
+                    
                                HStack {
                                    
                                
@@ -149,7 +133,30 @@ struct PhotoPopView: View {
                             }
                     }
                 
+            
+                VStack {
                     
+                    
+                    Text("only 1 image per friend may be active at a time")
+                        .font(.system(size: 12))
+                        .fontWeight(.light)
+                        .multilineTextAlignment(.center)
+                        .foregroundColor(ColorManager .grey4)
+                    
+                    Text("tap to delete current image")
+                        .font(.system(size: 12))
+                        .fontWeight(.light)
+                        .multilineTextAlignment(.center)
+                        .foregroundColor(ColorManager .grey4)
+                    
+                    Text("image will not appear distored on friends iPhone")
+                        .font(.system(size: 12))
+                        .fontWeight(.light)
+                        .multilineTextAlignment(.center)
+                        .foregroundColor(ColorManager .grey4)
+                }
+                
+                
                     if isLoading {
                         ProgressView()
                             .progressViewStyle(CircularProgressViewStyle(tint: Color.white))

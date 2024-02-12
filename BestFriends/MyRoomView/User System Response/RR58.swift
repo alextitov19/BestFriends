@@ -46,7 +46,7 @@ struct RR58: View {
     
     
     @State var animate: Bool = false
-    let animation: Animation = Animation.linear(duration: 5.0).repeatForever(autoreverses: false)
+    let animation: Animation = Animation.linear(duration: 3.0).repeatForever(autoreverses: false)
     
     
     var body: some View {
@@ -84,24 +84,14 @@ struct RR58: View {
                
                 }
                 
-//*************************************************** in-app notifications
-                
- 
-        
-        
-          VStack {
+  
+    
+        VStack {
               
-      
-//              *******************
-              
+            Spacer ()
+                .frame(height: 30)
             
-//          }
-//      }
-
-              
-              
-//              *********************************************
-              
+            
               VStack {
                   
                   HStack {

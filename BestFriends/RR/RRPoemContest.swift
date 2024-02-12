@@ -39,9 +39,9 @@ struct RRPoemContest: View {
         
         ZStack {
             
-            Color.black
+            ColorManager .grey4
                 .ignoresSafeArea()
-                .opacity(0.7)
+                .opacity(0.99)
             
                         AdPlayerView(name: "sky2")
                             .ignoresSafeArea()
@@ -58,12 +58,12 @@ struct RRPoemContest: View {
             AdPlayerView(name: "easyHearts2")
                 .ignoresSafeArea()
                 .blendMode(.screen)
-                .opacity(0.9)
+                .opacity(0.7)
             
             AdPlayerView(name: "dining5")
                 .ignoresSafeArea()
                 .blendMode(.screen)
-                .opacity(0.9)
+                .opacity(0.15)
             
             //          ********************************************
             
