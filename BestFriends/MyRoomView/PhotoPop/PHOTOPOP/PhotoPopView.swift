@@ -74,8 +74,8 @@ struct PhotoPopView: View {
                                    .fontWeight(.bold)
                                    .multilineTextAlignment(.center)
                                    .foregroundColor(Color.white)
-                                   .rotationEffect(.degrees(-20))
-                                   .blinking(duration: 3.0)
+//                                   .rotationEffect(.degrees(-20))
+                                   .blinking(duration: 4.0)
                                    .shadow(color: ColorManager .grey3, radius: 0.7, x: 0.5, y: 0.5)
                                    .opacity(0.5)
                                

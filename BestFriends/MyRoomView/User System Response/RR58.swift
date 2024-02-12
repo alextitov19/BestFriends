@@ -107,10 +107,10 @@ struct RR58: View {
                       
                       
                       Spacer()
-                          .frame(width: 200)
+                          .frame(width: 50)
                       
                       GeometryReader { geo in
-                          HStack(spacing: -5) {
+                          HStack(spacing: 1) {
                               
                               
                               ZStack {
@@ -132,13 +132,23 @@ struct RR58: View {
                                   
                               }
                               
+                              
                               Image("")
                                   .aspectRatio(contentMode: .fit)
-                                  .frame(width: geo.size.width, alignment: .leading)
+                                  .frame(width: geo.size.width, alignment: .trailing)
                           }
                           .frame(width: geo.size.width, height: geo.size.height,
-                                 alignment: animate ? .trailing : .leading)
-                      }
+                                 alignment: animate ? .leading : .trailing)
+                          
+                      
+//                              Image("")
+//                                  .aspectRatio(contentMode: .fit)
+//                                  .frame(width: geo.size.width, alignment: .leading)
+//                          }
+//                          .frame(width: geo.size.width, height: geo.size.height,
+//                                 alignment: animate ? .trailing : .leading)
+                    
+                  }
                       .ignoresSafeArea()
                       .onAppear {
                           withAnimation(animation) {
