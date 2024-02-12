@@ -822,34 +822,35 @@ struct RRLoveTarts5: View {
                                     
                                     VStack {
                                         
-                                        
-                                        Text("Uggg")
+                                        Text("BreakUp")
                                             .font(.system(size: 25))
                                             .foregroundColor(Color .white)
+                                            .fontWeight(.medium)
+                                            .rotationEffect(.degrees(-10))
+                                            .opacity(0.99)
+                                            .multilineTextAlignment(.center)
+                                        
+                                        Text(" Ugggggg")
+                                            .font(.system(size: 17))
+                                            .foregroundColor(Color .white)
                                             .italic()
-                                            .fontWeight(.bold)
+                                            .fontWeight(.regular)
                                             .rotationEffect(.degrees(-13))
                                             .opacity(0.99)
                                             .multilineTextAlignment(.center)
                                         
-                                        Spacer ()
-                                            .frame(height: 7)
+//                                        Spacer ()
+//                                            .frame(height: 7)
                                         
-                                        Text("   hurt")
-                                            .font(.system(size: 20))
-                                            .foregroundColor(Color .white)
-                                            .fontWeight(.medium)
-                                            .rotationEffect(.degrees(-10))
-                                            .opacity(0.99)
-                                            .multilineTextAlignment(.center)
+                                      
                                         
-                                        Text("    heart")
-                                            .font(.system(size: 20))
-                                            .foregroundColor(Color .white)
-                                            .fontWeight(.medium)
-                                            .rotationEffect(.degrees(-10))
-                                            .opacity(0.99)
-                                            .multilineTextAlignment(.center)
+//                                        Text("    heart")
+//                                            .font(.system(size: 20))
+//                                            .foregroundColor(Color .white)
+//                                            .fontWeight(.medium)
+//                                            .rotationEffect(.degrees(-10))
+//                                            .opacity(0.99)
+//                                            .multilineTextAlignment(.center)
                                         
                                     }
                                     

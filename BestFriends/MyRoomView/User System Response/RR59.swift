@@ -55,7 +55,7 @@ struct RR59: View {
 //                .blendMode(.screen)
 //                .opacity(0.5)
             
-            AdPlayerView(name: "OffPlanet3")
+            AdPlayerView(name: "background_8")
                 .ignoresSafeArea()
                 .blendMode(.screen)
                 .opacity(0.7)
@@ -144,20 +144,21 @@ struct RR59: View {
                     HStack {
                         VStack {
                             
+                        
                             
-//                            NavigationLink(destination: RR20(user: user, friend: user, friends: friends, groups: groups), label: {
-//                                HugCircle (color: ColorManager .grey1, friendName: "Friend \naffirmation")
-//                            })
-//                            .offset(x: showItems ? -120 : 0, y: showItems ? 100: 0)
-//                            .shadow(color: Color.white, radius: 10, x: -4, y: 4)
-//                            .opacity(0.75)
-//
+                            NavigationLink(destination: WhyFiveFriends(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups), label: {
+                                HugCircle (color: ColorManager .grey1, friendName: "Hurt \nFeelings")
+                            })
+                            .offset(x: showItems ? -120 : 0, y: showItems ? 100: 0)
+                            .shadow(color: Color.white, radius: 10, x: -4, y: 4)
+                            .opacity(0.75)
+
                       
                         }
                         
                         
-//                        Spacer()
-//                            .frame(width: 50)
+                        Spacer()
+                            .frame(width: 50)
                         
                         //                            NavigationLink(destination: ChatInfo(user: user), label: {
                         

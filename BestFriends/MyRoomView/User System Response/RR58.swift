@@ -268,15 +268,15 @@ struct RR58: View {
                 NavigationLink(destination: RRLoveTarts5(user: user, friend: user, friends: friends, groups: groups, atmosphere: atmosphere, friendAtmospheres: friendAtmospheres), label: {
                     ZStack {
                         VStack {
-                            Text("sending")
-                                .font(.system(size: 17))
-                                .italic()
-                                .foregroundColor(Color.white)
-                                .fontWeight(.regular)
-                                .rotationEffect(.degrees(-10))
-                                .multilineTextAlignment(.center)
-                                .glow(color: ColorManager .purple3, radius: 2)
-                                .opacity(0.3)
+//                            Text("sending")
+//                                .font(.system(size: 17))
+//                                .italic()
+//                                .foregroundColor(Color.white)
+//                                .fontWeight(.regular)
+//                                .rotationEffect(.degrees(-10))
+//                                .multilineTextAlignment(.center)
+//                                .glow(color: ColorManager .purple3, radius: 2)
+//                                .opacity(0.3)
                             
                             Spacer ()
                                 .frame(height: 5)
@@ -453,7 +453,7 @@ struct RR58: View {
                                 HStack {
                                
                                     ZStack {
-                                        Text("BIG day!!!")
+                                        Text("my BIG day!")
                                             .fontWeight(.regular)
                                             .frame(width: 150, height: 35)
                                             .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
@@ -519,7 +519,7 @@ struct RR58: View {
                                     
                                     
                                     ZStack {
-                                        Text("Off Planet")
+                                        Text("Orbiting Jupitar")
                                             .fontWeight(.regular)
                                             .frame(width: 200, height: 35)
                                             .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))

@@ -125,7 +125,7 @@ struct RRDentedHeart: View {
                                         
                                         Image(systemName: "heart.fill")
                                             .resizable()
-                                            .foregroundColor(ColorManager .purple3)
+                                            .foregroundColor(ColorManager .orange4)
                                             .frame(width: 140, height: 110)
                                             .shadow(color: ColorManager .purple1, radius: 3, x: 3, y: 3)
                                             .rotationEffect(.degrees(10))
@@ -133,11 +133,11 @@ struct RRDentedHeart: View {
                                         
                                         
                                         
-                                        NavigationLink(destination:  WhyFiveFriends(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
+                    NavigationLink(destination:  PhotoPopFGPreload(user: user, friend: user, friends: friends, groups: groups),
                                                        label: {
                                             
                                             VStack {
-                                                Text("Hurt \nFeelings")
+                                                Text("Talk \nCoupon")
                                                     .font(.system(size: 20))
                                                     .fontWeight(.bold)
                                                     .multilineTextAlignment(.center)
@@ -172,7 +172,13 @@ struct RRDentedHeart: View {
                                     
                                 
                                     
-                                    Text("This Hurts!!!")
+                                    Text("omg")
+                                        .font(.system(size: 45, weight: .medium))
+                                        .foregroundColor(ColorManager .grey1)
+                                        .shadow(color: ColorManager .purple3, radius: 65, x: 30, y: 50)
+                                        .opacity(0.5)
+                                    
+                                    Text("this Hurts!!!")
                                         .font(.system(size: 45, weight: .medium))
                                         .foregroundColor(ColorManager .grey1)
                                         .shadow(color: ColorManager .purple3, radius: 65, x: 30, y: 50)

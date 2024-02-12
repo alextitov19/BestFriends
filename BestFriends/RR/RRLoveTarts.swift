@@ -111,7 +111,7 @@ struct RRLoveTarts: View {
                     .ignoresSafeArea()
                     .blendMode(.screen)
                 
-                
+        
                 AdPlayerView(name: "BlowingKisses2")
                     .ignoresSafeArea()
                     .blendMode(.screen)

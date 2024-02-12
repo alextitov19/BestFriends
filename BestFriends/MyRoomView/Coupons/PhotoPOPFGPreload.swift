@@ -105,15 +105,34 @@ struct PhotoPopFGPreload: View {
             } else {
                 
                 
-                Color.black
-                    .opacity(0.9)
-                    .ignoresSafeArea()
-                
-                
-                AdPlayerView(name: "background_8")
-                    .ignoresSafeArea()
-                    .blendMode(.screen)
-                
+                //                Color.black
+                //                    .opacity(0.99)
+                //                    .ignoresSafeArea()
+                                
+                                ColorManager .grey4
+                                    .opacity(0.99)
+                                    .ignoresSafeArea()
+                                
+                                Image("purpleBackground")
+                                    .resizable()
+                                    .ignoresSafeArea()
+                                    .scaledToFill()
+                                    .opacity(0.9)
+                                
+                //                AdPlayerView(name: "sky2")
+                //                    .ignoresSafeArea()
+                //                    .blendMode(.screen)
+                //                    .opacity(0.9)
+                                
+                                AdPlayerView(name: "CHsBackground3")
+                                    .ignoresSafeArea()
+                                    .blendMode(.screen)
+                                    .opacity(0.99)
+                                
+                                AdPlayerView(name: "moonShots3")
+                                    .ignoresSafeArea()
+                                    .blendMode(.screen)
+                                    .opacity(0.9)
                 
                 
             }
@@ -127,13 +146,13 @@ struct PhotoPopFGPreload: View {
                 Text("Let's get together")
                     .font(.system(size: 20))
                     .fontWeight(.light)
-                    .foregroundColor(Color.white)
+                    .foregroundColor(ColorManager .grey3)
                     .multilineTextAlignment(.center)
                 
-                Text("to grab an ice cream, a burger...")
+                Text("to grab an ice cream, a coffee...")
                     .font(.system(size: 23))
                     .fontWeight(.light)
-                    .foregroundColor(Color.white)
+                    .foregroundColor(ColorManager .grey3)
                     .multilineTextAlignment(.center)
 
                 Spacer()
@@ -143,44 +162,87 @@ struct PhotoPopFGPreload: View {
                     .font(.system(size: 20))
                     .italic()
                     .fontWeight(.light)
-                    .foregroundColor(Color.white)
+                    .foregroundColor(ColorManager .grey3)
                     .multilineTextAlignment(.center)
   
-                        
-                        ZStack(alignment: .bottom) {
-                            VStack {
+//  **************************************
+                
+                ZStack {
+                    
+                    VStack {
                                 Spacer()
                                 // TextField for userInput
-                                TextField("", text: $customMessage)
-                                    .placeholder(when: customMessage.isEmpty) {
-                                        HStack {
-                                            Text("Type your idea here...")
-                                                .foregroundColor(Color.white)
-                                                .fontWeight(.thin)
-                                                .background(Color.black)
-                                            
-                                            Spacer()
-                                        }
+                        TextField("", text: $customMessage)
+                            .placeholder(when: customMessage.isEmpty) {
+                                HStack {
+                                    VStack {
+                                        Text("type best quality here...")
+                                            .foregroundColor(ColorManager .grey4)
+                                            .fontWeight(.thin)
+
+                                        
+                                        Spacer()
+                                            .frame(height: 20)
+                                        
                                     }
-                                    .foregroundColor(.white)
-                                    .font(.system(size: 19))
-                                    .submitLabel(.done)
-                                    .onReceive(Just(customMessage)) { _ in limitText(65) }
-                                    .padding(.top, 20)
-                                    .padding(.horizontal, 40)
-                                    .overlay(
-                                        RoundedRectangle(cornerRadius: 10)
-                                            .stroke(Color.purple)
-                                            .frame(height: 40)
-                                            .padding(.horizontal, 30)
-                                    )
-                                    .padding(.bottom, 5)
-                                
-                                
-                                
-                                
+                                    
+                                    
+                                    Spacer()
+                                }
+                            }
+                            .foregroundColor(.black)
+                            .font(.system(size: 15))
+                            .submitLabel(.done)
+                            .onReceive(Just(customMessage)) { _ in limitText(65) }
+                            .padding(.top, 20)
+                            .padding(.horizontal, 80)
+                            .overlay(
+                                RoundedRectangle(cornerRadius: 10)
+                                    .stroke(Color.purple)
+                                //                                                            .background(ColorManager.purple3)
+                                    .frame(height: 50)
+                                    .padding(.horizontal, 50)
+                            )
+                            .padding(.bottom, 5)
                             }
                         }
+                
+                
+//    *********************************************
+//                        ZStack(alignment: .bottom) {
+//                            VStack {
+//                                Spacer()
+//                                // TextField for userInput
+//                                TextField("", text: $customMessage)
+//                                    .placeholder(when: customMessage.isEmpty) {
+//                                        HStack {
+//                                            Text("Type your idea here...")
+//                                                .foregroundColor(ColorManager .grey4)
+//                                                .fontWeight(.thin)
+////                                                .background(Color.black)
+//                                            
+//                                            Spacer()
+//                                        }
+//                                    }
+//                                    .foregroundColor(ColorManager .grey4)
+//                                    .font(.system(size: 19))
+//                                    .submitLabel(.done)
+//                                    .onReceive(Just(customMessage)) { _ in limitText(65) }
+//                                    .padding(.top, 20)
+//                                    .padding(.horizontal, 40)
+//                                    .overlay(
+//                                        RoundedRectangle(cornerRadius: 10)
+//                                            .stroke(Color.purple)
+//                                            .frame(height: 40)
+//                                            .padding(.horizontal, 30)
+//                                    )
+//                                    .padding(.bottom, 5)
+//                                
+//                                
+//                                
+//                                
+//                            }
+//                        }
                         
 
                     
@@ -189,11 +251,11 @@ struct PhotoPopFGPreload: View {
                         Spacer()
                             .frame(height: 15)
                         
-                        Text("(Notify your friend)")
+                        Text("(send push notification)")
                             .font(.system(size: 15))
                             .italic()
                             .fontWeight(.light)
-                            .foregroundColor(Color.white)
+                            .foregroundColor(ColorManager .grey3)
                             .multilineTextAlignment(.center)
                         
                         
@@ -287,27 +349,27 @@ struct PhotoPopFGPreload: View {
                         Spacer()
                             .frame(height: 20)
                         
-                        
                         Button(action: {
                             counter += 1
                             shareTapped = true
                             shareButtonTapped()
-                            sendMessage()
                         },
                                label: {
-                            Text("SHARE")
-                            
-                                .fontWeight(.thin)
-                                .frame(width: 100, height: 30)
-                                .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                .font(.system(size: 25))
-                                .background(shareColor)
-                                .cornerRadius(25)
-                                .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                            Image("iconShare")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 80, height: 80)
+                                .rotationEffect(.degrees(20))
+                                .foregroundColor(ColorManager .purple5)
+                                .glow(color: Color.purple, radius: 2)
+                                .opacity(0.6)
+                                .blinking(duration: 3.0)
                                 .alert("Your Meetup Coupon \n\nhas been sent.", isPresented: $showingAlert) {
                                     Button("OK", role: .cancel) { }
+                                    
                                 }
                         })
+
                         
                         Spacer()
                         
