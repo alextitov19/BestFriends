@@ -88,7 +88,7 @@ struct FH2: View {
                             //                                .blinking(duration: 2.0)
                             
                             
-                            Text("We got you convered")
+                            Text("We got you")
                                 .font(.system(size: 20))
                                 .fontWeight(.light)
                                 .multilineTextAlignment(.leading)
@@ -113,7 +113,7 @@ struct FH2: View {
                     
                     VStack {
                         
-                        Text("Masked Chat GPT...")
+                        Text("AI visual aura")
                             .font(.system(size: 35))
                             .foregroundColor(Color.white)
                             .fontWeight(.light)
@@ -123,7 +123,7 @@ struct FH2: View {
                         Spacer()
                             .frame(height: 10)
                         
-                        Text("comming Q1:2024")
+                        Text("comming Q3:2024")
                             .font(.system(size: 27))
                             .italic()
                             .multilineTextAlignment(.center)

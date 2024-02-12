@@ -117,47 +117,47 @@ struct NEWSFeedPergion: View {
                 
                 VStack {
                     
-                    HStack {
+//                    HStack {
                         
-                        
-                        ZStack {
-                            
-                            Image(systemName: "heart.fill")
-                                .resizable()
-                                .foregroundColor(Color.purple)
-                                .frame(width: 130, height: 85)
-                                .shadow(color: ColorManager .purple3, radius: 65, x: 30, y: 50)
-                                .opacity(0.5)
-                            
-                            NavigationLink(
-                                destination:  PhotoPopView(user: user, friends: friends),
-                                label: {
-                                    
-                                    Image("IconPhotoNew")
-                                        .resizable()
-                                        .scaledToFit()
-                                        .frame(width: 70, height: 70)
-                                        .foregroundColor(Color.purple)
-//                                        .glow(color: Color.white, radius: 0.3)
-//                                        .shadow(color: .white, radius: 1, x: 3, y: -0.5)
-                                        .opacity(0.7)
-                                    
-                                })
-                            
-                            Spacer ()
-                                .frame(width: 100)
-                            
-                            Image(systemName: "heart.fill")
-                                .resizable()
-                                .foregroundColor(Color.purple)
-                                .frame(width: 0, height: 0)
-                                .shadow(color: ColorManager .purple3, radius: 65, x: 30, y: 50)
-                                .opacity(0.0)
-                            
-                            
-                            
-                        }
-                    }
+//                        
+//                        ZStack {
+//                            
+//                            Image(systemName: "heart.fill")
+//                                .resizable()
+//                                .foregroundColor(Color.purple)
+//                                .frame(width: 130, height: 85)
+//                                .shadow(color: ColorManager .purple3, radius: 65, x: 30, y: 50)
+//                                .opacity(0.5)
+//                            
+//                            NavigationLink(
+//                                destination:  PhotoPopView(user: user, friends: friends),
+//                                label: {
+//                                    
+//                                    Image("IconPhotoNew")
+//                                        .resizable()
+//                                        .scaledToFit()
+//                                        .frame(width: 70, height: 70)
+//                                        .foregroundColor(Color.purple)
+////                                        .glow(color: Color.white, radius: 0.3)
+////                                        .shadow(color: .white, radius: 1, x: 3, y: -0.5)
+//                                        .opacity(0.7)
+//                                    
+//                                })
+//                            
+//                            Spacer ()
+//                                .frame(width: 100)
+//                            
+//                            Image(systemName: "heart.fill")
+//                                .resizable()
+//                                .foregroundColor(Color.purple)
+//                                .frame(width: 0, height: 0)
+//                                .shadow(color: ColorManager .purple3, radius: 65, x: 30, y: 50)
+//                                .opacity(0.0)
+//                            
+//                            
+//                            
+//                        }
+//                    }
                     
                     //                        NavigationLink( destination:  PhotoPopView(user: user, friends: friends),
                     //                                        label: {
@@ -276,7 +276,7 @@ struct NEWSFeedPergion: View {
                     
                     
                     Spacer()
-                        .frame(height: 7)
+                        .frame(height: 15)
                     
                     Button(action: {
                         counter += 1
@@ -326,23 +326,23 @@ struct NEWSFeedPergion: View {
                         Spacer()
                             .frame(height: 30)
                         
-                        Button(action: {
-                            sessionManager.showLogin()
-                        },
-                               label: {
-                            Image("home-alt2")
-                                .frame(width: 50, height: 25)
-                                .foregroundColor(.white)
-                                .font(.system(size: 20))
-                                .background(ColorManager .grey3)
-                                .cornerRadius(15)
-                                .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
-                                .opacity(0.70)
-                            
-                        })
+//                        Button(action: {
+//                            sessionManager.showLogin()
+//                        },
+//                               label: {
+//                            Image("home-alt2")
+//                                .frame(width: 50, height: 25)
+//                                .foregroundColor(.white)
+//                                .font(.system(size: 20))
+//                                .background(ColorManager .grey3)
+//                                .cornerRadius(15)
+//                                .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
+//                                .opacity(0.70)
+//                            
+//                        })
                         
                         Spacer()
-                            .frame(height: 50)
+                            .frame(height: 300)
                         
                         
                         //                            Text("By tapping [Share] your CareHeart is automatically \nsent to: in-app & push notifications + our Widget")

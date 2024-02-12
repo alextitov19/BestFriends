@@ -66,7 +66,7 @@ struct SendKisses: View {
 
 
                 ColorManager .grey2
-                    .opacity(0.7)
+                    .opacity(0.5)
                     .ignoresSafeArea()
                 
                 
@@ -75,12 +75,15 @@ struct SendKisses: View {
                     .blendMode(.screen)
                     .opacity(0.9)
                 
-                AdPlayerView(name: "blowingkissesVid")
+//                AdPlayerView(name: "blowingkissesVid")
+//                    .ignoresSafeArea()
+//                    .blendMode(.screen)
+//                    .opacity(0.8)
+           
+                AdPlayerView(name: "NataliaKisses2")
                     .ignoresSafeArea()
                     .blendMode(.screen)
-                    .opacity(0.8)
-           
-              
+                    .opacity(0.99)
                 
             }
             
@@ -119,35 +122,35 @@ struct SendKisses: View {
                 
                 
                            Spacer()
-                               .frame(height: 130)
+                               .frame(height: 350)
                 
-                HStack {
-                    
-                    ZStack {
-                        
-                        Image(systemName: "heart.fill")
-                            .resizable()
-                            .foregroundColor(Color.purple)
-                            .frame(width: 130, height: 95)
-                            .shadow(color: ColorManager .purple3, radius: 65, x: 30, y: 50)
-                            .opacity(0.6)
-                        
-                        NavigationLink(
-                            destination:  PhotoPopView(user: user, friends: friends),
-                            label: {
-                                
-                                Image("IconPhotoNew")
-                                    .resizable()
-                                    .scaledToFit()
-                                    .frame(width: 70, height: 70)
-                                    .foregroundColor(Color.purple)
-//                                    .glow(color: Color.white, radius: 0.3)
-//                                    .shadow(color: .white, radius: 1, x: 3, y: -0.5)
-                                    .opacity(0.95)
-                                
-                            })
-                        
-                    }
+               HStack {
+//                    
+//                    ZStack {
+//                        
+//                        Image(systemName: "heart.fill")
+//                            .resizable()
+//                            .foregroundColor(Color.purple)
+//                            .frame(width: 130, height: 95)
+//                            .shadow(color: ColorManager .purple3, radius: 65, x: 30, y: 50)
+//                            .opacity(0.6)
+//                        
+//                        NavigationLink(
+//                            destination:  PhotoPopView(user: user, friends: friends),
+//                            label: {
+//                                
+//                                Image("IconPhotoNew")
+//                                    .resizable()
+//                                    .scaledToFit()
+//                                    .frame(width: 70, height: 70)
+//                                    .foregroundColor(Color.purple)
+////                                    .glow(color: Color.white, radius: 0.3)
+////                                    .shadow(color: .white, radius: 1, x: 3, y: -0.5)
+//                                    .opacity(0.95)
+//                                
+//                            })
+//                        
+//                    }
                     
                     Spacer ()
                         .frame(width: 280)

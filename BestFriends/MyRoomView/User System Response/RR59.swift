@@ -260,19 +260,19 @@ struct RR59: View {
                    HStack {
                         
                   
-//
-//                       NavigationLink(destination: FH2(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups), label: {
-//                           HugCircle (color: ColorManager .grey1, friendName: "AI \ncoming \n2024")
-//                       })
-//                       .offset(x: showItems ? 85 : 0, y: showItems ? 400: 0)
-//                       .shadow(color: Color.white, radius: 4, x: 2, y: 3)
-//                       .opacity(0.75)
-//
+
+                       NavigationLink(destination: FH2(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups), label: {
+                           HugCircle (color: ColorManager .grey1, friendName: "AI \ncoming \n2024")
+                       })
+                       .offset(x: showItems ? 85 : 0, y: showItems ? 400: 0)
+                       .shadow(color: Color.white, radius: 4, x: 2, y: 3)
+                       .opacity(0.75)
+
 
                         
-//                       Spacer()
-//                           .frame(width: 50)
-//
+                       Spacer()
+                           .frame(width: 50)
+
                         ZStack {
                             
                             NavigationLink(destination: InfoView(user: user, friends: friends), label: {
