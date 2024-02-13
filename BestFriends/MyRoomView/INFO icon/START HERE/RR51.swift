@@ -58,36 +58,7 @@ struct RR51: View {
                 ZStack {
 //        *************************************
                     
-                    NavigationLink(
-                        destination:  RR4(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
-                        label: {
-                            
-                            ZStack {
-                                
-                                Image("CoolGuy")
-                                    .aspectRatio(contentMode: .fit)
-                                    .frame(width: 35, height: 35)
-                                    .opacity(0.3)
-                                    .blinking(duration: 2.0)
-                                
-                                Text("First Time User (TAP)")
-                                    .fontWeight(.medium)
-                                    .frame(width: 170, height: 22)
-                                    .foregroundColor(Color.white)
-                                    .font(.system(size: 15))
-                                    .background(ColorManager .grey3)
-                                    .cornerRadius(7)
-//                                                                .rotationEffect(.degrees(-38))
-                                    .opacity(0.35)
-                                    .blinking(duration: 3.0)
-                                    .shadow(color: ColorManager .purple3, radius: 2, x: 0, y: 3)
-
-                     
-                            }
-                        })
-                
-            
-                    
+         
                     
 //         ********************************************
                     
@@ -95,13 +66,13 @@ struct RR51: View {
                     Image(systemName: "circle.fill")
                         .resizable()
                         .foregroundColor(Color.purple)
-                        .frame(width: 500, height: 500)
+                        .frame(width: 550, height: 550)
                         .shadow(color: ColorManager .purple2, radius: 65, x: 30, y: 50)
-                        .opacity(0.95)
+                        .opacity(0.8)
                     
                     VStack {
                         
-                        Text("Designed by over 150 \nteens worldwide")
+                        Text("Designed under the")
                             .font(.system(size: 20))
                             .italic()
                             .foregroundColor(Color.white)
@@ -109,24 +80,15 @@ struct RR51: View {
                             .multilineTextAlignment(.center)
                             .opacity(0.7)
                         
+                        Text("National Science Foundation")
+                            .font(.system(size: 25))
+                            .foregroundColor(Color.white)
+                            .fontWeight(.regular)
+                            .multilineTextAlignment(.center)
+                            .opacity(0.9)
+                        
                         HStack {
-                            NavigationLink(
-                                destination:   SettingsView(user: user, friends: friends, atmosphere: atmosphere),
-                                label: {
-                                    
-                                    ZStack {
-                                        Text("Settings")
-                                            .fontWeight(.light)
-                                            .frame(width: 200, height: 40)
-                                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                                            .font(.system(size: 25))
-                                            .background(Color.cyan)
-                                            .cornerRadius(10)
-                                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                                        
-                                        
-                                    }
-                                })
+                          
                            
 //  ***********************************
                             
@@ -136,27 +98,29 @@ struct RR51: View {
                                 Image("comicBubble")
                                     .resizable()
                                     .foregroundColor(ColorManager .orange3)
-                                    .frame(width: 130, height: 90)
+                                    .frame(width: 150, height: 110)
                                     .shadow(color: ColorManager .purple1, radius: 3, x: 3, y: 3)
                                     .rotationEffect(.degrees(-10))
-                                    .blinking(duration: 2.0)
-                                    .opacity(0.7)
+                                    .blinking(duration: 3.0)
+                                    .opacity(0.9)
                                 
                                 VStack {
                                     
                                     Link(destination: URL(string: "https://docs.google.com/forms/d/e/1FAIpQLSeR-uflz8Y3slsu8utnYIoN9QPKL4Dx6-sOh6r30Y8yB5I5VQ/viewform")!) {
                                         
                                         
-                                        
-                                        Text("your \nfeedback")
-                                            .font(.system(size: 12))
-                                            .fontWeight(.light)
-                                            .multilineTextAlignment(.center)
-                                            .rotationEffect(.degrees(-10))
-                                            .blinking(duration: 2.0)
-                                            .foregroundColor(ColorManager .grey2)
-                                        
-                                  
+                                      
+                                        VStack {
+                                            Text("your \nfeedback")
+                                                .font(.system(size: 15))
+                                                .fontWeight(.regular)
+                                                .multilineTextAlignment(.center)
+                                                .rotationEffect(.degrees(-10))
+                                                .blinking(duration: 3.0)
+                                                .foregroundColor(ColorManager .grey2)
+                                       Spacer ()
+                                                .frame(height: 5)
+                                        }
                                         
                                     }
                                 }
@@ -167,24 +131,21 @@ struct RR51: View {
 //**********************************************************
                             
                         }
-                        Spacer()
-                            .frame(height: 30)
                         
-                        Text("Let the outside of you")
-                            .font(.system(size: 35))
+                        Text("Making friendships")
+                            .font(.system(size: 40))
                             .foregroundColor(Color.white)
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
-                            .opacity(0.99)
-                     
-                        Text("match the inside of you")
-                            .font(.system(size: 37))
+                            .opacity(0.9)
+                        
+                        Text("a little easer")
+                            .font(.system(size: 30))
+                            .italic()
                             .foregroundColor(Color.white)
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)
-                            .opacity(0.90)
-                        
-
+                            .opacity(0.9)
                         
                         VStack {
                             NavigationLink(
@@ -205,40 +166,47 @@ struct RR51: View {
                                     }
                                 })
                             
-                   
+                            Spacer ()
+                                .frame(height: 10)
+                            
+                            NavigationLink(
+                                destination:   SettingsView(user: user, friends: friends, atmosphere: atmosphere),
+                                label: {
+                                    
+                                    ZStack {
+                                        Text("Settings")
+                                            .fontWeight(.light)
+                                            .frame(width: 200, height: 40)
+                                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                            .font(.system(size: 25))
+                                            .background(Color.cyan)
+                                            .cornerRadius(10)
+                                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                                        
+                                        
+                                    }
+                                })
+                          
+                         
                             
                             Spacer()
-                                .frame(height: 5)
+                                .frame(height: 10)
                             
-                            
-                            Text("- protected & non-toxic")
-                                .font(.system(size: 20))
-                                .italic()
-                                .foregroundColor(Color.white)
-                                .fontWeight(.light)
-                                .multilineTextAlignment(.center)
-                                .opacity(0.7)
-                            
-                            
-                            Text("- no likes, profiles or comments")
-                                .font(.system(size: 20))
-                                .italic()
-                                .foregroundColor(Color.white)
-                                .fontWeight(.light)
-                                .multilineTextAlignment(.center)
-                                .opacity(0.7)
-                            
-                            
-                            Text("shelter from the storm ")
-                                .font(.system(size: 25))
+                            VStack {
                                 
-                                .foregroundColor(Color.white)
-                                .fontWeight(.light)
-                                .multilineTextAlignment(.center)
-                                .opacity(0.7)
-                            
-                            Spacer()
-                                .frame(height: 30)
+                                Link(destination: URL(string: "https://socialtechlabs.com/social-media-influencers/")!) {
+                                    
+                                    Text("Early Supporters")
+                                        .fontWeight(.light)
+                                        .frame(width: 200, height: 40)
+                                        .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
+                                        .font(.system(size: 25))
+                                        .background(Color.cyan)
+                                        .cornerRadius(10)
+                                        .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+                                    
+                                }
+                            }
                             
                             VStack {
                                 
@@ -262,21 +230,7 @@ struct RR51: View {
                 }
                 
               
-                VStack {
-                    
-                    Link(destination: URL(string: "https://socialtechlabs.com/social-media-influencers/")!) {
-                        
-                        Text("Supportive social Influencers")
-                            .fontWeight(.thin)
-                            .frame(width: 320, height: 40)
-                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-                            .font(.system(size: 25))
-                            .background(Color.cyan)
-                            .cornerRadius(10)
-                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-                        
-                    }
-                }
+             
                 
                 
                 Spacer()

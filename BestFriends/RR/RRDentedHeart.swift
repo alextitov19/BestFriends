@@ -67,7 +67,7 @@ struct RRDentedHeart: View {
                 
                 
                 ColorManager .grey2
-                    .opacity(0.9)
+                    .opacity(0.6)
                     .ignoresSafeArea()
                 
                 AdPlayerView(name: "sky2")
@@ -82,11 +82,16 @@ struct RRDentedHeart: View {
                    .opacity(0.0)
               
                 
-                AdPlayerView(name: "missingYou3")
+//                AdPlayerView(name: "missingYou3")
+//                    .ignoresSafeArea()
+//                    .blendMode(.screen)
+//                   .opacity(0.8)
+
+               
+                AdPlayerView(name: "BreakUp2")
                     .ignoresSafeArea()
                     .blendMode(.screen)
-                   .opacity(0.8)
-
+                   .opacity(0.9)
                 
             }
             

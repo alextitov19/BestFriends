@@ -107,7 +107,7 @@ struct RR58: View {
                       
                       
                       Spacer()
-                          .frame(width: 50)
+                          .frame(width: 140)
                       
                       GeometryReader { geo in
                           HStack(spacing: 1) {
@@ -157,8 +157,8 @@ struct RR58: View {
                           
                       }
                       
-                      Spacer()
-                          .frame(width: 100)
+//                      Spacer()
+//                          .frame(width: 10)
 //                      
 
                       

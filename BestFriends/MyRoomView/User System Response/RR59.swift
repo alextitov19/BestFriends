@@ -91,7 +91,7 @@ struct RR59: View {
                                 .multilineTextAlignment(.center)
                                 .foregroundColor(ColorManager .grey1)
                                 .shadow(color: Color.white, radius: 6, x: 3, y: 5)
-                                .opacity(0.25)
+                                .opacity(0.7)
     
                             Text("When friends aren't around")
                                 .font(.system(size: 17))
@@ -99,23 +99,23 @@ struct RR59: View {
                                 .multilineTextAlignment(.center)
                                 .foregroundColor(Color.white)
                                 .shadow(color: Color.white, radius: 3, x: 3, y: 5)
-                                .opacity(0.25)
+                                .opacity(0.7)
                             
-                            Text("- or -")
+//                            Text("- or -")
+//                                .font(.system(size: 17))
+//                                .fontWeight(.regular)
+//                                .multilineTextAlignment(.center)
+//                                .foregroundColor(Color.white)
+//                                .shadow(color: Color.white, radius: 3, x: 3, y: 5)
+//                                .opacity(0.7)
+                            
+                            Text("in the quiet of space")
                                 .font(.system(size: 17))
                                 .fontWeight(.regular)
                                 .multilineTextAlignment(.center)
                                 .foregroundColor(Color.white)
                                 .shadow(color: Color.white, radius: 3, x: 3, y: 5)
-                                .opacity(0.25)
-                            
-                            Text("what some quiet alone time")
-                                .font(.system(size: 17))
-                                .fontWeight(.regular)
-                                .multilineTextAlignment(.center)
-                                .foregroundColor(Color.white)
-                                .shadow(color: Color.white, radius: 3, x: 3, y: 5)
-                                .opacity(0.25)
+                                .opacity(0.7)
                             
                         }
                         

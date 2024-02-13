@@ -52,14 +52,20 @@ struct RR32: View {
                 
             } else {
                 
-                Color.black
-                    .opacity(0.99)
+                ColorManager .grey4
+                    .opacity(0.8)
                     .ignoresSafeArea()
                 
                 AdPlayerView(name: "sky2")
                     .ignoresSafeArea()
                     .blendMode(.screen)
                     .opacity(0.9)
+                
+                AdPlayerView(name: "NataliaCHs2")
+                    .ignoresSafeArea()
+                    .blendMode(.screen)
+                    .opacity(0.9)
+                
             }
             
    
@@ -83,23 +89,25 @@ VStack {
                         .rotationEffect(.degrees(-20))
                     //                .blinking(duration: 3.0)
                         .shadow(color: Color.white, radius: 6, x: 3, y: 5)
-                        .opacity(0.35)
+                        .opacity(0.9)
                     
                 
                         
-                        Text("I'm")
-                            .font(.system(size: 15))
-                            .fontWeight(.light)
-                            .multilineTextAlignment(.center)
-                            .foregroundColor(Color.white)
-                            .rotationEffect(.degrees(-20))
-                        
-                        Text("   Off Planet")
-                            .font(.system(size: 20))
-                            .fontWeight(.light)
-                            .multilineTextAlignment(.center)
-                            .foregroundColor(Color .green)
-                            .rotationEffect(.degrees(-20))
+//                        Text("I'm")
+//                            .font(.system(size: 15))
+//                            .fontWeight(.light)
+//                            .multilineTextAlignment(.center)
+//                            .foregroundColor(Color.white)
+//                            .rotationEffect(.degrees(-20))
+//                            .opacity(0.9)
+//                        
+//                        Text("   Off Planet")
+//                            .font(.system(size: 20))
+//                            .fontWeight(.light)
+//                            .multilineTextAlignment(.center)
+//                            .foregroundColor(Color .green)
+//                            .rotationEffect(.degrees(-20))
+//                            .opacity(0.9)
                     
                     
                 }
@@ -113,17 +121,19 @@ VStack {
                     
                     Text("Ask friends for")
                         .font(.system(size: 15))
-                        .fontWeight(.light)
+                        .fontWeight(.regular)
                         .multilineTextAlignment(.center)
                         .foregroundColor(Color.white)
                         .rotationEffect(.degrees(-20))
+                        .opacity(0.9)
                     
                     Text("   CareHearts")
                         .font(.system(size: 20))
-                        .fontWeight(.light)
+                        .fontWeight(.regular)
                         .multilineTextAlignment(.center)
                         .foregroundColor(Color.cyan)
                         .rotationEffect(.degrees(-20))
+                        .opacity(0.9)
                 }
           
                 ZStack {
@@ -172,7 +182,7 @@ VStack {
      
         Text("_______________________________")
             .font(.system(size: 10))
-            .fontWeight(.light)
+            .fontWeight(.bold)
             .multilineTextAlignment(.center)
             .foregroundColor(Color.purple)
         
@@ -229,7 +239,7 @@ VStack {
                                 .foregroundColor(Color.white)
                                 .rotationEffect(.degrees(-20))
                                 .shadow(color: Color.white, radius: 6, x: 3, y: 5)
-                                .opacity(0.35)
+                                .opacity(0.9)
                             
                             Text("    wish me luck")
                                 .font(.system(size: 27))
@@ -238,7 +248,7 @@ VStack {
                                 .foregroundColor(Color.white)
                                 .rotationEffect(.degrees(-20))
                                 .shadow(color: Color.white, radius: 6, x: 3, y: 5)
-                                .opacity(0.35)
+                                .opacity(0.9)
                             
                       
                         }
@@ -257,7 +267,7 @@ VStack {
             
             Text("_______________________________")
                 .font(.system(size: 10))
-                .fontWeight(.light)
+                .fontWeight(.bold)
                 .multilineTextAlignment(.center)
                 .foregroundColor(Color.purple)
             
@@ -275,7 +285,7 @@ VStack {
                     .rotationEffect(.degrees(-20))
                 //                .blinking(duration: 3.0)
                     .shadow(color: Color.white, radius: 6, x: 3, y: 5)
-                    .opacity(0.35)
+                    .opacity(0.9)
                 
                 Text("AI generated \naura")
                     .font(.system(size: 14))
@@ -285,7 +295,7 @@ VStack {
                     .rotationEffect(.degrees(-20))
                 //                .blinking(duration: 3.0)
                     .shadow(color: Color.white, radius: 6, x: 3, y: 5)
-                    .opacity(0.35)
+                    .opacity(0.9)
                 
       
             }
@@ -306,7 +316,7 @@ VStack {
                             .rotationEffect(.degrees(-20))
                         //                .blinking(duration: 3.0)
                             .shadow(color: Color.white, radius: 6, x: 3, y: 5)
-                            .opacity(0.35)
+                            .opacity(0.9)
                         
                     }
             
@@ -351,15 +361,30 @@ VStack {
             }
         }
     
-       
-        
-        
-        
-        
-        
-        
+    
                             
                             //                ********************************************
+        
+        
+        VStack {
+            
+            
+            Spacer()
+                .frame(height: 5)
+            
+            Text("_______________________________")
+                .font(.system(size: 10))
+                .fontWeight(.bold)
+                .multilineTextAlignment(.center)
+                .foregroundColor(Color.purple)
+            
+            Spacer()
+                .frame(height: 5)
+        }
+        
+        
+        
+        
                         //                ************************************************
         
         
@@ -377,7 +402,7 @@ VStack {
                                     .multilineTextAlignment(.center)
                                     .foregroundColor(Color.white)
                                     .shadow(color: Color.white, radius: 6, x: 3, y: 5)
-                                    .opacity(0.35)
+                                    .opacity(0.9)
                                 
                                 
                                 
@@ -387,14 +412,15 @@ VStack {
                                     .multilineTextAlignment(.center)
                                     .foregroundColor(Color.white)
                                     .shadow(color: Color.white, radius: 6, x: 3, y: 5)
-                                    .opacity(0.35)
+                                    .opacity(0.9)
            
                                 Text("(alert friends & set 'color')")
                                     .font(.system(size: 15))
                                     .italic()
                                     .fontWeight(.light)
                                     .multilineTextAlignment(.center)
-                                    .foregroundColor(Color.purple)
+                                    .foregroundColor(Color.white)
+                                    .opacity(0.9)
                      
                                 
                                 HStack {
@@ -490,18 +516,8 @@ VStack {
                                 Spacer()
                                     .frame(height: 15)
                                 
-                                ZStack {
-                                    
-                                    Text("")
-                                        .fontWeight(.light)
-                                        .frame(width: 330, height: 95)
-                                        .font(.system(size: 25))
-                                        .background(Color.black)
-                                        .cornerRadius(15)
-                                      
-                                    
-                                    
-                                    
+//                                ZStack {
+                             
 
                                     Button(action: {
                                         //                                    counter += 1
@@ -524,7 +540,7 @@ VStack {
                                             }
                                         
                                     })
-                                }
+//                                }
                               
                
                                 
