@@ -72,7 +72,7 @@ struct RR51: View {
                     
                     VStack {
                         
-                        Text("Designed under the")
+                        Text("working under the")
                             .font(.system(size: 20))
                             .italic()
                             .foregroundColor(Color.white)
@@ -140,8 +140,7 @@ struct RR51: View {
                             .opacity(0.9)
                         
                         Text("a little easer")
-                            .font(.system(size: 30))
-                            .italic()
+                            .font(.system(size: 35))
                             .foregroundColor(Color.white)
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)

@@ -150,7 +150,7 @@ struct HomeView: View {
                                     .opacity(0.7)
                                     .cornerRadius(10)
                                     .shadow(color: ColorManager .grey3, radius: 3, x: -5, y: -5)
-//                                   .shadow(color: Color.purple, radius: 5, x: -4, y: -2)
+                                   .shadow(color: ColorManager .purple4, radius: 1, x: 1, y: 1)
                                         })
 
                         
