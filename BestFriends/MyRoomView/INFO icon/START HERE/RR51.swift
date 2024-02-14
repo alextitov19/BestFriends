@@ -139,8 +139,8 @@ struct RR51: View {
                             .multilineTextAlignment(.center)
                             .opacity(0.9)
                         
-                        Text("a little easer")
-                            .font(.system(size: 35))
+                        Text("easer")
+                            .font(.system(size: 40))
                             .foregroundColor(Color.white)
                             .fontWeight(.light)
                             .multilineTextAlignment(.center)

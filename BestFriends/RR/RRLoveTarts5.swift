@@ -286,7 +286,7 @@ struct RRLoveTarts5: View {
                             .foregroundColor(ColorManager .grey2)
                             .frame(width: 140, height: 110)
                             .shadow(color: ColorManager .grey1, radius: 3, x: 3, y: 3)
-                            .rotationEffect(.degrees(-10))
+                            .rotationEffect(.degrees(10))
                             .opacity(0.4)
                         
                         
@@ -299,7 +299,7 @@ struct RRLoveTarts5: View {
                                         .fontWeight(.light)
                                         .multilineTextAlignment(.center)
                                         .foregroundColor(ColorManager .grey1)
-                                        .rotationEffect(.degrees(-10))
+                                        .rotationEffect(.degrees(10))
                                         .opacity(0.99)
                                     
                                     Text("fairy tale \npoems")
@@ -308,7 +308,7 @@ struct RRLoveTarts5: View {
                                         .fontWeight(.light)
                                         .multilineTextAlignment(.center)
                                         .foregroundColor(ColorManager .grey1)
-                                        .rotationEffect(.degrees(-10))
+                                        .rotationEffect(.degrees(10))
                                         .opacity(0.99)
                                     
                                 }
@@ -657,7 +657,7 @@ struct RRLoveTarts5: View {
                                 Spacer ()
                                     .frame(height: 30)
                                 
-                                Text("     touching their")
+                                Text("     feel their")
                                     .font(.system(size: 15))
                                     .italic()
                                     .fontWeight(.regular)
@@ -743,7 +743,7 @@ struct RRLoveTarts5: View {
                                     Image(systemName: "heart.fill")
                                         .resizable()
                                         .foregroundColor(ColorManager .purple3)
-                                        .frame(width: 100, height: 80)
+                                        .frame(width: 150, height: 120)
                                         .shadow(color: ColorManager .purple1, radius: 3, x: 3, y: 3)
                                         .rotationEffect(.degrees(10))
                                         .opacity(0.4)
@@ -751,7 +751,7 @@ struct RRLoveTarts5: View {
                                     
                                     
                                     Text("TAP")
-                                        .font(.system(size: 30))
+                                        .font(.system(size: 35))
                                         .fontWeight(.light)
                                         .multilineTextAlignment(.center)
                                         .rotationEffect(.degrees(10))
