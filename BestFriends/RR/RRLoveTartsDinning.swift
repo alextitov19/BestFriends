@@ -152,8 +152,8 @@ struct RRLoveTartsDinning: View {
     //                            .rotationEffect(.degrees(-10))
 //                            .blinking(duration: 2.0)
                         
-                        Spacer ()
-                            .frame(height: 50)
+//                        Spacer ()
+//                            .frame(height: 20)
                         
                         
                         NavigationLink(
@@ -285,14 +285,14 @@ struct RRLoveTartsDinning: View {
                         VStack {
                             
                             Spacer()
-                                .frame(height: 50)
+                                .frame(height: 20)
                             
                    
                 VStack {
                     
                     
-                    Text("nurturing your romance")
-                        .font(.system(size: 35))
+                    Text("protecting, cherishing ...")
+                        .font(.system(size: 30))
                         .fontWeight(.bold)
                         .multilineTextAlignment(.center)
                         .foregroundColor(Color.white)
@@ -300,7 +300,7 @@ struct RRLoveTartsDinning: View {
 //                            .rotationEffect(.degrees(-10))
                         .blinking(duration: 2.0)
                     
-                    Text("protecting")
+                    Text("your romance")
                         .font(.system(size: 35))
                         .fontWeight(.bold)
                         .multilineTextAlignment(.center)
@@ -309,8 +309,12 @@ struct RRLoveTartsDinning: View {
 //                            .rotationEffect(.degrees(-10))
                         .blinking(duration: 3.0)
                     
-                    Text("preciously cherishing")
-                        .font(.system(size: 35))
+                    Spacer ()
+                        .frame(height: 60)
+                    
+                    
+                    Text("hoping, wishing ...")
+                        .font(.system(size: 30))
                         .fontWeight(.bold)
                         .multilineTextAlignment(.center)
                         .foregroundColor(Color.white)
