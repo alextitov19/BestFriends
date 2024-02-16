@@ -983,7 +983,6 @@
 				CF7A55552B55CEAD0068F249 /* RRMotivationCH.swift */,
 				CF7A555A2B55CEAD0068F249 /* RRWantToTalk.swift */,
 				CF7A55732B5921E50068F249 /* RRLoveTarts.swift */,
-				CF7A55792B5B96770068F249 /* RRGuysTexting.swift */,
 				CF7A55502B55CEAC0068F249 /* RRLoveTarts3.swift */,
 				CF3163EC2B64A3A200A4D4B0 /* RRLoveTarts5.swift */,
 				CF3163EE2B64BC5B00A4D4B0 /* RRLoveTarts7.swift */,
@@ -992,6 +991,7 @@
 				CF7A55582B55CEAD0068F249 /* RRPoemContest.swift */,
 				CF1B26ED2B69242300BCF2E9 /* RRPoemContest2.swift */,
 				CF1B26EF2B6BA5E600BCF2E9 /* RRLoveTartsDinning.swift */,
+				CF7A55792B5B96770068F249 /* RRGuysTexting.swift */,
 			);
 			path = RR;
 			sourceTree = "<group>";

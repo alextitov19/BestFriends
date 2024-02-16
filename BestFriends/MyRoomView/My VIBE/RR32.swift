@@ -61,10 +61,18 @@ struct RR32: View {
                     .blendMode(.screen)
                     .opacity(0.9)
                 
+                
+//                *************** delete this video from assets
+                
                 AdPlayerView(name: "NataliaCHs2")
                     .ignoresSafeArea()
                     .blendMode(.screen)
                     .opacity(0.9)
+                
+//                AdPlayerView(name: "VibeVideo2")
+//                    .ignoresSafeArea()
+//                    .blendMode(.screen)
+//                    .opacity(0.9)
                 
             }
             
