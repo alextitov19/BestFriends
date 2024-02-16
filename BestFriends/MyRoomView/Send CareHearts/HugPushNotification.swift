@@ -75,12 +75,12 @@ struct HugPushNotification: View {
                 AdPlayerView(name: "grayGrass2")
                     .ignoresSafeArea()
                     .blendMode(.screen)
-                    .opacity(0.5)
+                    .opacity(0.65)
               
-                AdPlayerView(name: "NataliaCHs2")
-                    .ignoresSafeArea()
-                    .blendMode(.screen)
-                    .opacity(0.8)
+//                AdPlayerView(name: "NataliaCHs2")
+//                    .ignoresSafeArea()
+//                    .blendMode(.screen)
+//                    .opacity(0.8)
                 
             }
             

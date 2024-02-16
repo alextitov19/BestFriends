@@ -67,7 +67,7 @@ struct RRDentedHeart: View {
                 
                 
                 ColorManager .grey2
-                    .opacity(0.6)
+                    .opacity(0.5)
                     .ignoresSafeArea()
                 
                 AdPlayerView(name: "sky2")
@@ -91,7 +91,7 @@ struct RRDentedHeart: View {
                 AdPlayerView(name: "BreakUp2")
                     .ignoresSafeArea()
                     .blendMode(.screen)
-                   .opacity(0.9)
+                   .opacity(0.99)
                 
             }
             
@@ -142,7 +142,7 @@ struct RRDentedHeart: View {
                                                        label: {
                                             
                                             VStack {
-                                                Text("Talk \nCoupon")
+                                                Text("Can we \ntalk?")
                                                     .font(.system(size: 20))
                                                     .fontWeight(.bold)
                                                     .multilineTextAlignment(.center)

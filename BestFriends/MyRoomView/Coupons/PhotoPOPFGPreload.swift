@@ -105,18 +105,29 @@ struct PhotoPopFGPreload: View {
                       
                   } else {
                       ColorManager .grey4
-                        .opacity(0.9)
-                        .ignoresSafeArea()
-                      
-                      AdPlayerView(name: "sky2")
-                          .ignoresSafeArea()
-                          .blendMode(.screen)
                           .opacity(0.99)
-                      
-                      AdPlayerView(name: "fernShadow2")
                           .ignoresSafeArea()
-                          .blendMode(.screen)
-                          .opacity(0.99)
+                      
+//                      Image("purpleBackground")
+//                          .resizable()
+//                          .ignoresSafeArea()
+//                          .scaledToFill()
+//                          .opacity(0.9)
+//                      
+//      //                AdPlayerView(name: "sky2")
+//      //                    .ignoresSafeArea()
+//      //                    .blendMode(.screen)
+//      //                    .opacity(0.9)
+//                      
+//                      AdPlayerView(name: "CHsBackground3")
+//                          .ignoresSafeArea()
+//                          .blendMode(.screen)
+//                          .opacity(0.99)
+//                      
+////                      AdPlayerView(name: "moonShots3")
+////                          .ignoresSafeArea()
+////                          .blendMode(.screen)
+////                          .opacity(0.9)
                    
             }
           
@@ -130,12 +141,12 @@ struct PhotoPopFGPreload: View {
                     ZStack {
                   
                         
-//                        Image(systemName: "cube.fill")
-//                            .resizable()
-//                            .foregroundColor(Color.purple)
-//                            .frame(width: 250, height: 200)
-//                            .shadow(color: ColorManager .purple3, radius: 65, x: 30, y: 50)
-//                            .opacity(0.7)
+                        Image(systemName: "cube.fill")
+                            .resizable()
+                            .foregroundColor(Color.purple)
+                            .frame(width: 350, height: 275)
+                            .shadow(color: ColorManager .purple3, radius: 65, x: 30, y: 50)
+                            .opacity(0.7)
                        
                         
                         
@@ -147,30 +158,30 @@ struct PhotoPopFGPreload: View {
                             
                             
                             if (colorScheme == .dark){
-                                Text("Say,")
+                                Text("Will you give me a chance")
                                     .font(.system(size: 25, weight: .light))
-                                    .foregroundColor(ColorManager .grey3)
+                                    .foregroundColor(ColorManager .grey1)
                                     .multilineTextAlignment(.center)
                                     .opacity(0.5)
                                 
                                 
-                                Text("'You look nice today'")
+                                Text("to if we can work this out")
                                     .font(.system(size: 30, weight: .light))
-                                    .foregroundColor(ColorManager .grey3)
+                                    .foregroundColor(ColorManager .grey1)
                                     .multilineTextAlignment(.center)
                                     .opacity(0.5)
                                     .frame(height: 10)
                             } else{
-                                Text("Say,")
+                                Text("Will you give me a chance")
                                     .font(.system(size: 25, weight: .light))
-                                    .foregroundColor(ColorManager .grey4)
+                                    .foregroundColor(ColorManager .grey1)
                                     .multilineTextAlignment(.center)
                                     .opacity(0.5)
                                 
                                 
-                                Text("'You look nice today'")
+                                Text("to if we can work this out")
                                     .font(.system(size: 30, weight: .light))
-                                    .foregroundColor(ColorManager .grey4)
+                                    .foregroundColor(ColorManager .grey1)
                                     .multilineTextAlignment(.center)
                                     .opacity(0.5)
                                     .frame(height: 10)
@@ -186,7 +197,7 @@ struct PhotoPopFGPreload: View {
                 
           
         Spacer()
-            .frame(height: 100)
+            .frame(height: 20)
             
                 
 
@@ -206,12 +217,12 @@ struct PhotoPopFGPreload: View {
 //                                            .foregroundColor(ColorManager .grey4)
 //                                            .fontWeight(.thin)
                                         if (colorScheme == .dark){
-                                            Text("tell them the time & place ...")
-                                                .foregroundColor(ColorManager .grey3)
+                                            Text("suggest a time & place ...")
+                                                .foregroundColor(ColorManager .grey1)
                                                 .fontWeight(.thin)
                                         } else{
-                                            Text("tell them the time & place ...")
-                                                .foregroundColor(ColorManager .grey4)
+                                            Text("suggest a time & place ...")
+                                                .foregroundColor(ColorManager .grey1)
                                                 .fontWeight(.thin)
                                         }
                                         
