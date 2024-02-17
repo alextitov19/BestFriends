@@ -512,8 +512,11 @@ struct RR58: View {
                     
                     ZStack {
                         
+                        
+//                        RR59(user: user, friends: friends, groups: groups, atmosphere: atmosphere, friendAtmospheres: friendAtmospheres
+                        
                         NavigationLink(
-                            destination:  RR59(user: user, friends: friends, groups: groups, atmosphere: atmosphere, friendAtmospheres: friendAtmospheres),
+                            destination:  RRGuysTexting(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups),
                             label: {
                                 VStack {
                                     
