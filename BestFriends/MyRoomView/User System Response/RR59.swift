@@ -218,8 +218,8 @@ struct RR59: View {
 
             
             
-            NavigationLink(destination: RR32(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups), label: {
-                HugCircle (color: ColorManager .grey1, friendName: "request \nCareHearts")
+            NavigationLink(destination: InfoView(user: user, friends: friends), label: {
+                HugCircle (color: ColorManager .grey1, friendName: "my \nDreams")
             })
             .offset(x: showItems ? -100 : 0, y: showItems ? -140: 0)
             .shadow(color: Color .white, radius: 5, x: 2, y: -2)
@@ -269,8 +269,8 @@ struct RR59: View {
 
                         ZStack {
                             
-                            NavigationLink(destination: InfoView(user: user, friends: friends), label: {
-                                HugCircle (color: ColorManager .grey1, friendName: "my \nDreams")
+                            NavigationLink(destination: RR32(user: user, atmosphere: atmosphere, friends: friends, friendAtmospheres: friendAtmospheres, groups: groups), label: {
+                                HugCircle (color: ColorManager .grey1, friendName: "request \nCareHearts")
                             })
                             .offset(x: showItems ? -80 : 0, y: showItems ? 220: 0)
                             .shadow(color: Color.white, radius: 5, x: -2, y: -2)
