@@ -85,37 +85,31 @@ struct RR59: View {
                         
                         VStack {
                             
-                            Text("Off Planet")
-                                .font(.system(size: 35))
-                                .fontWeight(.bold)
-                                .multilineTextAlignment(.center)
-                                .foregroundColor(ColorManager .grey1)
-                                .shadow(color: Color.white, radius: 6, x: 3, y: 5)
-                                .opacity(0.7)
-    
-                            Text("When friends aren't around")
-                                .font(.system(size: 17))
-                                .fontWeight(.regular)
-                                .multilineTextAlignment(.center)
-                                .foregroundColor(Color.white)
-                                .shadow(color: Color.white, radius: 3, x: 3, y: 5)
-                                .opacity(0.7)
-                            
-//                            Text("- or -")
+//                            Text("Off Planet")
+//                                .font(.system(size: 35))
+//                                .fontWeight(.bold)
+//                                .multilineTextAlignment(.center)
+//                                .foregroundColor(ColorManager .grey1)
+//                                .shadow(color: Color.white, radius: 6, x: 3, y: 5)
+//                                .opacity(0.7)
+//    
+//                            Text("When friends aren't around")
 //                                .font(.system(size: 17))
 //                                .fontWeight(.regular)
 //                                .multilineTextAlignment(.center)
 //                                .foregroundColor(Color.white)
 //                                .shadow(color: Color.white, radius: 3, x: 3, y: 5)
 //                                .opacity(0.7)
-                            
-                            Text("in the quiet of space")
-                                .font(.system(size: 17))
-                                .fontWeight(.regular)
-                                .multilineTextAlignment(.center)
-                                .foregroundColor(Color.white)
-                                .shadow(color: Color.white, radius: 3, x: 3, y: 5)
-                                .opacity(0.7)
+//                            
+//
+//                            
+//                            Text("in the quiet of space")
+//                                .font(.system(size: 17))
+//                                .fontWeight(.regular)
+//                                .multilineTextAlignment(.center)
+//                                .foregroundColor(Color.white)
+//                                .shadow(color: Color.white, radius: 3, x: 3, y: 5)
+//                                .opacity(0.7)
                             
                         }
                         
@@ -244,7 +238,7 @@ struct RR59: View {
                             
                             
                             NavigationLink(destination: RRDidGood(user: user, friends: friends), label: {
-                                HugCircle (color: ColorManager .grey1, friendName: "Yep \nI did\n it!!!")
+                                HugCircle (color: ColorManager .grey1, friendName: "Yep \nyou did\n it!!!")
                             })
                             .offset(x: showItems ? -100 : 0, y: showItems ? -140: 0)
                             .shadow(color: Color .white, radius: 5, x: 2, y: -2)
