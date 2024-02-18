@@ -75,7 +75,7 @@ struct RR59: View {
                 VStack {
      
                     Spacer()
-                        .frame(height: 70)
+                        .frame(height: 120)
 //  *************************************************
        
                     HStack {
