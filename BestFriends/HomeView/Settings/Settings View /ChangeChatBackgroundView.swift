@@ -13,79 +13,79 @@ struct ChangeChatBackgroundView: View {
     
     let user: User
     
-    @State private var selectedBackground = 0
+    @State private var selectedBackground = 10
     
     var body: some View {
         ZStack {
-            ColorManager.purple2
+            ColorManager.purple1
                 .ignoresSafeArea()
             
             VStack {
                 
-//
-//                Button(action: {
-//                    sessionManager.showLogin()
-//                },
-//                    label: {
-//                        Text("Home / Chat")
-//                            .fontWeight(.thin)
-//                            .frame(width: 200, height: 40)
-//                            .foregroundColor(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
-//                            .font(.system(size: 30))
-//                            .background(ColorManager.purple3)
-//                            .cornerRadius(15)
-//                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
-//                    })
-//
+
                 
-                Text("Go ahead. Try a 'motion' background")
-                    .font(.system(size: 17))
+                Text("Customize chat background")
+                    .font(.system(size: 30))
                     .fontWeight(.light)
                     .multilineTextAlignment(.center)
-                    .foregroundColor(ColorManager.purple5)
-                
-                Spacer()
-                    .frame(height: 15)
-                
-                Text("Change chat background")
+                    .foregroundColor(Color.black)
+             
+                Text("")
                     .onAppear(perform: loadData)
+                
+                Button(action: {
+                    sessionManager.showLogin()
+                },
+                       label: {
+                    Image("home-alt2")
+                        .frame(width: 50, height: 25)
+                        .foregroundColor(.white)
+                        .font(.system(size: 20))
+                        .background(ColorManager .grey2)
+                        .cornerRadius(15)
+                        .shadow(color: Color(.gray), radius: 1, x: 0, y: 2.5)
+                        .opacity(0.70)
+                    
+                })
                 
                 HStack {
                   
-                    
-                    BackgroundCard(title: "Flowers - motion", backgroundNumber: 4, user: user, selectedBackground: $selectedBackground)
+         
+                    BackgroundCard(title: "Same as Homepage", backgroundNumber: 10, user: user, selectedBackground: $selectedBackground)
+//                        .blinking(duration: 2.0)
                         .padding(5)
                     
-                    BackgroundCard(title: "Default - static", backgroundNumber: 0, user: user, selectedBackground: $selectedBackground)
+                    BackgroundCard(title: "LoveTarts Romantic", backgroundNumber: 11, user: user, selectedBackground: $selectedBackground)
                         .padding(5)
-                    
-                 
-                    
-                 
-                   
-                  
-                    
                  
                 }
                 .padding(.horizontal, 10)
                 
-//                HStack {
-//                    BackgroundCard(title: "Clouds", backgroundNumber: 2, user: user, selectedBackground: $selectedBackground)
-//                        .padding(5)
-//                    
-//                    BackgroundCard(title: "Nostalgia", backgroundNumber: 3, user: user, selectedBackground: $selectedBackground)
-//                        .padding(5)
-//                }
-//                .padding(.horizontal, 10)
+                HStack {
+                    
+                    BackgroundCard(title: "Orange Planet", backgroundNumber: 8, user: user, selectedBackground: $selectedBackground)
+                        .padding(5)
+                  
+                    BackgroundCard(title: "Circling Planets", backgroundNumber: 7, user: user, selectedBackground: $selectedBackground)
+                        .padding(5)
+                    
+                 
+                  
+                }
+                .padding(.horizontal, 10)
+            
                 
                 HStack {
                     
-                    BackgroundCard(title: "Embedded Nike Ad", backgroundNumber: 1, user: user, selectedBackground: $selectedBackground)
-                        .padding(5)
-                  
                     
-                    BackgroundCard(title: "Bull - motion", backgroundNumber: 5, user: user, selectedBackground: $selectedBackground)
+                    BackgroundCard(title: "Poppies in breeze", backgroundNumber: 4, user: user, selectedBackground: $selectedBackground)
                         .padding(5)
+                    
+//                    BackgroundCard(title: "Default - Static Gray", backgroundNumber: 0, user: user, selectedBackground: $selectedBackground)
+//                        .padding(5)
+                  
+//                    BackgroundCard(title: "Bull in snow", backgroundNumber: 5, user: user, selectedBackground: $selectedBackground)
+//                        .padding(5)
                 }
                 .padding(.horizontal, 10)
             }
@@ -94,9 +94,9 @@ struct ChangeChatBackgroundView: View {
     
     private func loadData() {
         if user.chatBackground == "" {
-            selectedBackground = 0
+            selectedBackground = 10
         } else {
-            selectedBackground = Int(user.chatBackground) ?? 0
+            selectedBackground = Int(user.chatBackground) ?? 10
         }
     }
     
@@ -112,12 +112,12 @@ struct ChangeChatBackgroundView: View {
                 
                 VStack {
                     Text(title)
-                        .font(.system(size: 20))
+                        .font(.system(size: 15))
                     
                     Image("background_\(backgroundNumber)")
                         .resizable()
                         .scaledToFit()
-                        .frame(width: 100, height: 100)
+                        .frame(width: 70, height: 70)
                     
                     if backgroundNumber == selectedBackground {
                         Text("Selected")
@@ -129,21 +129,21 @@ struct ChangeChatBackgroundView: View {
                             update()
                         }, label: {
                             ZStack {
-                                ColorManager.purple7
+                                ColorManager.grey4
                                 
                                 Text("Select")
                                     .font(.system(size: 20))
                                     .foregroundColor(.white)
                             }
-                            .frame(width: 100, height: 40)
-                            .cornerRadius(20)
+                            .frame(width: 90, height: 40)
+                            .cornerRadius(10)
                         })
                     }
                     
                 
                 }
             }
-            .frame(height: 220)
+            .frame(height: 190)
             .cornerRadius(15)
         }
         

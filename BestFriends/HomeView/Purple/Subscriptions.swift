@@ -120,7 +120,7 @@ struct Subscriptions: View {
             
                 VStack {
                     Button(action: {
-                        sessionManager.showStore()
+//                        sessionManager.showStore()
                     },
                            label: {
                         Text("BestFrends PURPLE")

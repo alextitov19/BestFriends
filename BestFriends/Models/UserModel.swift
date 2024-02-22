@@ -20,7 +20,12 @@ struct User: Codable {
     var chatBackground: String
     var smileNotes: [String]?
     var photoPop: [String]?
-
+    var roomHidden: Bool?
+    var niceMessages: [String]?
+    var journals: [String]?
+    var journalCategories: [String]?
+    var affirmations: [String]?
+    
     enum CodingKeys: String, CodingKey {
         case id = "id"
         case firstName = "first_name"
@@ -34,5 +39,10 @@ struct User: Codable {
         case chatBackground = "chat_background"
         case smileNotes = "smile_notes"
         case photoPop = "photo_pop"
+        case roomHidden = "room_hidden"
+        case niceMessages = "nice_messages"
+        case journals = "journals"
+        case journalCategories = "journal_categories"
+        case affirmations = "affirmations"
     }
 }

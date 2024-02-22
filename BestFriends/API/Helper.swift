@@ -82,6 +82,7 @@ class Helper {
     
     public var needLogin : Bool {
         get {
+            print("Renew token: ", renewToken)
             return renewToken!.isEmpty
         }
     }
@@ -189,6 +190,16 @@ class Helper {
         }
     }
     
+    func createNiceMessage(url: String, createNiceMessage: CreateNiceMessage) -> Promise<Int> {
+        let payload = try? JSONEncoder().encode(createNiceMessage)
+        if let p = payload {
+            print(String(data: p, encoding: .utf8) as Any)
+        }
+        return callRestApi(url: url, method: .post, data: payload, RestResponse.self).then { restResponse in
+            return Promise<Int>(restResponse.status)
+        }
+    }
+    
     func createSmileNote(url: String, createSmileNote: CreateSmileNote) -> Promise<SmileNote> {
         let payload = try? JSONEncoder().encode(createSmileNote)
         if let p = payload {
@@ -221,8 +232,38 @@ class Helper {
         }
     }
     
+    public func getUserStatus(url: String) -> Promise<Bool> {
+        return callRestApi(url: url, method: .get, RestResponse.self).then({ response in
+            if response.status == 200 {
+                return Promise<Bool>(true)
+            } else {
+                return Promise<Bool>(false)
+            }
+        })
+    }
+    
     func sendPushNotification(url: String, createNotification: CreateNotification) -> Promise<Int> {
         let payload = try? JSONEncoder().encode(createNotification)
+        if let p = payload {
+            print(String(data: p, encoding: .utf8) as Any)
+        }
+        return callRestApi(url: url, method: .post, data: payload, RestResponse.self).then { response in
+            return Promise<Int>(response.status)
+        }
+    }
+    
+    func createInAppNotification(url: String, ian: InAppNotification) -> Promise<Int> {
+        let payload = try? JSONEncoder().encode(ian)
+        if let p = payload {
+            print(String(data: p, encoding: .utf8) as Any)
+        }
+        return callRestApi(url: url, method: .post, data: payload, RestResponse.self).then { response in
+            return Promise<Int>(response.status)
+        }
+    }
+    
+    func createJournal(url: String, cj: CreateJournal) -> Promise<Int> {
+        let payload = try? JSONEncoder().encode(cj)
         if let p = payload {
             print(String(data: p, encoding: .utf8) as Any)
         }

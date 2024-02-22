@@ -17,3 +17,16 @@ struct CreateNotification: Codable {
         case APNToken = "apn_token"
     }
 }
+
+struct InAppNotification: Codable {
+    let user: String
+    let sender: String
+    let text: String
+    let createdOn: Int64
+    enum CodingKeys: String, CodingKey {
+        case user = "user"
+        case sender = "sender"
+        case text = "text"
+        case createdOn = "created_on"
+    }
+}

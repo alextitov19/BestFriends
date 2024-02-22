@@ -6,17 +6,22 @@
 //
 
 import Foundation
-import Promises
+import Promises     
 import FirebaseMessaging
 
 class RestApi {
     var helper: Helper
     var userId: String?
-    let API_URL = "http://af1da3679459b4f559b1dbb17a97f432-44066674.us-east-2.elb.amazonaws.com:80/api/v1/services"
-    let WS_URL = "ws://af1da3679459b4f559b1dbb17a97f432-44066674.us-east-2.elb.amazonaws.com:80/api/v1/services"
-
-//    let API_URL = "http://localhost:8080/api/v1/services"
-//    let WS_URL = "ws://localhost:8080/api/v1/services"
+    let API_URL = "http://a62582cbc2c9d4a689103dc16200ef4a-1698906125.us-east-2.elb.amazonaws.com:80/api/v1/services"
+    let WS_URL = "ws://a62582cbc2c9d4a689103dc16200ef4a-1698906125.us-east-2.elb.amazonaws.com:80/api/v1/services"
+    
+    
+    
+//    OLD SERVER (Alex built) let API_URL = "http://af1da3679459b4f559b1dbb17a97f432-44066674.us-east-2.elb.amazonaws.com:80/api/v1/services"
+//    let WS_URL = "ws://af1da3679459b4f559b1dbb17a97f432-44066674.us-east-2.elb.amazonaws.com:80/api/v1/services"
+    
+    //    let API_URL = "http://localhost:8080/api/v1/services"
+    //    let WS_URL = "ws://localhost:8080/api/v1/services"
     
     public static var instance = RestApi()
     
@@ -52,6 +57,10 @@ class RestApi {
     
     public func getUserById(id: String) -> Promise<User> {
         return helper.callRestApi(url: API_URL + "/users/" + id, method: .get, User.self)
+    }
+    
+    public func deleteUser() -> Promise<RestResponse> {
+        return helper.callRestApi(url: API_URL + "/users", method: .delete, RestResponse.self)
     }
     
     public func getHomeData() -> Promise<HomeData> {
@@ -127,6 +136,15 @@ class RestApi {
         return helper.callRestApi(url: API_URL + "/atmosphere/mood/" + id, method: .get, MoodLog.self)
     }
     
+    public func createNiceMessage(message: String, receiver: String) -> Promise<Int> {
+        let cnm = CreateNiceMessage(message: message, receiver: receiver)
+        return helper.createNiceMessage(url: API_URL + "/nice-message", createNiceMessage: cnm)
+    }
+    
+    public func getNiceMessage(id: String) -> Promise<NiceMessage> {
+        return helper.callRestApi(url: API_URL + "/nice-message/" + id, method: .get, NiceMessage.self)
+    }
+    
     public func createSmileNote(messageId: String, messageBody: String, sendername: String) -> Promise<SmileNote> {
         let csn = CreateSmileNote(messageId: messageId, messageBody: messageBody, senderName: sendername)
         return helper.createSmileNote(url: API_URL + "/smile-notes", createSmileNote: csn)
@@ -159,18 +177,18 @@ class RestApi {
     
     public func registerAPNToken() {
         Messaging.messaging().token { token, error in
-          if let error = error {
-            print("Error fetching FCM registration token: \(error)")
-          } else if let token = token {
-            print("FCM registration token: \(token)")
-              self.updateUserToken(token: token).then {result in
-                  if result == 200 {
-                  print("Successfully register token")
-                  } else {
-                      print("Failed to register token")
-                  }
-              }
-          }
+            if let error = error {
+                print("Error fetching FCM registration token: \(error)")
+            } else if let token = token {
+                print("FCM registration token: \(token)")
+                self.updateUserToken(token: token).then {result in
+                    if result == 200 {
+                        print("Successfully register token")
+                    } else {
+                        print("Failed to register token")
+                    }
+                }
+            }
         }
     }
     
@@ -195,7 +213,58 @@ class RestApi {
         }
     }
     
-    public func removeFriend(email:String, removeFriend:RemoveFriend) {
-        
+    public func setStatusToOnline(id: String) {
+        helper.callRestApi(url: API_URL + "/online-status/" + id, method: .post, RestResponse.self).then({ response in
+            if response.status == 200 {
+                print("Status changed to online")
+            }
+        })
     }
+    
+    public func setStatusToOffline(id: String) {
+        helper.callRestApi(url: API_URL + "/online-status/" + id, method: .delete, RestResponse.self).then({ response in
+            if response.status == 200 {
+                print("Status changed to offline")
+            }
+        })
+    }
+    
+    public func getUserOnlineStatus(id: String) -> Promise<Bool> {
+        return helper.getUserStatus(url: API_URL + "/online-status/" + id)
+    }
+    
+    public func getInAppNotifications() -> Promise<[InAppNotification]> {
+        return helper.callRestApi(url: API_URL + "/notification/in_app", method: .get, [InAppNotification].self)
+    }
+    
+    public func createInAppNotification(ian: InAppNotification) -> Promise<Int> {
+        return helper.createInAppNotification(url: API_URL + "/notification/in_app", ian: ian)
+    }
+    
+    public func createStreakLog(friendID: String) {
+        helper.callRestApi(url: API_URL + "/streak/" + friendID, method: .post, RestResponse.self).then({ response in
+            if response.status == 200 {
+                print("Created streak log successfully for friend: ", friendID)
+            } else {
+                print("Error creating streak log successfully for friend: ", friendID)
+            }
+        })
+    }
+    
+    public func getStreakLog(friendID: String) -> Promise<Int> {
+        helper.callRestApi(url: API_URL + "/streak/" + friendID, method: .get, Int.self).then({ response in
+            return response
+        })
+    }
+    
+    public func createJournal(cj: CreateJournal) -> Promise<Int> {
+        return helper.createJournal(url: API_URL + "/journal", cj: cj)
+    }
+    
+    public func getJournal(id: String) -> Promise<Journal> {
+        return helper.callRestApi(url: API_URL + "/journal/" + id, method: .get, Journal.self).then({ j in
+            return j
+        })
+    }
+    
 }

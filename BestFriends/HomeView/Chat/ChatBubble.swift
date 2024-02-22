@@ -80,9 +80,9 @@ struct ChatBubble: View {
             self.image = UIImage(data: data)
             print("Got image from data")
         }
-        //        let request = RestApi.instance.createDownloadImageWebSocketRequest(folderId: groupId, imageId: key!)
-        //        let stream = WebSocketStream(request: request)
-        //        await listenForImages(stream: stream)
+//                let request = RestApi.instance.createDownloadImageWebSocketRequest(folderId: groupId, imageId: key!)
+//                let stream = WebSocketStream(request: request)
+//                await listenForImages(stream: stream)
     }
     
     
@@ -129,12 +129,14 @@ private struct MyChatMessage: View {
                 Spacer()
                     .onAppear(perform: loadData)
                 
+                
+                Spacer()
+                
                 Text(messageBody)
                     .padding(10)
                     .multilineTextAlignment(.leading)
-                //                    .font(.system(size: 15).weight(.light))
-                    .background(ColorManager.grey3)
-                    .opacity(0.7)
+                    .background(ColorManager.orange3)
+                    .opacity(0.99)
                     .font(.system(size: 15).weight(.thin))
                     .foregroundColor(.black)
                     .cornerRadius(15)
@@ -144,8 +146,15 @@ private struct MyChatMessage: View {
                 Spacer()
                 
                 Text(timeString)
-                    .font(.system(size: 12).weight(.light))
-                    .foregroundColor(ColorManager.grey4)
+                    .frame(width: 50, alignment: .leading)
+                    .foregroundColor(Color.white)
+                    .font(.system(size: 11).weight(.light))
+                    .background(ColorManager.grey4)
+                    .cornerRadius(5)
+                    .opacity(0.95)
+                    .offset(x: 20, y: 5)
+                    .font(.system(size: 12).weight(.bold))
+                    .foregroundColor(Color.black)
             }
         }
         .padding(.horizontal, 20)
@@ -179,14 +188,28 @@ private struct FriendChatMessage: View {
         VStack {
             HStack {
                 Text(name)
-                    .frame(width: 200, alignment: .leading)
-                    .foregroundColor(ColorManager.purple5)
-                //                    .foregroundColor(.green)
-                    .font(.system(size: 16).weight(.thin))
-                    .offset(x: 5, y: 5)
+                    .frame(width: 150, alignment: .leading)
+                    .foregroundColor(Color.black)
+                    .font(.system(size: 11).weight(.light))
+                    .background(ColorManager.purple4)
+                    .cornerRadius(5)
+                    .opacity(0.85)
+                    .offset(x: 20, y: 5)
                     .onAppear(perform: loadData)
                 
+                Text(timeString)
+                    .frame(width: 50, alignment: .leading)
+                    .foregroundColor(Color.white)
+                    .font(.system(size: 11).weight(.light))
+                    .background(ColorManager.grey3)
+                    .cornerRadius(5)
+                    .opacity(0.95)
+                    .offset(x: 20, y: 5)
+//                    .font(.system(size: 10).weight(.bold))
+//                    .foregroundColor(Color.black)
+                
                 Spacer()
+                    
             }
             
             HStack {
@@ -194,7 +217,6 @@ private struct FriendChatMessage: View {
                     .padding(10)
                     .multilineTextAlignment(.leading)
                     .font(.system(size: 16).weight(.light))
-                //                    .background(ColorManager.grey4)
                     .foregroundColor(.white)
                     .background(ColorManager.purple3)
                     .cornerRadius(15)
@@ -203,9 +225,22 @@ private struct FriendChatMessage: View {
             }
             
             HStack {
-                Text(timeString)
-                    .font(.system(size: 12).weight(.light))
-                    .foregroundColor(ColorManager.orange5)
+//                Text(timeString)
+//                    .frame(width: 50, alignment: .leading)
+//                    .foregroundColor(Color.white)
+//                    .font(.system(size: 11).weight(.light))
+//                    .background(ColorManager.grey2)
+//                    .cornerRadius(5)
+//                    .opacity(0.90)
+//                    .offset(x: 20, y: 5)
+//                    .font(.system(size: 10).weight(.bold))
+//                    .foregroundColor(Color.black)
+                
+                
+                
+                
+                
+                
                 
                 Spacer()
             }

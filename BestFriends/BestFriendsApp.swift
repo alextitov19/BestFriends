@@ -14,7 +14,6 @@ struct BestFriendsApp: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
     
     @ObservedObject var sessionManager = SessionManager()
-    @StateObject var storeManager = StoreManager()
     
     let productIDs = [
         "com.socialtechlabs.bestfriends.iap.monthly",
@@ -36,29 +35,6 @@ struct BestFriendsApp: App {
             case .chat(let user, let group):
                 ChatView(user: user, group: group)
                     .environmentObject(sessionManager)
-            case .masterFriendVault:
-                MasterFriendVault()
-                    .environmentObject(sessionManager)
-                
-            case .fightTextUserIdeas:
-                FightTextUserIdeas()
-                
-            case .parentsFighting:
-                ParentsFighting()
-                    .environmentObject(sessionManager)
-            case .fightWithFriend:
-                FightWithFriend()
-                    .environmentObject(sessionManager)
-            case .infoView(let user, let group):
-                InfoView(group: group, user: user).environmentObject(sessionManager)
-                
-            case .store:
-                PurpleSubscriptionView(storeManager: storeManager)
-                    .environmentObject(sessionManager)
-                    .onAppear(perform: {
-                        SKPaymentQueue.default().add(storeManager)
-                        storeManager.getProducts(productIDs: productIDs)
-                    })
                 
             }
         }

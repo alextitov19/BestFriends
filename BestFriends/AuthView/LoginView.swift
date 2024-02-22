@@ -18,12 +18,25 @@ struct LoginView: View {
     var body: some View {
         NavigationView {
             ZStack {
-                
-                ColorManager.grey4
+ 
+                Color.black
+                    .opacity(0.9)
                     .ignoresSafeArea()
                 
-//                ColorManager.purple1
-//                    .ignoresSafeArea()
+                Image("purpleBackground")
+                    .resizable()
+                    .ignoresSafeArea()
+                    .scaledToFill()
+
+                AdPlayerView(name: "sky2")
+                    .ignoresSafeArea()
+                    .blendMode(.screen)
+                    .opacity(0.9)
+                
+                AdPlayerView(name: "moonShots")
+                    .ignoresSafeArea()
+                    .blendMode(.screen)
+                    .opacity(0.9)
                 
                 
                 //TODO: Remove the onAppear for production
@@ -45,10 +58,23 @@ struct LoginView: View {
                     .offset(x: -200, y: 400)
                 
                 VStack {
-                    Text("Welcome Back")
-                        .font(.custom("MainFont", size: 40).bold())
-                        .foregroundColor(ColorManager.grey3)
-                        .padding(30)
+                  
+                    Text("For your protection:")
+                        .font(.system(size: 20, weight: .light))
+                        .foregroundColor(Color.white)
+                        .shadow(color: .black, radius: 1, x: 0, y: 1)
+                        .opacity(0.50)
+                        .multilineTextAlignment(.center)
+                       
+                    Text("We don't sell user data or use 3rd party cookies")
+                        .font(.system(size: 15, weight: .light))
+                        .foregroundColor(Color.white)
+                        .shadow(color: .black, radius: 1, x: 0, y: 1)
+                        .opacity(0.50)
+                        .multilineTextAlignment(.center)
+                    
+               
+                    
                     
                     MainTextField(text: $email, placeholder: "Email")
                         .padding(.horizontal, 40)
@@ -71,6 +97,8 @@ struct LoginView: View {
                             return
                         }
                         
+                        email = email.lowercased()
+                        
                         RestApi.instance.login(email: email, password: password).then{ tokens in
                             print("Tokens: ", tokens)
                             sessionManager.showHome()
@@ -81,8 +109,13 @@ struct LoginView: View {
                         }
                         
                     }) {
-                        CustomButtonInterior(text: "Login", backgroundColor: ColorManager.purple4, textColor: ColorManager.grey1)
+                        CustomButtonInterior(text: "Login", backgroundColor: ColorManager.purple4, textColor: Color.white)
                     }
+                    
+                    Link("forgot password", destination: URL(string: "https://socialtechlabs.com/terms-service/")!)
+                        .foregroundColor(Color.blue)
+                    
+                    
                     
                     Button(action: {
                         sessionManager.showSignUp()
@@ -91,7 +124,7 @@ struct LoginView: View {
                             .font(.system(size: 25))
                             .underline()
                             .frame(width: 150, height: 30)
-                            .foregroundColor(ColorManager.purple5)
+                            .foregroundColor(Color.white)
                     }
                 }
             }

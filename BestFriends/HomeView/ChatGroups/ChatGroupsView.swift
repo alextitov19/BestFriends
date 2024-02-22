@@ -12,6 +12,7 @@ struct ChatGroupsView: View {
     @EnvironmentObject var sessionManager: SessionManager
     
     let user: User
+//    let friends: [User]
 //    let atmosphere: Atmosphere
     
     
@@ -39,37 +40,79 @@ struct ChatGroupsView: View {
                     
                     VStack(alignment: .center) {
                         
-                        HStack {
+//                        if (groups.count == 0) {
+                            HStack {
+//
+//                                NavigationLink(
+//                                    destination: InfoCreateChatRooms(user: user),
+//                                    label: {
+//                                        Text("SetUp")
+//                                            .fontWeight(.thin)
+//                                            .frame(width: 85, height: 25)
+//                                            .foregroundColor(ColorManager.purple1)
+//                                            .font(.system(size: 20))
+//                                            .background(ColorManager.purple3)
+//                                            .cornerRadius(15)
+//                                            .shadow(color: Color(#colorLiteral(red: 0.2067186236, green: 0.2054963708, blue: 0.2076624334, alpha: 1)), radius: 2, x: 0, y: 2)
+//                                    })
+//                            }
+//                        } else {
+                           
+                ZStack {
+                                  
+                    VStack {
                         
-//                            Capsule()
-//                                .fill(Color.white)
-//                                .frame(width: 40, height: 4)
-//                                .padding(.top)
+                        HStack  {
                             
-                       
                             
+                            Spacer ()
+                                .frame(width: 95)
+
                             Text("^")
-                                .font(.system(size: 35))
+                                .font(.system(size: 25))
+                                .foregroundColor(Color.white)
                                 .fontWeight(.thin)
-                                .foregroundColor(.white)
+                                .opacity(0.8)
+                                .multilineTextAlignment(.center)
+                                .blinking(duration: 2.0)
                             
-                        Text("My Chat Rooms")
-                            .font(.system(size: 20))
-                            .fontWeight(.thin)
-                            .foregroundColor(ColorManager.purple2)
-                        
+                            Image("iconChat5")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 90, height: 90)
+                                .foregroundColor(ColorManager .purple5)
+                                .glow(color: Color.purple, radius: 2)
+                                .opacity(0.9)
+
                             Text("^")
-                                .font(.system(size: 35))
+                                .font(.system(size: 25))
+                                .foregroundColor(Color.white)
                                 .fontWeight(.thin)
-                                .foregroundColor(.white)
+                                .opacity(0.8)
+                                .multilineTextAlignment(.center)
+                                .blinking(duration: 2.0)
+
+
+                            Spacer ()
+                                .frame(width: 40)
                             
                             
-                            
-//                        Capsule()
-//                            .fill(Color.white)
-//                            .frame(width: 40, height: 4)
-//                            .padding(.top)
+                            NavigationLink(
+                                destination: RR50(user: user),
+                                label: {
+                                    Image(systemName: "info.circle")
+                                        .resizable()
+                                        .scaledToFit()
+                                        .frame(width: 28, height: 28)
+                                        .foregroundColor(ColorManager .purple3)
+//                                        .blinking(duration: 2.0)
+                                        .opacity(0.9)
+                                })
+                              
                         }
+                    }
+                }
+            }
                         
                         //MARK: ScrollView content...
                         ScrollView(.vertical, showsIndicators: false) {
@@ -96,7 +139,7 @@ struct ChatGroupsView: View {
                         Text("Hide")
                             .font(.system(size: 35))
                             .foregroundColor(ColorManager.purple2)
-                           
+                        
                             .onTapGesture(perform: {
                                 self.offset = 30
                             })
@@ -148,6 +191,6 @@ struct ChatGroupsView: View {
             self.offset = lastOffset + gestureOffset
         }
     }
-                
+    
 }
-            
+

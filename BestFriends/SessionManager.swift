@@ -11,16 +11,7 @@ enum AppState {
     case signUp
     case login
     case chat(user: User, group: Group)
-    case masterFriendVault
     
-    //    case bestFriendsMessages(user: User, atmosphere: Atmosphere, friends: [User], friendAtmospheres: [Atmosphere])
-    //
-    case fightTextUserIdeas
-    case parentsFighting
-    case fightWithFriend
-    case infoView(user:User,group: Group)
-    
-    case store
 }
 
 final class SessionManager: ObservableObject {
@@ -51,36 +42,6 @@ final class SessionManager: ObservableObject {
         appState = .chat(user: user, group: group)
     }
     
-    
-   
-    func showMasterFriendVault() {
-        appState = .masterFriendVault
-    }
-    
-    func showFightTextUserIdeas() {
-        appState = .fightTextUserIdeas
-    }
-    
-    func showParentsFighting() {
-        appState = .parentsFighting
-    }
-    
-    func showFightWithFriend() {
-        appState = .fightWithFriend
-    }
-    
-    func infoView(user: User ,group: Group) {
-        appState = .infoView(user: user, group: group)
-    }
-    
-    func showStore() {
-        appState = .store
-    }
-    
-//    func infoViewPlanet(user: User, group: Group) {
-//        appState = .infoViewPlanet(user: user, group: group)
-//    }
-//
     func reloadHome() {
         appState = .login
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.01) {

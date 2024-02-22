@@ -30,12 +30,24 @@ struct SignUpView: View {
     var body: some View {
         ZStack {
             
-            ColorManager.grey4
+            Color.black
                 .ignoresSafeArea()
             
+            Image("purpleBackground")
+                .resizable()
+                .ignoresSafeArea()
+                .scaledToFill()
+                .opacity(0.7)
+
+            AdPlayerView(name: "sky2")
+                .ignoresSafeArea()
+                .blendMode(.screen)
+                .opacity(0.9)
             
-//            ColorManager.purple1
-//                .ignoresSafeArea()
+            AdPlayerView(name: "moonShots")
+                .ignoresSafeArea()
+                .blendMode(.screen)
+                .opacity(0.45)
             
             ZStack {
                 Circle()
@@ -51,10 +63,8 @@ struct SignUpView: View {
             
             
             VStack {
-//                Text("Welcome to BestFriends")
-//                    .font(.custom("MainFont", size: 40).bold())
-//                    .foregroundColor(ColorManager.grey3)
-//                    .padding(30)
+
+           
                 
                 VStack {
                     HStack {
@@ -136,6 +146,7 @@ struct SignUpView: View {
                 
                 Button(action: {
                     if checkFields() {
+                        email = email.lowercased()
                         let data = SignUpUserData(firstName: firstname, lastName: lastname, credentials: Credentials(email: email, password: password), age: age, gender: gender, location: locationString)
                         // Sign up
                         RestApi.instance.signUp(data).then{ response in
@@ -160,20 +171,20 @@ struct SignUpView: View {
                 
                 HStack {
                     Link("Terms of Service", destination: URL(string: "https://socialtechlabs.com/terms-service/")!)
-                        .foregroundColor(ColorManager.purple5)
+                        .foregroundColor(Color.blue)
                     
                     Text("and")
                         .foregroundColor(.white)
                     
                     Link("Privacy Policy", destination: URL(string: "https://socialtechlabs.com/privacy-policy-2/")!)
-                        .foregroundColor(ColorManager.purple5)
+                        .foregroundColor(Color.blue)
                 }
                 
                 Text("Login")
                     .underline()
                     .font(.system(size: 25))
                     .frame(width: 150, height: 50)
-                    .foregroundColor(ColorManager.purple5)
+                    .foregroundColor(ColorManager.purple3)
                     .onTapGesture {
                         sessionManager.showLogin()
                     }
